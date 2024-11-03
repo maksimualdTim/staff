@@ -1,0 +1,90 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ @import '../../../style/main.scss';
+.news {
+	@include main-container();
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: size(59px);
+		margin-top: size(32px);
+		&title {
+			font-size: size(40px);
+			color: #313131;
+			line-height: size(48px);
+		}
+	}
+	&__card {
+		text-decoration: none;
+		color: inherit;
+		// width: size(417px);
+		display: inline-block;
+		background: #fff;
+		border-radius: size(18px);
+	}
+	&__title {
+		color: #454545;
+		font-size: size(18px);
+		line-height: size(19px);
+		margin-bottom: size(25px);
+	}
+	&__content {
+		padding: size(37px) size(34px);
+		color: #A8A8A8;
+		font-size: size(14px);
+		line-height: size(21px);
+	}
+	&__date {
+		color: #C5C5C5;
+		margin-bottom: size(10px);
+		font-size: size(13px);
+		font-weight: 500;
+		line-height: size(19px);
+	}
+	&__excerpt {
+		margin-bottom: size(25px);
+	}
+	&__readmore {
+		color: $primaryColor;
+	}
+	&__img {
+		border-radius: size(18px);
+		height: size(185px);
+		overflow: hidden;
+		img {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+.swiper {
+	border-radius: size(18px);
+}
+.swiper__navigation {
+	display: flex;
+	align-items: center;
+	height: size(44px);
+	.swiper-button-next {
+		margin-left: size(40px);
+	}
+	.swiper-button-next, .swiper-button-prev {
+		position: relative;
+		width: size(44px);
+		height: size(44px);
+		right: 0;
+		top: 10px;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+		&::after {
+			content: '';
+		}
+	}
+}

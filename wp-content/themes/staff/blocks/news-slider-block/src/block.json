@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/news-slider-block",
+	"version": "0.1.0",
+	"title": "News Slider Block",
+	"category": "staff-category",
+	"icon": "admin-site",
+	"description": "Блок слайдера с новостями",
+	"example": {},
+	"attributes": {
+		"subSectionText": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "news-slider-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

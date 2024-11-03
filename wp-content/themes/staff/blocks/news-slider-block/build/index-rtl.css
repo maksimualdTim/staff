@@ -1,0 +1,64 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss (1) ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+body {
+  background-color: #FCF8FF;
+  font-family: "inter-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400;
+}
+
+.section {
+  padding-top: calc(3.3333333333 * (1vw + 1vh));
+  padding-bottom: calc(3.3333333333 * (1vw + 1vh));
+}
+.section__sub {
+  display: flex;
+  -moz-column-gap: calc(0.625 * (1vw + 1vh));
+       column-gap: calc(0.625 * (1vw + 1vh));
+  align-items: center;
+}
+.section__text {
+  color: #000;
+  opacity: 0.3;
+  font-size: calc(0.625 * (1vw + 1vh));
+  line-height: calc(0.6666666667 * (1vw + 1vh));
+}
+.section__line {
+  background-color: #1260F5;
+  height: 1px;
+  width: calc(2.2916666667 * (1vw + 1vh));
+}
+
+.news {
+  width: 100%;
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1050px) {
+  .news {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.news__card {
+  width: 32%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-wrapper a {
+  text-decoration: none !important;
+}

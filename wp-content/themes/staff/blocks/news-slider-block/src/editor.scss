@@ -1,0 +1,19 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ @import '../../../style/main.scss';
+.news {
+    @include main-container();
+}
+ .news__card {
+    width: 32%;
+ }
+ .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    a {
+        text-decoration: none !important;
+     }
+ }

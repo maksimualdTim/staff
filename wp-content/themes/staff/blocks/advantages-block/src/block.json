@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/advantages-block",
+	"version": "0.1.0",
+	"title": "Advantages Block",
+	"category": "staff-category",
+	"icon": "thumbs-up",
+	"description": "Блок с преимуществами",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"items": {
+		  "type": "array",
+		  "default": []
+		}
+	  },
+	"textdomain": "advantages-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

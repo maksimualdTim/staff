@@ -1,0 +1,23 @@
+{
+    "settings": {
+        "templateParts": [
+            {
+                "area": "header",
+                "name": "header",
+                "title": "Header"
+            },
+            {
+                "area": "footer",
+                "name": "footer",
+                "title": "Footer"
+            }
+        ],
+        "customTemplates": [
+            {
+                "name": "page-wide",
+                "postTypes": ["page"],
+                "title": "Page Wide"
+            }
+        ]
+    }
+}
