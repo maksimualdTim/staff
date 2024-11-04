@@ -1,7 +1,6 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', function () {
-    wp_enqueue_style( 'main', get_template_directory_uri() . '/style/main.css' );
     wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
 
     wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');

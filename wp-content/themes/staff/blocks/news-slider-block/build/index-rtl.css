@@ -10,6 +10,10 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+div {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FCF8FF;
   font-family: "inter-variable", sans-serif;
@@ -32,10 +36,53 @@ body {
   font-size: calc(0.625 * (1vw + 1vh));
   line-height: calc(0.6666666667 * (1vw + 1vh));
 }
+@media (max-width: 600px) {
+  .section__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .section__text {
+    line-height: 16px;
+  }
+}
 .section__line {
   background-color: #1260F5;
   height: 1px;
   width: calc(2.2916666667 * (1vw + 1vh));
+}
+@media (max-width: 600px) {
+  .section__line {
+    width: 55px;
+  }
+}
+.section__number {
+  color: #89B1FF;
+  font-size: calc(0.625 * (1vw + 1vh));
+  line-height: calc(0.6666666667 * (1vw + 1vh));
+  margin-right: calc(2.0833333333 * (1vw + 1vh));
+}
+@media (max-width: 600px) {
+  .section__number {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .section__number {
+    line-height: 16px;
+  }
+}
+
+.bg {
+  opacity: 0.15;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
 }
 
 .news {

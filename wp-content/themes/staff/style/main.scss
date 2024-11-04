@@ -2,6 +2,9 @@
 
 
 //temaplates
+div {
+	box-sizing: border-box;
+}
 
 $index: calc(1vw + 1vh);
 $conversion-factor: 24px;
@@ -13,6 +16,37 @@ $primaryColor: #1260F5;
 
 @mixin border-radius() {
 	border-radius: size(18px);
+	@media (max-width: 600px) {
+		border-radius: 18px;
+	}
+}
+
+@mixin font-size($size) {
+	font-size: size($size);
+	@media (max-width: 600px) {
+		font-size: $size;
+	}
+}
+
+@mixin line-height($size) {
+	line-height: size($size);
+	@media (max-width: 600px) {
+		line-height: $size;
+	}
+}
+
+@mixin height($size) {
+	height: size($size);
+	@media (max-width: 600px) {
+		height: $size;
+	}
+}
+
+@mixin width($size) {
+	width: size($size);
+	@media (max-width: 600px) {
+		width: $size;
+	}
 }
 
 @mixin main-container() {
@@ -44,20 +78,20 @@ body {
 	&__text {
 		color: #000;
 		opacity: .3;
-		font-size: size(15px);
-		line-height: size(16px);
+		@include font-size(15px);
+		@include line-height(16px);
 	}
 
 	&__line {
 		background-color: $primaryColor;
 		height: 1px;
-		width: size(55px);
+		@include width(55px);
 	}
 
 	&__number {
 		color: #89B1FF;
-		font-size: size(15px);
-		line-height: size(16px);
+		@include font-size(15px);
+		@include line-height(16px);
 		margin-left: size(50px);
 	}
 }

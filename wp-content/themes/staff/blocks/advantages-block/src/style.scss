@@ -9,18 +9,53 @@
 
 .advantages {
 	@include main-container();
+	@media (max-width: 600px) {
+		padding: 0;
+	}
+	&__top,
+	&__bottom {
+		display: flex;
+		@media (max-width: 420px) {
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		@media (max-width: 395px) {
+			flex-direction: column;
+		}
+	}
 	&__container {
 		@include border-radius();
 		background-color: #fff;
 		padding: size(90px) size(80px);
 		display: flex;
 		align-items: flex-start;
+
+		@media (max-width: 981px) {
+			flex-direction: column-reverse;
+		}
+
+		@media (max-width: 600px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 
 	&__info {
 		margin-left: size(105px);
 		position: sticky;
 		top: size(90px);
+		@media (max-width: 981px) {
+			margin-left: 0;
+			margin-bottom: 63px;
+			position: static;
+		}
+	}
+
+	&__empty {
+		width: size(57px);
+		@media (max-width: 981px) {
+			width: 0;
+		}
 	}
 
 	&__icon {
@@ -30,6 +65,10 @@
 		@include border-radius();
 		position: relative;
 		z-index: 2;
+		@media (max-width: 981px) {
+			width: 57px;
+			height: 57px;
+		}
 		img {
 			position: absolute;
 			top: 50%;
@@ -37,29 +76,43 @@
 			width: size(28px);
 			height: size(28px);
 			transform: translate(-50%, -50%);
+			@media (max-width: 981px) {
+				width: 28px;
+				height: 28px;
+			}
 		}
 	}
 	&__cards {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		@media (max-width: 981px) {
+			width: 100%;
+		}
+	}
+	&__cardwrapper {
+		width: size(500px);
+		@media (max-width: 981px) {
+			width: 100%;
+		}
 	}
 	&__card {
 		padding: size(37px);
 		background: linear-gradient(270deg, #7EA8FA 0%, #1A64F6 100%);
 		box-shadow: 0px 4px 200px 0px #1260F51A;
 		position: relative;
-		width: size(500px);
-		display: flex;
-		justify-content: space-between;
+		width: 100%;
 		@include border-radius();
 		.bg {
 			@include border-radius();
 		}
+
+		@media (max-width: 981px) {
+			padding: 37px 27px;
+		}
 	}
 	&__subtitle {
-		font-size: size(14px);
-		line-height: size(15px);
+		@include font-size(14px);
+		@include line-height(15px);
 		font-weight: 500;
 		opacity: .5;
 		color: #fff;
@@ -68,40 +121,77 @@
 	&__title {
 		color: #fff;
 		font-weight: 500;
-		font-size: size(24px);
-		line-height: size(26px);
+		@include font-size(24px);
+		@include line-height(26px);
 		margin-bottom: size(30px);
 		max-width: size(360px);
+
+		@media (max-width: 981px) {
+			font-size: 16px;
+			line-height: 17px;
+			max-width: 100%;
+		}
 	}
 	&__content {
 		position: relative;
 		z-index: 2;
+		margin-left: size(30px);
+		@media (max-width: 981px) {
+			margin-left: 30px;
+			&.--bottom {
+				margin-left: 0;
+			}
+		}
+		@media (max-width: 420px) {
+			margin-left: 10px;
+		}
+		@media (max-width: 395px) {
+			margin-top: 15px;
+			margin-left: 0;
+		}
 	}
 	&__text {
-		font-size: size(15px);
-		line-height: size(22px);
+		@include font-size(15px);
+		@include line-height(22px);
 		font-weight: 500;
 		opacity: .9;
 		color: #fff;
 		max-width: size(360px);
+
+		@media (max-width: 981px) {
+			max-width: 100%;
+			margin-top: 25px;
+			font-size: 15px;
+			line-height: 22px;
+		}
+		@media (max-width: 395px) {
+			margin-top: 15px;
+		}
 	}
 
 	&__blocktitle {
-		font-size: size(35px);
-		line-height: size(42px);
+		@include font-size(35px);
+		@include line-height(42px);
+
 		color: #313131;
 		margin-top: size(32px);
 		margin-bottom: size(72px);
 		span {
 			color: $primaryColor;
 		}
+		@media (max-width: 600px) {
+			line-height: 33px;
+			font-size: 28px;
+			margin-top: 30px;
+			margin-bottom: 41px;
+		}
 	}
 
 	&__blocktext {
 		color: #000;
 		opacity: .4;
-		font-size: size(16px);
-		line-height: size(25px);
+		@include font-size(16px);
+		@include line-height(25px);
 		margin-bottom: size(72px);
 	}
 
@@ -109,8 +199,8 @@
 		a {
 			text-decoration: none;
 			color: $primaryColor;
-			font-size: size(16px);
-			line-height: size(17px);
+			@include font-size(16px);
+			@include line-height(17px);
 		}
 	}
 }
@@ -119,8 +209,16 @@
 	margin: -1px 0;
 	width: size(69px);
 	height: size(19px);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	svg {
 		width: 100%;
 		height: 100%;
+	}
+	@media (max-width: 981px) { 
+		margin: -2px 0;
+		width: 69px;
+		height: 19px;
 	}
 }
