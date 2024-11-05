@@ -13,7 +13,7 @@ import { Spinner, Placeholder, PanelBody, TextControl, ToggleControl } from '@wo
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import { InspectorControls, useBlockProps, RichText, PanelColorSettings } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -31,6 +31,13 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
+function formatDateToDDMMYYYY(date) {
+    const day = String(date.getDate()).padStart(2, '0'); // Получаем день с ведущим нулем
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Месяцы начинаются с 0, поэтому добавляем 1
+    const year = date.getFullYear(); // Получаем полный год
+
+    return `${day}/${month}/${year}`; // Собираем строку в формате DD/MM/YYYY
+}
 
 export default function Edit({ attributes, setAttributes }) {
 	const { subSectionText, title } = attributes;
@@ -76,13 +83,6 @@ export default function Edit({ attributes, setAttributes }) {
                             setAttributes( { subSectionText: value } )
                         }
                     />
-                    <TextControl
-                        label={ "Заголовок" }
-                        value={ title || '' }
-                        onChange={ ( value ) =>
-                            setAttributes( { title: value } )
-                        }
-                    />
                 </PanelBody>
             </InspectorControls>
 			<section { ...useBlockProps({className: "news section"}) }>
@@ -91,7 +91,14 @@ export default function Edit({ attributes, setAttributes }) {
 					<div class="section__text">{subSectionText}</div>
 				</div>
 				<div class="news__block">
-					<h3 class="news__blocktitle">{title}</h3>
+					<RichText
+						tagName="p"
+						value={title}
+						onChange={(newContent) => setAttributes({ title: newContent })}
+						placeholder="Введите текст ..."
+						style={{}}
+						className="news__blocktitle"
+					/>
 					<div class="swiper__navigation">
 						<svg class="swiper-button-prev" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M44 22C44 17.6488 42.7097 13.3953 40.2923 9.77745C37.8749 6.15957 34.439 3.33977 30.419 1.67465C26.3991 0.00951995 21.9756 -0.426157 17.708 0.42272C13.4404 1.27159 9.52041 3.36689 6.44365 6.44365C3.3669 9.5204 1.2716 13.4404 0.422724 17.708C-0.426153 21.9756 0.00952302 26.3991 1.67465 30.419C3.33978 34.439 6.15957 37.8749 9.77745 40.2923C13.3953 42.7097 17.6488 44 22 44C27.8328 43.9937 33.4249 41.6738 37.5494 37.5494C41.6738 33.4249 43.9937 27.8328 44 22ZM12.0743 24.5923C11.3869 23.9047 11.0008 22.9723 11.0008 22C11.0008 21.0277 11.3869 20.0953 12.0743 19.4077L19.8532 11.6288L22.4455 14.2212L16.5 20.1667L33 20.1667L33 23.8333L16.5 23.8333L22.4455 29.7788L19.8532 32.3712L12.0743 24.5923Z" fill="#1360F5"/>
@@ -111,7 +118,7 @@ export default function Edit({ attributes, setAttributes }) {
 										{post.imageUrl && <img src={post.imageUrl} alt={post.title.rendered} />}
 									</div>
 									<div className="news__content">
-										<div className="news__date">{post.date}</div>
+										<div className="news__date">{formatDateToDDMMYYYY(new Date(post.date))}</div>
 										<div className="news__title">{post.title.rendered}</div>
 										<div className="news__excerpt">{post.excerpt.raw}</div>
 										<div className="news__readmore">Читать -&gt;</div>

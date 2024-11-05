@@ -15,6 +15,21 @@
     "items": {
       "type": "array",
       "default": []
+    },
+    "subSectionText": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "descriptionText": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "subSectionNumber": {
+      "type": "string"
     }
   },
   "textdomain": "advantages-block",

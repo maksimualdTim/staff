@@ -16,7 +16,6 @@
 	&__bottom {
 		display: flex;
 		@media (max-width: 420px) {
-			justify-content: space-between;
 			flex-wrap: wrap;
 		}
 		@media (max-width: 395px) {
@@ -96,7 +95,7 @@
 		}
 	}
 	&__card {
-		padding: size(37px);
+		padding: size(36px);
 		background: linear-gradient(270deg, #7EA8FA 0%, #1A64F6 100%);
 		box-shadow: 0px 4px 200px 0px #1260F51A;
 		position: relative;
@@ -176,6 +175,7 @@
 		color: #313131;
 		margin-top: size(32px);
 		margin-bottom: size(72px);
+		font-weight: 400;
 		span {
 			color: $primaryColor;
 		}
@@ -189,7 +189,6 @@
 
 	&__blocktext {
 		color: #000;
-		opacity: .4;
 		@include font-size(16px);
 		@include line-height(25px);
 		margin-bottom: size(72px);
