@@ -1,0 +1,58 @@
+@import url("https://use.typekit.net/psh5uyq.css");
+
+
+//temaplates
+
+$index: calc(1vw + 1vh);
+$conversion-factor: 24px;
+$primaryColor: #1260F5;
+
+@function size($px) {
+	@return calc($px / $conversion-factor * $index);
+}
+
+@mixin border-radius() {
+	border-radius: size(18px);
+	@media (max-width: 600px) {
+		border-radius: 18px;
+	}
+}
+
+@mixin font-size($size) {
+	font-size: size($size);
+	@media (max-width: 600px) {
+		font-size: $size;
+	}
+}
+
+@mixin line-height($size) {
+	line-height: size($size);
+	@media (max-width: 600px) {
+		line-height: $size;
+	}
+}
+
+@mixin height($size) {
+	height: size($size);
+	@media (max-width: 600px) {
+		height: $size;
+	}
+}
+
+@mixin width($size) {
+	width: size($size);
+	@media (max-width: 600px) {
+		width: $size;
+	}
+}
+
+@mixin main-container() {
+	width: 100%;
+	padding-right: size(120px);
+	padding-left: size(120px);
+	box-sizing: border-box;
+	@media screen and (max-width: 1050px) {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}

@@ -1,5 +1,1 @@
-body {
-    background-color: #FCF8FF;
-	font-family: "inter-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wght" 400;
-}
+@import url('./style.css');

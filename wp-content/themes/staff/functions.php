@@ -2,6 +2,7 @@
 
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+    wp_enqueue_style('theme-style', get_stylesheet_uri());
 
     wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
 });
@@ -10,7 +11,7 @@ require __DIR__ . '/blocks/news-slider-block/news-slider-block.php';
 require __DIR__ . '/blocks/advantages-block/advantages-block.php';
 
 function my_custom_editor_styles() {
-    add_editor_style('editor-style.css');
+    add_editor_style('style.css');
 }
 add_action('admin_init', 'my_custom_editor_styles');
 
