@@ -4,7 +4,7 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
- @import '../../../style/main.scss';
+ @import '../../../template.scss';
 .news {
 	@include main-container();
 	&__block {

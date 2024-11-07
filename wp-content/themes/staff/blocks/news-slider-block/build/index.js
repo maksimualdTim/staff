@@ -134,7 +134,7 @@ function Edit({
           onChange: newContent => setAttributes({
             title: newContent
           }),
-          placeholder: "Enter your text...",
+          placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043A\u0441\u0442 ...",
           style: {},
           className: "news__blocktitle"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
