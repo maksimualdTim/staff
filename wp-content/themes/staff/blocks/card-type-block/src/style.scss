@@ -1,0 +1,89 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../template.scss';
+
+
+
+.credit {
+  padding-top: 200px !important;
+  padding-bottom: 200px !important;
+  @include main-container();
+  @media (max-width: 600px) {
+	padding: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.credit-section-content{
+  display: flex;
+  gap: 10px; /* Отступы между блоками */
+}
+.credit-section-title {
+  color: #313131;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.credit-section-description {
+  color: #979499;
+  font-size: 17px;
+  margin-top: 67px;
+  width: 60%;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+
+
+.credit-section-content > div {
+  flex: 1; /* Каждый элемент занимает равное количество пространства */
+}
+
+.credit-section-img {
+  position: relative;
+}
+.credit-section-img img {
+  position: absolute;
+  top: -210px;
+  right: -133px;
+  z-index: 10;
+  width: 716px;
+  height: max-content;
+}
+
+
+.card-preview-btns {
+  margin-top: 67px;
+}
+
+
+
+.credit-section-btn {
+  border-radius: 18px;
+  height: fit-content;
+  text-decoration: none;
+  padding: 27px 69px;
+}
+.btn-left {
+  color: #fff;
+  margin-right: 14px;
+  background: linear-gradient(to left, #578CF2, #1260F5);
+}
+
+.btn-right {
+  border: #1260F5 solid 1px;
+  color: #1260F5;
+}

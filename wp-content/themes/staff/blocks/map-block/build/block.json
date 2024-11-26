@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/map-block",
+  "version": "0.1.0",
+  "title": "Map Block",
+  "category": "staff-category",
+  "icon": "location-alt",
+  "description": "Блок с картой",
+  "example": {},
+  "attributes": {
+    "subSectionText": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Кнопка"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "mapEmbed": {
+      "type": "string",
+      "default": ""
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "bgUrl": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "map-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

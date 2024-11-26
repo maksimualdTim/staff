@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/card-type-sec-block",
+	"version": "0.1.0",
+	"title": "Card Type Sec Block",
+	"category": "staff-category",
+	"icon": "smiley",
+	"description": "Второй блок с типами карт",
+	"example": {},
+	"attributes": {
+	  "items": {
+		"type": "array",
+		"default": []
+	  },
+	  "subSectionText": {
+		"type": "string"
+	  },
+	  "subSectionNum": {
+		"type": "string"
+	  },
+	  "title": {
+		"type": "string"
+	  },
+	  "underTextGroup": {
+		"type": "array",
+		"default": []
+	  },
+	  "contentBox": {
+		"type": "array",
+		"default": []
+	  },
+
+	  "imageUrl": {
+		"type": "string"
+	  },
+	  "bgUrl": {
+		"type": "string"
+	  }
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "card-type-sec-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

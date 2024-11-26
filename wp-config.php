@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'staff' );
 
 /** Database username */
-define( 'DB_USER', 'myuser' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'mypass' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -95,5 +95,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
 
-define( 'WP_SITEURL', 'http://10.10.18.28' );
-define('WP_HOME', 'http://10.10.18.28');
+//define( 'WP_SITEURL', 'http://10.10.18.28' );
+//define('WP_HOME', 'http://10.10.18.28');
+

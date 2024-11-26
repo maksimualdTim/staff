@@ -2,13 +2,26 @@
 
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+    wp_enqueue_style('slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+    wp_enqueue_style('slick-slider-theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css');
     wp_enqueue_style('theme-style', get_stylesheet_uri());
 
+
+
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.7.1.min.js', '1.0', true);
     wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
+    // Подключение скриптов Slick Slider
+    wp_enqueue_script('slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', ['jquery'], null, true);
 });
 
 require __DIR__ . '/blocks/news-slider-block/news-slider-block.php';
 require __DIR__ . '/blocks/advantages-block/advantages-block.php';
+require __DIR__ . '/blocks/card-type-block/card-type-block.php';
+require __DIR__ . '/blocks/map-block/map-block.php';
+require __DIR__ . '/blocks/review-block/review-block.php';
+require __DIR__ . '/blocks/form-block/form-block.php';
+require __DIR__ . '/blocks/header-block/header-block.php';
+require __DIR__ . '/blocks/card-type-sec-block/card-type-sec-block.php';
 
 function my_custom_editor_styles() {
     add_editor_style('style.css');

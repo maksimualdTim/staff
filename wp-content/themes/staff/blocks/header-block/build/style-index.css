@@ -1,0 +1,81 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.header-block {
+  width: 100%;
+  padding-right: calc(5 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1050px) {
+  .header-block {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .header-block {
+    padding: 0;
+  }
+}
+
+.header-block-container {
+  display: flex;
+}
+
+.header-uppertext {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-section-title {
+  margin-top: 36px;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.header-section-btn {
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 18px;
+  background: #1260F5;
+  padding-right: 20px;
+}
+
+.header-section-btn a {
+  text-decoration: none;
+  color: #1260F5;
+  border-radius: 18px;
+  border: 1px solid #1260F5;
+  background: white;
+  padding: 22px 45px;
+  margin-right: 20px;
+}
+
+.header-section-under {
+  display: flex;
+  margin-top: 86px;
+  align-items: center;
+}
+
+.header-section-description {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 29px;
+  width: 40%;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

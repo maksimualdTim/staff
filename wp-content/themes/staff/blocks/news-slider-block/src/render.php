@@ -9,6 +9,7 @@ $news_posts = get_posts([
 ]);
 
 ?>
+
 <section class="news section" <?php echo get_block_wrapper_attributes(); ?>>
 	<div class="section__sub">
 		<div class="section__line"></div>

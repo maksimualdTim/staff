@@ -71,7 +71,7 @@ export default function Edit({ attributes, setAttributes }) {
 			}
 			return item;
 		});
-		
+
 		setAttributes({ items: newItems });
 	};
 
@@ -114,7 +114,7 @@ export default function Edit({ attributes, setAttributes }) {
 													<Button onClick={open} variant="secondary" style={{position: 'relative', transform: 'translate(-50%, -50%)', left: '50%', top: '50%'}}>
 														{item.iconUrl ? <EditIcon /> : <EditIcon />}
 													</Button>
-													
+
 												)}
 											/>
 										</div>
@@ -134,7 +134,7 @@ export default function Edit({ attributes, setAttributes }) {
 												value={item.title}
 												onChange={(value) => updateCard(index, 'title', value)}
 												className="advantages__title"
-											/>	
+											/>
 										</div>
 									</div>
 									<div class="advantages__bottom">
@@ -158,9 +158,11 @@ export default function Edit({ attributes, setAttributes }) {
 							</div>
 						))}
 					</div>
+
 					<Button onClick={addCard} style={{border: '1px solid var(--wp-components-color-accent,var(--wp-admin-theme-color,#3858e9))'}}>
 						{"Добавить карточку"}
 					</Button>
+
 					<div className="advantages__info">
 						<div className="section__sub">
 							<div className="section__line"></div>

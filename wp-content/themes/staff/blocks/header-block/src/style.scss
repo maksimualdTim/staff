@@ -1,0 +1,66 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../template.scss';
+
+.header-block{
+  @include main-container();
+  @media (max-width: 600px) {
+	padding: 0;
+  }
+}
+
+
+
+
+.header-block-container {
+  display: flex;
+}
+
+
+.header-uppertext {
+  font-size: 17px;
+  color: rgba(0,0,0,0.3);
+}
+.header-section-title {
+  margin-top: 36px;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.header-section-btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 18px;
+  background: #1260F5;
+  padding-right: 20px;
+}
+
+.header-section-btn a {
+  text-decoration: none;
+  color: #1260F5;
+  border-radius: 18px;
+  border: 1px solid #1260F5;
+  background: white;
+  padding: 22px 45px;
+  margin-right: 20px;
+}
+
+.header-section-under {
+  display: flex;
+  margin-top: 86px;
+  align-items: center;
+}
+
+.header-section-description {
+  font-size: 16px;
+  color: rgba(0,0,0,0.4);
+  margin-left: 29px;
+  width: 40%;
+  line-height: 25px;
+}

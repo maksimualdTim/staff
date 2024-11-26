@@ -1,0 +1,81 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../template.scss';
+
+
+.map-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.map {
+  @include main-container();
+  @media (max-width: 600px) {
+	padding: 0;
+  }
+}
+.section {
+  padding-top: size(80px);
+  padding-bottom: size(80px);
+
+  &__sub {
+	display: flex;
+	column-gap: size(15px);
+	align-items: center;
+  }
+  &__text {
+	color: #000;
+	opacity: .3;
+	@include font-size(15px);
+	@include line-height(16px);
+  }
+
+  &__line {
+	background-color: $primaryColor;
+	height: 1px;
+	@include width(55px);
+  }
+
+  &__number {
+	color: #89B1FF;
+	@include font-size(15px);
+	@include line-height(16px);
+	margin-left: size(50px);
+  }
+}
+
+
+
+
+.map-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+
+.map-section-title {
+  font-size: 40px;
+  margin: 0px;
+}
+.map-section-btn {
+  border: #1260F5 solid 1px;
+  border-radius: 18px;
+  height: fit-content;
+  text-decoration: none;
+  color: #1260F5;
+  padding: 27px 69px;
+}
+
+.map-section-map {
+  margin-top: 33px;
+}
+.map-section-map iframe{
+  width: 100%;
+  border-radius: 18px;
+}
