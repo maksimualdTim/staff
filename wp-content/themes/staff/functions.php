@@ -22,9 +22,7 @@ require __DIR__ . '/blocks/review-block/review-block.php';
 require __DIR__ . '/blocks/form-block/form-block.php';
 require __DIR__ . '/blocks/header-block/header-block.php';
 require __DIR__ . '/blocks/card-type-sec-block/card-type-sec-block.php';
-require __DIR__ . '/blocks/economy-block/economy-block.php';
-
-
+require __DIR__ . '/blocks/economy-stages/economy-stages.php';
 
 function my_custom_editor_styles() {
     add_editor_style('style.css');
