@@ -12,26 +12,54 @@
   @media (max-width: 600px) {
 	padding: 0;
   }
+  border-radius: 25px;
+  background: black;
+  padding-top: 160px !important;
+  padding-bottom: 160px !important;
 }
 
 
 
+.card-sec-text {
+  color: rgba(255,255,255, 0.8);
+  font-size: 14px;
+}
+.card-sec-text p:first-child{
+  margin-bottom: 10px;
+}
 
 
-.swiper {
+.card-sec .swiper__navigation {
+  position: relative !important;
+  display: flex;
+}
+
+.swiper__navigation svg {
+  width: 44px;
+  height: 44px;
+}
+
+.swiper__navigation .swiper-custom-right {
+  margin-left: 20px;
+}
+
+
+
+.card-sec .swiper {
   width: 606px !important;
   height: 435px !important;
-
+  margin-bottom: 110px;
 }
-.swiper-wrapper {
+.card-sec .swiper-wrapper {
   width: 100%;
   height: auto;
+
 }
-.swiper-slide {
+.card-sec .swiper-slide {
   width: 100% !important;
   margin: 0 !important;
 }
-.swiper-slide img {
+.card-sec .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -39,10 +67,23 @@
 
 
 
+.card-sec .section__line {
+  background-color: rgba(255, 255,255, 0.5);
+}
+
+.card-sec .section__text ,.card-sec .section__number{
+ color: rgba(255, 255,255, 0.7);
+}
+
+.card-sec .section__text {
+
+}
 
 
 
-
+.left-card-sec , .right-card-sec {
+	width: 50%;
+}
 
 
 .card-section-content {
@@ -65,7 +106,7 @@
 }
 
 .tab {
-  padding: 10px 20px;
+  padding: 23px 20px;
   cursor: pointer;
   font-size: 16px;
   border: none;
@@ -80,12 +121,15 @@
   justify-content: center;
 }
 .tab-span {
-  display: inline-block;
+  display: flex;
   width: 36px !important;
   height: 36px !important;
   border-radius: 100%;
   background: #fff;
-  color: transparent;
+  color: black;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
 }
 .tab.active {
   border-bottom: 2px solid #fff;
@@ -170,5 +214,89 @@
   to {
 	opacity: 1;
 	transform: translateY(0);
+  }
+}
+
+
+
+.card-sec .buttons {
+  margin-top: 67px;
+}
+.card-sec .buttons a {
+  padding: 30px 50px;
+  border-radius: 18px;
+}
+.card-sec .buttons a:first-child {
+  background: #fff;
+  color: #0F0F0F;
+}
+
+.card-sec .buttons a:last-child {
+  background: none;
+  color: rgba(255,255,255,0.6);
+}
+
+
+
+.card-sec-title {
+  font-size: 40px;
+  color: #fff;
+}
+
+
+//АДМИНКА
+
+.ctb-admin-panel-control {
+  display: flex;
+}
+
+.ctb-admin-panel-control .buttons{
+  margin-top: 20px;
+}
+.ctb-admin-panel-control .card-type-content-box{
+	width: 50%;
+	background-color: rgba(255,255,255, 0.8);
+	padding: 20px 30px;
+	margin: 10px 20px;
+  	color: rgba(255,255,255, 0.7);
+}
+
+.ctb-admin-panel-control .admin-panel-btn-link input, .ctb-admin-panel-control .admin-panel-btn-text input{
+	width: 70%;
+}
+
+.ctb-admin-panel-control .admin-panel-btn-link div, .ctb-admin-panel-control .admin-panel-btn-text div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.ctb-admin-panel-control .buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.ctb-admin-panel-control .points-group{
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+//MOBILE
+
+@media (max-width: 500px) {
+  .card-section-content {
+	flex-direction: column;
+  }
+  .card-sec .swiper {
+	width: 100% !important;
+  }
+  .card-sec .buttons {
+	display: flex;
+	flex-direction: column;
   }
 }

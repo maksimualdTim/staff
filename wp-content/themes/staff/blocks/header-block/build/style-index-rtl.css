@@ -16,6 +16,9 @@
   padding-left: calc(5 * (1vw + 1vh));
   padding-right: calc(5 * (1vw + 1vh));
   box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 100px !important;
+  padding-top: 265px !important;
 }
 @media screen and (max-width: 1050px) {
   .header-block {
@@ -33,6 +36,20 @@
   display: flex;
 }
 
+.header-section-content {
+  width: 60%;
+}
+
+.header-section-img {
+  width: 40%;
+  position: relative;
+}
+
+.header-section-img img {
+  position: absolute;
+  top: -28px;
+}
+
 .header-uppertext {
   font-size: 17px;
   color: rgba(0, 0, 0, 0.3);
@@ -42,6 +59,7 @@
   margin-top: 36px;
   font-size: 60px;
   font-weight: 500;
+  color: #313131;
 }
 
 .header-section-btn {
@@ -50,7 +68,7 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 18px;
-  background: #1260F5;
+  background: linear-gradient(to right, #578CF2, #1260F5);
   padding-left: 20px;
 }
 
@@ -74,6 +92,6 @@
   font-size: 16px;
   color: rgba(0, 0, 0, 0.4);
   margin-right: 29px;
-  width: 40%;
+  width: 70%;
   line-height: 25px;
 }

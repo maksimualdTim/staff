@@ -4,10 +4,40 @@
 	"name": "create-block/economy-block",
 	"version": "0.1.0",
 	"title": "Economy Block",
-	"category": "widgets",
+	"category": "staff-category",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Economy block",
 	"example": {},
+	"attributes": {
+	  "items": {
+		"type": "array",
+		"default": []
+	  },
+	  "singleItem": {
+		"type": "array",
+		"default": []
+	  },
+	  "subSectionText": {
+		"type": "string"
+	  },
+	  "subSectionNum": {
+		"type": "string"
+	  },
+	  "title": {
+		"type": "string"
+	  },
+	  "sideText": {
+		"type": "string"
+	  },
+	  "btnText": {
+		"type": "string",
+		"default": "Кнопка 1"
+	  },
+	  "btnUrl": {
+		"type": "string",
+		"default": "#"
+	  }
+	},
 	"supports": {
 		"html": false
 	},

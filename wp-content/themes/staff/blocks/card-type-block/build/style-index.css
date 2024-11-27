@@ -93,4 +93,24 @@
   color: #1260F5;
 }
 
+@media (max-width: 500px) {
+  .credit-section-content {
+    flex-direction: column;
+  }
+  .credit-section-title {
+    font-size: 28px;
+  }
+  .credit-section-description {
+    width: 100%;
+  }
+  .card-preview-btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .credit-section-btn {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 /*# sourceMappingURL=style-index.css.map*/

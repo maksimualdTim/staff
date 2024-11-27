@@ -357,3 +357,67 @@ body {
     height: 34px !important;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+header  .wp-container-core-columns-is-layout-2 {
+  margin-bottom: 0;
+}
+header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layout-1 {
+  margin-bottom: 0;
+}
+
+.menu__language__dropdown{
+  list-style: none;
+  width: max-content;
+}
+
+.menu__language__dropdown li a{
+  text-decoration: none;
+  color: #0E4BC1;
+  font-size: 18px;
+  border-radius: 18px;
+  background-color: white;
+  padding: 28px;
+}
+
+.wp-block-button__link {
+  font-size: 18px;
+  padding: 28px 57px;
+  background: linear-gradient(to left, #578CF2, #1260F5);
+  border-radius: 18px;
+  width: 200px !important;
+}
+
+
+.wp-container-core-columns-is-layout-1  .wp-block-column-is-layout-flow {
+  flex-grow: 0.4 !important;
+}
+
+
+.header-block {
+  background: url("img/header-bg.svg") no-repeat;
+  background-size: cover;
+}
+
+.economy-single-item {
+  background: url("img/single-cart.png") no-repeat;
+  background-size: cover;
+}
+
+.card-sec {
+  background: url("img/bg1.png") no-repeat;
+  background-size: cover;
+}
+
+.swiper {
+  background: url("img/rectangle.png") no-repeat center center ;
+  background-size: contain;
+}
+
+header {
+  position: relative;
+}
+
+header .wp-container-core-columns-is-layout-3 {
+ position: absolute;
+}

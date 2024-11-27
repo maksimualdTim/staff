@@ -15,10 +15,11 @@ $style = $bgUrl ? 'style="background-image: url(' . $bgUrl . ');"' : '';
 
 <section <?=$style ?>  class="map-container" <?= get_block_wrapper_attributes(); ?>>
 	<div class="map section">
+
+
 		<div class="section__sub">
 			<div class="section__line"></div>
 			<div class="section__text"><?=$attributes['subSectionText']?></div>
-
 		</div>
 
 

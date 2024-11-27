@@ -136,8 +136,7 @@ export default function Edit({ attributes, setAttributes }) {
 								</clipPath>
 							</defs>
 						</svg>
-						<p className="form-section-description">{underFromText}</p>
-
+						<p className="header-section-description">{underFromText}</p>
 					</div>
 
 				</div>

@@ -227,93 +227,110 @@ export default function Edit({ attributes, setAttributes }) {
 
 			</InspectorControls>
 
+
+
 			<div className="section__sub">
 				<div className="section__line"></div>
 				<div className="section__text">{subSectionText}</div>
 				<div className="section__number">{subSectionNum && "/ " + subSectionNum + " /"}</div>
 			</div>
 
-			<div className="card-sec-content">
+			<div className="card-section-content">
+				<div className="left-card-sec">
+					<RichText
+						tagName="h2"
+						value={title}
+						label='Заголовок'
+						placeholder='Введите заголовок ...'
+						onChange={(val) => setAttributes({title: val})}
+						className="card-sec-title"
+					/>
 
-				<RichText
-					tagName="h2"
-					value={title}
-					label='Заголовок'
-					placeholder='Введите заголовок ...'
-					onChange={(val) => setAttributes({title: val})}
-					className="card-sec-title"
-				/>
+					<div className="card-sec-img">
+						{imageUrl && <img src={imageUrl} alt="Card Image" />}
+					</div>
 
-				<div className="card-sec-img">
-					{imageUrl && <img src={imageUrl} alt="Card Image" />}
+					{/* Slider */}
+					<div className="swiper">
+						<div className="swiper-wrapper">
+							{items.map((item, index) => (
+								<div key={index} className="swiper-slide" style={{ display: 'inline-block' }}>
+									<MediaUpload
+										onSelect={(media) => updateCard(index, media.url)}
+										allowedTypes={['image']}
+										render={({ open }) => (
+											<div>
+												<Button onClick={open} variant="primary">
+													{item.slideImageUrl
+														? __('Change Image', 'review-block')
+														: __('Select Image', 'review-block')}
+												</Button>
+												{item.slideImageUrl && (
+													<div className="image-preview" style={{ marginTop: '10px' }}>
+														<img
+															src={item.slideImageUrl}
+															alt={__('Slide Image', 'review-block')}
+															style={{ width: '100%' }}
+														/>
+													</div>
+												)}
+											</div>
+										)}
+									/>
+									<Button
+										isSecondary
+										isDestructive
+										onClick={() => removeCard(index)}
+									>
+										{__('Remove', 'review-block')}
+									</Button>
+								</div>
+							))}
+						</div>
+						<Button isPrimary onClick={addCard}>
+							{__('Add Slide', 'review-block')}
+						</Button>
+					</div>
+
+					{/*	Text*/}
+					<div className="under-text-group">
+						{underTextGroup.map((item, index) => (
+							<div key={index} className="text-item">
+								<TextControl
+									label={__('Text Content', 'review-block')}
+									value={item.text || ''}
+									onChange={(value) => updateUnderTextGroup(index, value)}
+								/>
+								<Button
+									isSecondary
+									isDestructive
+									onClick={() => removeUnderTextGroupItem(index)}
+								>
+									{__('Remove', 'review-block')}
+								</Button>
+							</div>
+						))}
+						<Button isPrimary onClick={addUnderTextGroupItem}>
+							{__('Add Text Item', 'review-block')}
+						</Button>
+					</div>
+				</div>
+
+				<div className="right-card-sec">
+					<div className="tab-container">
+						<div className="tabs">
+
+						</div>
+
+					</div>
 				</div>
 			</div>
 
-			{/* Slider */}
-			<div className="">
-				{items.map((item, index) => (
-					<div key={index} className="">
-						<MediaUpload
-							onSelect={(media) => updateCard(index, media.url)}
-							allowedTypes={['image']}
-							render={({ open }) => (
-								<div>
-									<Button onClick={open} variant="primary">
-										{item.slideImageUrl
-											? __('Change Image', 'review-block')
-											: __('Select Image', 'review-block')}
-									</Button>
-									{item.slideImageUrl && (
-										<div className="image-preview" style={{ marginTop: '10px' }}>
-											<img
-												src={item.slideImageUrl}
-												alt={__('Slide Image', 'review-block')}
-												style={{ width: '100%' }}
-											/>
-										</div>
-									)}
-								</div>
-							)}
-						/>
-						<Button
-							isSecondary
-							isDestructive
-							onClick={() => removeCard(index)}
-						>
-							{__('Remove', 'review-block')}
-						</Button>
-					</div>
-				))}
-				<Button isPrimary onClick={addCard}>
-					{__('Add Slide', 'review-block')}
-				</Button>
-			</div>
-			{/*	Text*/}
-			<div className="under-text-group">
-				{underTextGroup.map((item, index) => (
-					<div key={index} className="text-item">
-						<TextControl
-							label={__('Text Content', 'review-block')}
-							value={item.text || ''}
-							onChange={(value) => updateUnderTextGroup(index, value)}
-						/>
-						<Button
-							isSecondary
-							isDestructive
-							onClick={() => removeUnderTextGroupItem(index)}
-						>
-							{__('Remove', 'review-block')}
-						</Button>
-					</div>
-				))}
-				<Button isPrimary onClick={addUnderTextGroupItem}>
-					{__('Add Text Item', 'review-block')}
-				</Button>
-			</div>
+
 			{/*DYNAMIC BLOCK	*/}
-			<div className="content-box-wrapper">
+			<div className="content-box-wrapper ctb-admin-panel-control">
 				{contentBox.map((box, index) => (
-					<div key={index} className="content-box">
+					<div key={index} className="card-type-content-box">
 						<TextControl
 							label={__('Title', 'your-text-domain')}
 							value={box.title}
@@ -335,6 +352,7 @@ export default function Edit({ attributes, setAttributes }) {
 									<TextControl
 										label={__('Button Text', 'your-text-domain')}
 										value={button.text}
+										className="admin-panel-btn-text"
 										onChange={(value) =>
 											updateButton(index, btnIndex, 'text', value)
 										}
@@ -342,6 +360,7 @@ export default function Edit({ attributes, setAttributes }) {
 									<TextControl
 										label={__('Button Link', 'your-text-domain')}
 										value={button.link}
+										className="admin-panel-btn-link"
 										onChange={(value) =>
 											updateButton(index, btnIndex, 'link', value)
 										}
@@ -362,6 +381,7 @@ export default function Edit({ attributes, setAttributes }) {
 							))}
 							<Button
 								isSecondary
+								className="admin-panel-btn-add"
 								onClick={() => addPoint(index)}
 							>
 								{__('Add Point', 'your-text-domain')}

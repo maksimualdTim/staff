@@ -12,6 +12,9 @@
   @media (max-width: 600px) {
 	padding: 0;
   }
+  overflow: hidden;
+  padding-bottom: 100px !important;
+  padding-top: 265px !important;
 }
 
 
@@ -22,6 +25,18 @@
 }
 
 
+.header-section-content {
+  width: 60%;
+}
+
+.header-section-img {
+  width: 40%;
+  position: relative;
+}
+.header-section-img img {
+  position: absolute;
+  top: -28px;
+}
 .header-uppertext {
   font-size: 17px;
   color: rgba(0,0,0,0.3);
@@ -30,6 +45,7 @@
   margin-top: 36px;
   font-size: 60px;
   font-weight: 500;
+  color: #313131;
 }
 
 .header-section-btn {
@@ -37,7 +53,7 @@
   align-items: center;
   width: fit-content;
   border-radius: 18px;
-  background: #1260F5;
+  background: linear-gradient(to left, #578CF2, #1260F5);
   padding-right: 20px;
 }
 
@@ -61,6 +77,10 @@
   font-size: 16px;
   color: rgba(0,0,0,0.4);
   margin-left: 29px;
-  width: 40%;
+  width: 70%;
   line-height: 25px;
 }
+
+
+
+//MOBILE

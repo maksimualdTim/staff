@@ -10,9 +10,7 @@
 
 .review {
   @include main-container();
-  @media (max-width: 600px) {
-	padding: 0;
-  }
+
   border-radius: 25px;
   background-color: bisque;
   padding-top: 165px !important;
@@ -31,10 +29,10 @@
 
 }
 
-.section__sub .section__line{
-  background-color: rgba(255,255,255,0.4) !important;
+.review .section__sub .section__line{
+  background-color: rgba(255,255,255,0.4) ;
 }
-.section__sub .section__text , .section__sub .section__number{
+.review .section__sub .section__text , .review .section__sub .section__number{
   color: rgba(255,255,255,0.7) !important;
 }
 
@@ -267,6 +265,34 @@
 }
 .custom-dots-container {
   margin-top: 52px;
+}
+
+
+
+
+//MOBILE
+
+@media (max-width: 600px) {
+
+  .review {
+	padding-top: 87px !important;
+  }
+  .review-section-content {
+	flex-direction: column;
+  }
+  .review-section-img {
+	display: none;
+  }
+  .review-section-title {
+	font-size: 28px;
+	width: 100%;
+  }
+  .review-section-desc-con svg{
+	display: none;
+  }
+  .review-section-description {
+	width: 100%;
+  }
 }
 
 

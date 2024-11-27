@@ -9,9 +9,8 @@
 
 .form-block {
   @include main-container();
-  @media (max-width: 600px) {
-	padding: 0;
-  }
+
+
 }
 
 
@@ -120,3 +119,26 @@
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
 }
+
+
+
+//Mobile
+
+
+@media (max-width: 600px) {
+  .form-block-container {
+	flex-direction: column;
+	padding-right: 20px;
+	padding-left: 20px;
+  }
+  .form-section-title {
+	width: 100%;
+	font-size: 28px;
+	font-weight: 300;
+  }
+
+
+}
+
+
+

@@ -1,1 +1,165 @@
-.wp-block-create-block-economy-block{background-color:#21759b;color:#fff;padding:2px}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.economy {
+  width: 100%;
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1050px) {
+  .economy {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .economy {
+    padding: 0;
+  }
+}
+
+.economy-card-preview {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.economy-section-title {
+  width: 50%;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.economy-section-description-container {
+  display: flex;
+  align-items: center;
+}
+
+.economy-section-description {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  margin-left: 31px;
+}
+
+.economy-block-items {
+  display: flex;
+  margin-top: 75px;
+  gap: 20px;
+}
+
+.economy-single-item {
+  width: 50%;
+  overflow: hidden;
+}
+
+.economy-double-items {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.economy-double-items .economy-block-item-box {
+  overflow: hidden;
+  width: 50%;
+  border-radius: 18px;
+  border: solid 1px #548AF3;
+  padding: 41px 33px;
+}
+
+.economy-double-items-title {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 33px;
+}
+
+.economy-double-items-name {
+  background: linear-gradient(to top, #ADC9FF, #1360F5); /* Градиент снизу вверх */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 75px;
+}
+
+.economy-double-items-desc {
+  margin-top: 17px;
+  color: #1360F5;
+  font-size: 16px;
+}
+
+.economy-double-items-img {
+  position: relative;
+}
+
+.economy-double-items-img img {
+  position: absolute;
+  width: 304px;
+  top: 61px;
+  left: -39px;
+}
+
+.economy-single-item {
+  border-radius: 18px;
+  padding: 77px 52px;
+}
+
+.single-item-num {
+  color: #fff;
+  font-size: 128px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.single-item-under {
+  padding: 18px 38px;
+  background: #fff;
+  color: #266CF6;
+  border-radius: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 56px;
+}
+
+.single-item-name {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.single-item-desc {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.single-item-img {
+  position: relative;
+}
+
+.single-item-img img {
+  position: absolute;
+  left: -55px;
+  top: -78px;
+}
+
+.economy-preview-btns {
+  margin-top: 58px;
+}
+
+.economy-section-btn {
+  text-decoration: none;
+  color: #1360F5;
+  font-size: 16px;
+}

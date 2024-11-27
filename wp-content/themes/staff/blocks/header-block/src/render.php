@@ -12,7 +12,7 @@
 
 			<div class="header-uppertext"><?= esc_html($attributes['subSectionText']); ?></div>
 
-			<h2 class="header-section-title"><?= esc_html($attributes['title']); ?></h2>
+			<h2 class="header-section-title"><?= $attributes['title'] ?></h2>
 
 			<div class="header-section-btn">
 				<a class="header-section-btn-link" href="<?=$attributes['buttonUrl']?>" target="_blank" rel="noopener noreferrer">
