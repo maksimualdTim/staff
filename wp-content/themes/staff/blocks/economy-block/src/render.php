@@ -95,6 +95,15 @@ $maxContentBoxes = 1;  // Максимальное количество блок
 								<img src="<?= esc_url($box['img']); ?>" alt="">
 							</div>
 						<?php endif; ?>
+
+						<div class="boxes-container-mobile">
+							<div class="white-box"></div>
+							<div class="blue-box"></div>
+							<?php if ($index === 1) : // Для второго блока добавляем ещё один white-box ?>
+								<div class="white-box"></div>
+							<?php endif; ?>
+						</div>
+
 					</div>
 				<?php endforeach; ?>
 			</div>

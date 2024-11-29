@@ -5,6 +5,7 @@
 /*!*******************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
   \*******************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 /**
  * The following styles get applied both on the front of your site
  * and in the editor.
@@ -24,11 +25,6 @@
   .header-block {
     padding-right: 20px;
     padding-left: 20px;
-  }
-}
-@media (max-width: 600px) {
-  .header-block {
-    padding: 0;
   }
 }
 
@@ -94,6 +90,52 @@
   margin-left: 29px;
   width: 70%;
   line-height: 25px;
+}
+
+@media (max-width: 600px) {
+  .header-section-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-section-content .header-section-btn {
+    order: 4;
+    margin-top: 57px;
+  }
+  .header-block-container {
+    flex-direction: column;
+  }
+  .header-section-under {
+    margin-top: 48px;
+  }
+  .header-section-title {
+    font-size: 34px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 24px;
+  }
+  .header-section-under svg {
+    display: none;
+  }
+  .header-section-description {
+    margin-left: 0;
+  }
+  .header-section-content {
+    width: 100%;
+  }
+  .header-section-img {
+    width: 100%;
+    padding-bottom: calc(16.6666666667 * (1vw + 1vh));
+    margin-top: 78px;
+    overflow-y: clip; /* Включаем вертикальный скролл */
+  }
+  .header-section-img img {
+    width: 822px;
+    top: 0;
+    left: 50%; /* Сдвигаем к центру родителя */
+    transform: translateX(-50%); /* Выравниваем центр элемента */
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
 }
 
 /*# sourceMappingURL=style-index.css.map*/

@@ -9,9 +9,7 @@
 
 .card-sec {
   @include main-container();
-  @media (max-width: 600px) {
-	padding: 0;
-  }
+
   border-radius: 25px;
   background: black;
   padding-top: 160px !important;
@@ -20,11 +18,15 @@
 
 
 
-.card-sec-text {
+.card-sec-text, .card-sec-text-mobile {
   color: rgba(255,255,255, 0.8);
   font-size: 14px;
 }
-.card-sec-text p:first-child{
+
+.card-sec-text-mobile {
+  display: none;
+}
+.card-sec-text p:first-child , .card-sec-text-mobile p:first-child{
   margin-bottom: 10px;
 }
 
@@ -288,7 +290,32 @@
 
 //MOBILE
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .card-sec {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+  }
+
+  .left-card-sec, .card-sec-text-mobile, .section__sub {
+	padding-right: 20px;
+	padding-left: 20px;
+  }
+
+  .card-sec-text {
+	display: none;
+  }
+  .card-sec-text-mobile {
+	display: block;
+	margin-top: 49px;
+  }
+  .card-sec {
+	padding-top: 92px !important;
+	padding-bottom: 67px !important;
+  }
+  .content {
+	padding: 0 ;
+  }
+
   .card-section-content {
 	flex-direction: column;
   }
@@ -298,5 +325,34 @@
   .card-sec .buttons {
 	display: flex;
 	flex-direction: column;
+  }
+
+
+  .card-sec .buttons  .btn:first-child{
+	width: fit-content;
+  }
+  .card-sec .buttons  .btn:last-child{
+	  padding-left: 0px;
+	}
+
+  .left-card-sec, .right-card-sec {
+	width: 100%;
+  }
+  .card-sec-title {
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 36px;
+	margin-top: 33px;
+	margin-bottom: 42px;
+  }
+  .card-sec .swiper {
+	margin-top: 32px;
+	height: auto !important;
+  }
+  .card-sec-text-mobile p:last-child {
+	margin-top: 33px;
+  }
+  .content-box {
+	padding-top: 38px;
   }
 }

@@ -9,9 +9,7 @@
 
 .header-block{
   @include main-container();
-  @media (max-width: 600px) {
-	padding: 0;
-  }
+
   overflow: hidden;
   padding-bottom: 100px !important;
   padding-top: 265px !important;
@@ -84,3 +82,52 @@
 
 
 //MOBILE
+@media (max-width: 600px) {
+
+  .header-section-content {
+	display: flex;
+	flex-direction: column;
+  }
+  .header-section-content .header-section-btn {
+	order: 4;
+	margin-top: 57px;
+  }
+  .header-block-container {
+	flex-direction: column;
+  }
+  .header-section-under {
+	margin-top: 48px;
+  }
+  .header-section-title {
+	font-size: 34px;
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 24px;
+  }
+  .header-section-under svg {
+	display: none;
+  }
+  .header-section-description {
+	margin-left: 0;
+  }
+
+  .header-section-content {
+	width: 100%;
+  }
+  .header-section-img {
+	width: 100%;
+	padding-bottom: size(400px);
+	margin-top: 78px;
+	overflow-y: clip; /* Включаем вертикальный скролл */
+  }
+  .header-section-img img{
+	width: 822px;
+	top: 0;
+	left: 50%; /* Сдвигаем к центру родителя */
+	transform: translateX(-50%); /* Выравниваем центр элемента */
+	-o-object-fit: contain;
+	object-fit: contain;
+  }
+
+}
+

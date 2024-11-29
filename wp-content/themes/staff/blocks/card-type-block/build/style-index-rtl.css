@@ -26,11 +26,6 @@
     padding-right: 20px;
   }
 }
-@media (max-width: 600px) {
-  .credit {
-    padding: 0;
-  }
-}
 
 .credit-section-content {
   display: flex;
@@ -62,12 +57,13 @@
 
 .credit-section-img img {
   position: absolute;
-  top: -210px;
-  left: -133px;
   z-index: 10;
-  width: 716px;
+  width: calc(29.8333333333 * (1vw + 1vh));
   height: -moz-max-content;
   height: max-content;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -217px;
 }
 
 .card-preview-btns {
@@ -93,22 +89,45 @@
   color: #1260F5;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .credit {
+    padding-bottom: 70px !important;
+    padding-top: 94px !important;
+    overflow: hidden;
+  }
   .credit-section-content {
     flex-direction: column;
   }
   .credit-section-title {
     font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
   }
   .credit-section-description {
     width: 100%;
+    margin-top: 53px;
+    font-size: 16px;
   }
   .card-preview-btns {
     display: flex;
     flex-direction: column;
+    margin-top: 44px;
   }
   .credit-section-btn {
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .credit-section-img {
+    padding-top: 350px;
+  }
+  .credit-section-img img {
+    width: 100%;
+    top: 0;
+    right: 80px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .card-preview-btns .btn-right {
+    margin-top: 13px;
   }
 }

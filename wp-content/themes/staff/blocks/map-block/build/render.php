@@ -33,5 +33,9 @@ $style = $bgUrl ? 'style="background-image: url(' . $bgUrl . ');"' : '';
 		<div class="map-section-map">
 			<?=$attributes['mapEmbed']?>
 		</div>
+
+		<a class="map-section-btn-mobile " href="<?=$attributes['buttonUrl']?>" target="_blank" rel="noopener noreferrer">
+			<?=$attributes['buttonText']?>
+		</a>
 	</div>
 </section>

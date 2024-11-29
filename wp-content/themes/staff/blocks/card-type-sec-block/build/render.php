@@ -120,6 +120,12 @@ $style = $bgUrl ? 'style="background-image: url(' . $bgUrl . ');"' : '';
 			</div>
 		</div>
 
+		<div class="card-sec-text-mobile">
+			<?php foreach ($attributes['underTextGroup'] as $i => $item):?>
+				<p><?= esc_html($item['text']); ?></p>
+			<?php endforeach;?>
+		</div>
+
 	</div>
 
 

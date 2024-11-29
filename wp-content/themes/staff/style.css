@@ -414,6 +414,38 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   background-size: contain;
 }
 
+.credit {
+  background: url("img/card-type-bg.png") no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width: 600px) {
+  .form-block {
+    background: url("img/contact-form-mobile-bg.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 18px;
+  }
+
+
+  .tab-container .content {
+    background: url("img/test.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 18px;
+  }
+
+  .card-sec {
+    background: linear-gradient(to top, #202020, #1a1a1a);
+    border-radius: 18px;
+  }
+
+
+}
+
+
+
+
+
 header {
   position: relative;
 }
