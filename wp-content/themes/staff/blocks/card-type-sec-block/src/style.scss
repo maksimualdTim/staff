@@ -10,24 +10,24 @@
 .card-sec {
   @include main-container();
 
-  border-radius: 25px;
+  border-radius: size(25px);
   background: black;
-  padding-top: 160px !important;
-  padding-bottom: 160px !important;
+  padding-top: size(160px) !important;
+  padding-bottom: size(160px) !important;
 }
 
 
 
 .card-sec-text, .card-sec-text-mobile {
   color: rgba(255,255,255, 0.8);
-  font-size: 14px;
+  font-size: size(14px);
 }
 
 .card-sec-text-mobile {
   display: none;
 }
 .card-sec-text p:first-child , .card-sec-text-mobile p:first-child{
-  margin-bottom: 10px;
+  margin-bottom: size(10px);
 }
 
 
@@ -37,20 +37,20 @@
 }
 
 .swiper__navigation svg {
-  width: 44px;
-  height: 44px;
+  width: size(44px);
+  height: size(44px);
 }
 
 .swiper__navigation .swiper-custom-right {
-  margin-left: 20px;
+  margin-left: size(20px);
 }
 
 
 
 .card-sec .swiper {
-  width: 606px !important;
-  height: 435px !important;
-  margin-bottom: 110px;
+  width: size(606px) !important;
+  height: size(435px) !important;
+  margin-bottom: size(110px);
 }
 .card-sec .swiper-wrapper {
   width: 100%;
@@ -98,7 +98,7 @@
   width: 100%;
   margin: 0 auto;
   background: rgba(36,36,36,0.6);
-  border-radius: 18px;
+  border-radius: size(18px);
 }
 
 /* Табы */
@@ -108,14 +108,14 @@
 }
 
 .tab {
-  padding: 23px 20px;
+  padding: size(23px) size(20px);
   cursor: pointer;
-  font-size: 16px;
+  font-size: size(16px);
   border: none;
   background: none;
   outline: none;
   transition: color 0.3s, border-bottom 0.3s;
-  border-bottom: 2px solid #DBDBDB;
+  border-bottom: size(2px) solid #DBDBDB;
   width: 50%;
   color: #DBDBDB;
   display: flex;
@@ -124,12 +124,12 @@
 }
 .tab-span {
   display: flex;
-  width: 36px !important;
-  height: 36px !important;
+  width: size(36px) !important;
+  height: size(36px) !important;
   border-radius: 100%;
   background: #fff;
   color: black;
-  margin-right: 15px;
+  margin-right: size(15px);
   align-items: center;
   justify-content: center;
 }
@@ -142,12 +142,12 @@
 /* Контент */
 .content {
   position: relative;
-  padding: 28px 62px 44px 62px;
+  padding: size(28px) size(62px) size(44px) size(62px);
 }
 
 .content-box {
   display: none;
-  padding: 20px;
+  padding: size(20px);
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -158,48 +158,50 @@
 
 .content-box-name {
   color: #fff;
-  font-size: 24px;
+  font-size: size(24px);
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: size(44px);
 }
 .content-box-description-title , .content-box-name-title {
-  font-size: 14px;
+  font-size: size(14px);
   color: rgba(255,255,255, 0.4);
-  margin-bottom: 21px;
+  margin-bottom: size(21px);
 }
 .content-box-description {
   color: #fff;
-  font-size: 16px;
-  line-height: 35px;
+  font-size: size(16px);
+  line-height: size(35px);
 }
 /* Стили списка */
 .points-group {
-  margin-top: 57px;
+  margin-top: size(57px);
 }
 
 .content-box-point {
   display: flex;
   align-items: center;
-  margin-bottom: 19px;
+  margin-bottom: size(19px);
   color: white;
-  font-size: 16px;
+  font-size: size(16px);
 }
 .content-box-point svg {
-  margin-right: 11px;
+  margin-right: size(11px);
+  width: size(21px);
+  height: size(22px);
 }
 
 .content-box-point i {
   color: #007BFF;
-  margin-right: 10px;
+  margin-right: size(10px);
 }
 
 /* Кнопки */
 .btn {
-  padding: 10px 20px;
+  padding: size(10px) size(20px);
   background: #007BFF;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: size(5px);
   transition: background 0.3s ease;
 }
 
@@ -222,11 +224,12 @@
 
 
 .card-sec .buttons {
-  margin-top: 67px;
+  margin-top: size(67px);
 }
 .card-sec .buttons a {
-  padding: 30px 50px;
-  border-radius: 18px;
+  padding: size(30px) size(50px);
+  border-radius: size(18px);
+  font-size: size(16px);
 }
 .card-sec .buttons a:first-child {
   background: #fff;
@@ -241,7 +244,8 @@
 
 
 .card-sec-title {
-  font-size: 40px;
+  font-size: size(40px);
+  font-weight: 500;
   color: #fff;
 }
 
@@ -253,13 +257,13 @@
 }
 
 .ctb-admin-panel-control .buttons{
-  margin-top: 20px;
+  margin-top: size(20px);
 }
 .ctb-admin-panel-control .card-type-content-box{
 	width: 50%;
 	background-color: rgba(255,255,255, 0.8);
-	padding: 20px 30px;
-	margin: 10px 20px;
+	padding: size(20px) size(30px);
+	margin: size(10px) size(20px);
   	color: rgba(255,255,255, 0.7);
 }
 
@@ -280,7 +284,7 @@
 }
 
 .ctb-admin-panel-control .points-group{
-  margin-bottom: 30px;
+  margin-bottom: size(30px);
 }
 
 

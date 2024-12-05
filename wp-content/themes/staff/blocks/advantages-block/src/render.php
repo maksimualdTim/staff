@@ -16,7 +16,7 @@
 							</div>
 							<div class="advantages__content">
 								<div class="advantages__subtitle"><?=$item['subtitle']?></div>
-								<div class="advantages__title"><?=$item['title']?></div>		
+								<div class="advantages__title"><?=$item['title']?></div>
 							</div>
 						</div>
 						<div class="advantages__bottom">
@@ -48,7 +48,7 @@
 				<?=$attributes['title']?>
 			</h3>
 			<div class="advantages__blocktext">
-				<?=$attributes['descriprionText']?>
+				<?=$attributes['descriptionText']?>
 			</div>
 			<div class="advantages__blocklink">
 				<?=$attributes['link']?>

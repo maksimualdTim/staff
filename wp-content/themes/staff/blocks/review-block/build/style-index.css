@@ -17,10 +17,10 @@
   padding-right: calc(5 * (1vw + 1vh));
   padding-left: calc(5 * (1vw + 1vh));
   box-sizing: border-box;
-  border-radius: 25px;
+  border-radius: calc(1.0416666667 * (1vw + 1vh));
   background-color: bisque;
-  padding-top: 165px !important;
-  padding-bottom: 117px !important;
+  padding-top: calc(6.875 * (1vw + 1vh)) !important;
+  padding-bottom: calc(4.875 * (1vw + 1vh)) !important;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -35,9 +35,9 @@
 .review-section-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 51px;
+  margin-top: calc(2.125 * (1vw + 1vh));
   align-items: end;
-  margin-bottom: 112px;
+  margin-bottom: calc(4.6666666667 * (1vw + 1vh));
 }
 
 .review .section__sub .section__line {
@@ -50,10 +50,11 @@
 
 .review-section-title {
   margin: 0;
-  font-size: 40px;
-  width: 530px;
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  width: calc(22.0833333333 * (1vw + 1vh));
   color: #fff;
   overflow: hidden;
+  font-weight: 500;
 }
 
 .review-section-desc-con {
@@ -61,14 +62,16 @@
 }
 
 .review-section-description {
-  width: 368px;
-  font-size: 16px;
-  line-height: 25px;
+  width: calc(15.3333333333 * (1vw + 1vh));
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  line-height: calc(1.0416666667 * (1vw + 1vh));
   color: rgba(255, 255, 255, 0.4);
 }
 
 .review-section-desc-con svg {
-  margin-left: 26px;
+  margin-left: calc(1.0833333333 * (1vw + 1vh));
+  width: calc(2.3333333333 * (1vw + 1vh));
+  height: calc(2.3333333333 * (1vw + 1vh));
 }
 
 .review-section-img {
@@ -77,8 +80,8 @@
 
 .review-section-img img {
   position: absolute;
-  bottom: -329px;
-  right: -303px;
+  bottom: calc(-13.7083333333 * (1vw + 1vh));
+  right: calc(-12.625 * (1vw + 1vh));
 }
 
 .slick-slider {
@@ -89,37 +92,42 @@
   align-items: center;
 }
 
+.slick-slider .slick-arrow svg {
+  width: calc(1.8333333333 * (1vw + 1vh)) !important;
+  height: calc(1.8333333333 * (1vw + 1vh)) !important;
+}
+
 .slick-slider .slick-arrow:nth-child(1) {
-  margin-right: 27px;
+  margin-right: calc(1.125 * (1vw + 1vh));
 }
 
 .slick-slider .slick-arrow:last-child {
-  margin-left: 27px;
+  margin-left: calc(1.125 * (1vw + 1vh));
 }
 
 .slick-track {
   transition: transform 0.5s ease-in-out; /* Плавность переключения */
-  height: 445px !important;
+  height: calc(18.5416666667 * (1vw + 1vh)) !important;
 }
 
 .slider-item {
   position: relative;
   width: 100% !important;
-  max-width: 190px; /* Предельная ширина карточки */
-  height: 298px !important;
-  border-radius: 12px;
+  max-width: calc(7.9166666667 * (1vw + 1vh)); /* Предельная ширина карточки */
+  height: calc(12.4166666667 * (1vw + 1vh)) !important;
+  border-radius: calc(0.5 * (1vw + 1vh));
   overflow: hidden;
   background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 23px;
+  margin-right: calc(0.9583333333 * (1vw + 1vh));
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out; /* Плавность размеров */
 }
 
 .slick-initialized .slick-slide {
   transition: 0.5s;
-  margin-top: 60px;
+  margin-top: calc(2.5 * (1vw + 1vh));
 }
 
 .slick-initialized .slick-slide .play-button {
@@ -140,8 +148,8 @@
 
 .slick-track .slick-active {
   width: 100% !important;
-  max-width: 285px; /* Предельная ширина карточки */
-  height: 445px !important;
+  max-width: calc(11.875 * (1vw + 1vh)); /* Предельная ширина карточки */
+  height: calc(18.5416666667 * (1vw + 1vh)) !important;
   margin-top: 0px;
   border: 2px solid white;
 }
@@ -172,8 +180,8 @@
 }
 
 .play-button {
-  width: 50px;
-  height: 50px;
+  width: calc(2.0833333333 * (1vw + 1vh));
+  height: calc(2.0833333333 * (1vw + 1vh));
   mask-size: contain;
   -webkit-mask-size: contain;
   pointer-events: all; /* Активируем клики */
@@ -182,8 +190,8 @@
 
 .video-info {
   position: absolute;
-  bottom: 25px;
-  left: 25px;
+  bottom: calc(1.0416666667 * (1vw + 1vh));
+  left: calc(1.0416666667 * (1vw + 1vh));
   color: white;
   font-family: Arial, sans-serif;
   pointer-events: none;
@@ -191,13 +199,13 @@
 
 .video-info h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: calc(0.75 * (1vw + 1vh));
   font-weight: bold;
 }
 
 .video-info p {
-  margin: 13px 0 0;
-  font-size: 14px;
+  margin: calc(0.5416666667 * (1vw + 1vh)) 0 0;
+  font-size: calc(0.5833333333 * (1vw + 1vh));
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -216,8 +224,8 @@
 
 .slick-dots .slick-active {
   background: white;
-  width: 34px !important;
-  height: 7px !important;
+  width: calc(1.4166666667 * (1vw + 1vh)) !important;
+  height: calc(0.2916666667 * (1vw + 1vh)) !important;
   border-radius: 100px;
 }
 
@@ -230,16 +238,16 @@
 }
 
 .slick-dots li button {
-  height: 7px !important;
+  height: calc(0.2916666667 * (1vw + 1vh)) !important;
   padding: 0 !important;
-  width: 15px !important;
+  width: calc(0.625 * (1vw + 1vh)) !important;
 }
 
 .slick-dots li button:before {
-  line-height: 7px !important;
-  height: 7px !important;
-  font-size: 10px !important;
-  width: 15px !important;
+  line-height: calc(0.2916666667 * (1vw + 1vh)) !important;
+  height: calc(0.2916666667 * (1vw + 1vh)) !important;
+  font-size: calc(0.4166666667 * (1vw + 1vh)) !important;
+  width: calc(0.625 * (1vw + 1vh)) !important;
 }
 
 .custom-dots-container div {
@@ -247,7 +255,7 @@
 }
 
 .custom-dots-container {
-  margin-top: 52px;
+  margin-top: calc(2.1666666667 * (1vw + 1vh));
 }
 
 @media (max-width: 600px) {

@@ -13,8 +13,8 @@
  * Replace them with your own styles or remove the file completely.
  */
 .credit {
-  padding-top: 200px !important;
-  padding-bottom: 200px !important;
+  padding-top: calc(8.3333333333 * (1vw + 1vh)) !important;
+  padding-bottom: calc(8.3333333333 * (1vw + 1vh)) !important;
   width: 100%;
   padding-left: calc(5 * (1vw + 1vh));
   padding-right: calc(5 * (1vw + 1vh));
@@ -34,16 +34,17 @@
 
 .credit-section-title {
   color: #313131;
-  font-size: 40px;
-  margin-top: 40px;
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  margin-top: calc(1.6666666667 * (1vw + 1vh));
+  font-weight: 500;
 }
 
 .credit-section-description {
   color: #979499;
-  font-size: 17px;
-  margin-top: 67px;
-  width: 60%;
-  line-height: 28px;
+  font-size: calc(0.7083333333 * (1vw + 1vh));
+  margin-top: calc(2.7916666667 * (1vw + 1vh));
+  width: 85%;
+  line-height: calc(1.1666666667 * (1vw + 1vh));
   font-weight: 300;
 }
 
@@ -63,19 +64,20 @@
   height: max-content;
   top: 50%;
   transform: translateY(-50%);
-  left: -217px;
+  left: calc(-9.8333333333 * (1vw + 1vh));
 }
 
 .card-preview-btns {
-  margin-top: 67px;
+  margin-top: calc(2.7916666667 * (1vw + 1vh));
 }
 
 .credit-section-btn {
-  border-radius: 18px;
+  border-radius: calc(0.75 * (1vw + 1vh));
   height: -moz-fit-content;
   height: fit-content;
   text-decoration: none;
-  padding: 27px 69px;
+  padding: calc(1.125 * (1vw + 1vh)) calc(2.875 * (1vw + 1vh));
+  font-size: calc(0.75 * (1vw + 1vh));
 }
 
 .btn-left {

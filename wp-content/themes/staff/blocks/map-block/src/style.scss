@@ -52,31 +52,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 24px;
+  margin-top: size(24px);
 }
 
 
 .map-section-title {
-  font-size: 40px;
+  font-size: size(40px);
   margin: 0px;
+  font-weight: 500;
+  color: #313131;
 }
 .map-section-btn , .map-section-btn-mobile{
+  font-size: size(16px);
   border: #1260F5 solid 1px;
-  border-radius: 18px;
+  border-radius: size(18px);
   height: fit-content;
   text-decoration: none;
   color: #1260F5;
-  padding: 27px 69px;
+  padding: size(27px) size(69px);
 }
 .map-section-btn-mobile {
   display: none;
 }
 .map-section-map {
-  margin-top: 33px;
+  margin-top: size(33px);
 }
 .map-section-map iframe{
   width: 100%;
-  border-radius: 18px;
+  border-radius: size(18px);
+  height: size(488px);
 }
 
 

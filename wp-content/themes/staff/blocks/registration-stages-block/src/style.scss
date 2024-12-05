@@ -1,0 +1,44 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../template.scss';
+
+.platform-block {
+  @include main-container();
+  background-color: #fff;
+}
+
+
+.platform-block {
+
+}
+
+.platform-block__items{
+
+}
+
+.platform-block__item {
+
+}
+.platform-block__item__text {
+
+}
+.platform-block__item__title {
+  font-size: size(40px);
+  margin-bottom: size(37px);
+  color: #313131;
+
+}
+.platform-block__item__description {
+  color: rgba(0,0,0, 0.4);
+  font-size: size(16px);
+  margin-bottom: size(63px);
+}
+
+.platform-block__item__img{
+
+}

@@ -79,7 +79,17 @@ $maxContentBoxes = 1;  // Максимальное количество блок
 					<div class="economy-block-item-box">
 
 						<?php if (!empty($box['title'])) : ?>
-							<p class="economy-double-items-title"><?php echo esc_html($box['title']); ?></>
+							<div class="economy-double-items-title-container">
+
+								<p class="economy-double-items-title"><?php echo esc_html($box['title']); ?></>
+								<div class="boxes-container">
+									<div class="white-box"></div>
+									<div class="blue-box"></div>
+									<?php if ($index === 1) : // Для второго блока добавляем ещё один white-box ?>
+										<div class="white-box"></div>
+									<?php endif; ?>
+								</div>
+							</div>
 						<?php endif; ?>
 
 						<?php if (!empty($box['number'])) : ?>

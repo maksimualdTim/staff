@@ -11,8 +11,8 @@
   @include main-container();
 
   overflow: hidden;
-  padding-bottom: 100px !important;
-  padding-top: 265px !important;
+  padding-bottom: size(100px) !important;
+  padding-top: size(265px) !important;
 }
 
 
@@ -33,15 +33,18 @@
 }
 .header-section-img img {
   position: absolute;
-  top: -28px;
+  top: size(-28px);
+  left: size(18px);
+  width: size(822px);
+
 }
 .header-uppertext {
-  font-size: 17px;
+  font-size: size(17px);
   color: rgba(0,0,0,0.3);
 }
 .header-section-title {
-  margin-top: 36px;
-  font-size: 60px;
+  margin-top: size(36px);
+  font-size: size(60px);
   font-weight: 500;
   color: #313131;
 }
@@ -50,33 +53,39 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  border-radius: 18px;
+  border-radius: size(18px);
   background: linear-gradient(to left, #578CF2, #1260F5);
-  padding-right: 20px;
+  padding-right: size(20px);
+  font-size: size(16px);
 }
 
 .header-section-btn a {
   text-decoration: none;
   color: #1260F5;
-  border-radius: 18px;
+  border-radius: size(18px);
   border: 1px solid #1260F5;
   background: white;
-  padding: 22px 45px;
-  margin-right: 20px;
+  padding: size(22px) size(45px);
+  margin-right: size(20px);
 }
 
 .header-section-under {
   display: flex;
-  margin-top: 86px;
+  margin-top: size(86px);
   align-items: center;
 }
 
+.header-section-under svg {
+  width: size(51px) ;
+  height: size(52px);
+}
+
 .header-section-description {
-  font-size: 16px;
+  font-size: size(16px);
   color: rgba(0,0,0,0.4);
-  margin-left: 29px;
+  margin-left: size(29px);
   width: 70%;
-  line-height: 25px;
+  line-height: size(25px);
 }
 
 

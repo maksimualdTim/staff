@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/registration-stages-block",
+  "version": "0.1.0",
+  "title": "Registration Stages Block",
+  "category": "staff-category",
+  "icon": "smiley",
+  "description": "Stages of registration block",
+  "example": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "registration-stages-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

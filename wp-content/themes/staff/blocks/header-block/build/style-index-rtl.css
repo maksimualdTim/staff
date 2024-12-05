@@ -18,8 +18,8 @@
   padding-right: calc(5 * (1vw + 1vh));
   box-sizing: border-box;
   overflow: hidden;
-  padding-bottom: 100px !important;
-  padding-top: 265px !important;
+  padding-bottom: calc(4.1666666667 * (1vw + 1vh)) !important;
+  padding-top: calc(11.0416666667 * (1vw + 1vh)) !important;
 }
 @media screen and (max-width: 1050px) {
   .header-block {
@@ -43,17 +43,19 @@
 
 .header-section-img img {
   position: absolute;
-  top: -28px;
+  top: calc(-1.1666666667 * (1vw + 1vh));
+  right: calc(0.75 * (1vw + 1vh));
+  width: calc(34.25 * (1vw + 1vh));
 }
 
 .header-uppertext {
-  font-size: 17px;
+  font-size: calc(0.7083333333 * (1vw + 1vh));
   color: rgba(0, 0, 0, 0.3);
 }
 
 .header-section-title {
-  margin-top: 36px;
-  font-size: 60px;
+  margin-top: calc(1.5 * (1vw + 1vh));
+  font-size: calc(2.5 * (1vw + 1vh));
   font-weight: 500;
   color: #313131;
 }
@@ -63,33 +65,39 @@
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 18px;
+  border-radius: calc(0.75 * (1vw + 1vh));
   background: linear-gradient(to right, #578CF2, #1260F5);
-  padding-left: 20px;
+  padding-left: calc(0.8333333333 * (1vw + 1vh));
+  font-size: calc(0.6666666667 * (1vw + 1vh));
 }
 
 .header-section-btn a {
   text-decoration: none;
   color: #1260F5;
-  border-radius: 18px;
+  border-radius: calc(0.75 * (1vw + 1vh));
   border: 1px solid #1260F5;
   background: white;
-  padding: 22px 45px;
-  margin-left: 20px;
+  padding: calc(0.9166666667 * (1vw + 1vh)) calc(1.875 * (1vw + 1vh));
+  margin-left: calc(0.8333333333 * (1vw + 1vh));
 }
 
 .header-section-under {
   display: flex;
-  margin-top: 86px;
+  margin-top: calc(3.5833333333 * (1vw + 1vh));
   align-items: center;
 }
 
+.header-section-under svg {
+  width: calc(2.125 * (1vw + 1vh));
+  height: calc(2.1666666667 * (1vw + 1vh));
+}
+
 .header-section-description {
-  font-size: 16px;
+  font-size: calc(0.6666666667 * (1vw + 1vh));
   color: rgba(0, 0, 0, 0.4);
-  margin-right: 29px;
+  margin-right: calc(1.2083333333 * (1vw + 1vh));
   width: 70%;
-  line-height: 25px;
+  line-height: calc(1.0416666667 * (1vw + 1vh));
 }
 
 @media (max-width: 600px) {

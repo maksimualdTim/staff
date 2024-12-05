@@ -17,10 +17,10 @@
   padding-left: calc(5 * (1vw + 1vh));
   padding-right: calc(5 * (1vw + 1vh));
   box-sizing: border-box;
-  border-radius: 25px;
+  border-radius: calc(1.0416666667 * (1vw + 1vh));
   background: black;
-  padding-top: 160px !important;
-  padding-bottom: 160px !important;
+  padding-top: calc(6.6666666667 * (1vw + 1vh)) !important;
+  padding-bottom: calc(6.6666666667 * (1vw + 1vh)) !important;
 }
 @media screen and (max-width: 1050px) {
   .card-sec {
@@ -31,7 +31,7 @@
 
 .card-sec-text, .card-sec-text-mobile {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
+  font-size: calc(0.5833333333 * (1vw + 1vh));
 }
 
 .card-sec-text-mobile {
@@ -39,7 +39,7 @@
 }
 
 .card-sec-text p:first-child, .card-sec-text-mobile p:first-child {
-  margin-bottom: 10px;
+  margin-bottom: calc(0.4166666667 * (1vw + 1vh));
 }
 
 .card-sec .swiper__navigation {
@@ -48,18 +48,18 @@
 }
 
 .swiper__navigation svg {
-  width: 44px;
-  height: 44px;
+  width: calc(1.8333333333 * (1vw + 1vh));
+  height: calc(1.8333333333 * (1vw + 1vh));
 }
 
 .swiper__navigation .swiper-custom-right {
-  margin-right: 20px;
+  margin-right: calc(0.8333333333 * (1vw + 1vh));
 }
 
 .card-sec .swiper {
-  width: 606px !important;
-  height: 435px !important;
-  margin-bottom: 110px;
+  width: calc(25.25 * (1vw + 1vh)) !important;
+  height: calc(18.125 * (1vw + 1vh)) !important;
+  margin-bottom: calc(4.5833333333 * (1vw + 1vh));
 }
 
 .card-sec .swiper-wrapper {
@@ -101,7 +101,7 @@
   width: 100%;
   margin: 0 auto;
   background: rgba(36, 36, 36, 0.6);
-  border-radius: 18px;
+  border-radius: calc(0.75 * (1vw + 1vh));
 }
 
 /* Табы */
@@ -111,14 +111,14 @@
 }
 
 .tab {
-  padding: 23px 20px;
+  padding: calc(0.9583333333 * (1vw + 1vh)) calc(0.8333333333 * (1vw + 1vh));
   cursor: pointer;
-  font-size: 16px;
+  font-size: calc(0.6666666667 * (1vw + 1vh));
   border: none;
   background: none;
   outline: none;
   transition: color 0.3s, border-bottom 0.3s;
-  border-bottom: 2px solid #DBDBDB;
+  border-bottom: calc(0.0833333333 * (1vw + 1vh)) solid #DBDBDB;
   width: 50%;
   color: #DBDBDB;
   display: flex;
@@ -128,12 +128,12 @@
 
 .tab-span {
   display: flex;
-  width: 36px !important;
-  height: 36px !important;
+  width: calc(1.5 * (1vw + 1vh)) !important;
+  height: calc(1.5 * (1vw + 1vh)) !important;
   border-radius: 100%;
   background: #fff;
   color: black;
-  margin-left: 15px;
+  margin-left: calc(0.625 * (1vw + 1vh));
   align-items: center;
   justify-content: center;
 }
@@ -146,12 +146,12 @@
 /* Контент */
 .content {
   position: relative;
-  padding: 28px 62px 44px 62px;
+  padding: calc(1.1666666667 * (1vw + 1vh)) calc(2.5833333333 * (1vw + 1vh)) calc(1.8333333333 * (1vw + 1vh)) calc(2.5833333333 * (1vw + 1vh));
 }
 
 .content-box {
   display: none;
-  padding: 20px;
+  padding: calc(0.8333333333 * (1vw + 1vh));
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -161,52 +161,54 @@
 
 .content-box-name {
   color: #fff;
-  font-size: 24px;
+  font-size: calc(1 * (1vw + 1vh));
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: calc(1.8333333333 * (1vw + 1vh));
 }
 
 .content-box-description-title, .content-box-name-title {
-  font-size: 14px;
+  font-size: calc(0.5833333333 * (1vw + 1vh));
   color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 21px;
+  margin-bottom: calc(0.875 * (1vw + 1vh));
 }
 
 .content-box-description {
   color: #fff;
-  font-size: 16px;
-  line-height: 35px;
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  line-height: calc(1.4583333333 * (1vw + 1vh));
 }
 
 /* Стили списка */
 .points-group {
-  margin-top: 57px;
+  margin-top: calc(2.375 * (1vw + 1vh));
 }
 
 .content-box-point {
   display: flex;
   align-items: center;
-  margin-bottom: 19px;
+  margin-bottom: calc(0.7916666667 * (1vw + 1vh));
   color: white;
-  font-size: 16px;
+  font-size: calc(0.6666666667 * (1vw + 1vh));
 }
 
 .content-box-point svg {
-  margin-left: 11px;
+  margin-left: calc(0.4583333333 * (1vw + 1vh));
+  width: calc(0.875 * (1vw + 1vh));
+  height: calc(0.9166666667 * (1vw + 1vh));
 }
 
 .content-box-point i {
   color: #007BFF;
-  margin-left: 10px;
+  margin-left: calc(0.4166666667 * (1vw + 1vh));
 }
 
 /* Кнопки */
 .btn {
-  padding: 10px 20px;
+  padding: calc(0.4166666667 * (1vw + 1vh)) calc(0.8333333333 * (1vw + 1vh));
   background: #007BFF;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: calc(0.2083333333 * (1vw + 1vh));
   transition: background 0.3s ease;
 }
 
@@ -226,12 +228,13 @@
   }
 }
 .card-sec .buttons {
-  margin-top: 67px;
+  margin-top: calc(2.7916666667 * (1vw + 1vh));
 }
 
 .card-sec .buttons a {
-  padding: 30px 50px;
-  border-radius: 18px;
+  padding: calc(1.25 * (1vw + 1vh)) calc(2.0833333333 * (1vw + 1vh));
+  border-radius: calc(0.75 * (1vw + 1vh));
+  font-size: calc(0.6666666667 * (1vw + 1vh));
 }
 
 .card-sec .buttons a:first-child {
@@ -245,7 +248,8 @@
 }
 
 .card-sec-title {
-  font-size: 40px;
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  font-weight: 500;
   color: #fff;
 }
 
@@ -254,14 +258,14 @@
 }
 
 .ctb-admin-panel-control .buttons {
-  margin-top: 20px;
+  margin-top: calc(0.8333333333 * (1vw + 1vh));
 }
 
 .ctb-admin-panel-control .card-type-content-box {
   width: 50%;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px 30px;
-  margin: 10px 20px;
+  padding: calc(0.8333333333 * (1vw + 1vh)) calc(1.25 * (1vw + 1vh));
+  margin: calc(0.4166666667 * (1vw + 1vh)) calc(0.8333333333 * (1vw + 1vh));
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -281,7 +285,7 @@
 }
 
 .ctb-admin-panel-control .points-group {
-  margin-bottom: 30px;
+  margin-bottom: calc(1.25 * (1vw + 1vh));
 }
 
 @media (max-width: 600px) {

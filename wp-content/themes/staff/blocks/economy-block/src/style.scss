@@ -15,7 +15,7 @@
 
 
 .economy-card-preview {
-  margin-top: 70px;
+  margin-top: size(70px);
   display: flex;
   justify-content: space-between;
 	align-items: center;
@@ -23,26 +23,28 @@
 
 .economy-section-title {
   width: 50%;
-  font-size: 40px;
+  font-size: size(40px);
   font-weight: 500;
   margin: 0;
 }
 .economy-section-description-container {
   display: flex;
   align-items: center;
+  justify-content: end;
 
 }
 
 .economy-section-description {
   color: rgba(0,0,0, 0.4);
-  font-size: 16px;
-  margin-right: 31px;
+  font-size: size(16px);
+  margin-right: size(31px);
+  width: 50%;
 }
 
 .economy-block-items {
   display: flex;
-  margin-top: 75px;
-  gap: 20px;
+  margin-top: size(75px);
+  gap: size(20px);
 }
 
 .economy-single-item {
@@ -52,20 +54,20 @@
 .economy-double-items {
   width: 50%;
   display: flex;
-	gap: 20px;
+	gap: size(20px);
 }
 
 .economy-double-items .economy-block-item-box {
   overflow: hidden;
   width: 50%;
-  border-radius: 18px;
+  border-radius: size(18px);
   border: solid 1px #548AF3;
-  padding: 41px 33px ;
+  padding: size(41px) size(33px) ;
 }
 .economy-double-items-title {
-  font-size: 15px;
+  font-size: size(15px);
   color: rgba(0,0,0, 0.3);
-  margin-bottom: 33px;
+  margin-bottom: size(33px);
 }
 
 .economy-double-items-name{
@@ -74,31 +76,34 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  font-size: 75px;
+  font-size: size(75px);
 }
 
 .economy-double-items-desc {
-  margin-top: 17px;
+  margin-top: size(17px);
   color: #1360F5;
-  font-size: 16px;
+  font-size: size(16px);
 }
 
 
-
+.economy-double-items-title-container {
+  display: flex;
+  justify-content: space-between;
+}
 .economy-double-items-img {
   position: relative;
 }
 .economy-double-items-img img {
   position: absolute;
-  width: 304px;
-  top: 61px;
-  right: -39px;
+  width: size(304px);
+  top: size(61px);
+  right: size(-39px);
 }
 
 
 .economy-single-item {
-  border-radius: 18px;
-  padding: 77px 52px;
+  border-radius: size(18px);
+  padding: size(77px) size(52px);
 }
 
 
@@ -107,29 +112,31 @@
 
 .single-item-num {
   color: #fff;
-  font-size: 128px;
+  font-size: size(128px);
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: size(28px);
+  font-weight: 500;
 }
 
 .single-item-under {
-  padding: 18px 38px;
+  padding: size(18px) size(38px);
   background: #fff;
   color: #266CF6;
-  border-radius: 18px;
+  border-radius: size(18px);
   width: fit-content;
-  margin-bottom: 56px;
+  font-size: size(18px);
+  margin-bottom: size(56px);
 }
 
 .single-item-name {
   color: #fff;
-  font-size: 18px;
-  margin-bottom: 28px;
+  font-size: size(18px);
+  margin-bottom: size(28px);
 }
 
 .single-item-desc {
   color: rgba(255,255,255, 0.8);
-
+	font-size: size(16px);
 }
 
 
@@ -139,33 +146,34 @@
 
 .single-item-img img {
   position: absolute;
-  right: -55px;
-  top: -78px;
+  width: size(300px);
+  right: size(-55px);
+  top: size(-78px);
 
 }
 
 .economy-preview-btns {
-  margin-top: 58px;
+  margin-top: size(58px);
 }
 
 .economy-section-btn  {
   text-decoration: none;
   color: #1360F5;
-  font-size: 16px;
+  font-size: size(16px);
 }
 
 
 .boxes-container, .boxes-container-mobile {
   display: flex;
-  gap:5px;
+  gap:size(5px);
 }
 
 .boxes-container-mobile {
   display: none;
 }
 .white-box , .blue-box {
-  width: 18px;
-  height: 18px;
+  width: size(18px);
+  height: size(18px);
 }
 .white-box {
   background-color: #EDEDED;

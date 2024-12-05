@@ -63,48 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
       clickable: true
     },
     navigation: {
-      nextEl: '.swiper-custom-left',
-      prevEl: '.swiper-custom-right'
+      nextEl: '.swiper-custom-right',
+      prevEl: '.swiper-custom-left'
     }
     // autoplay: {
     // 	delay: 3000,
     // },
   });
 });
-
-//
-// addEventListener('DOMContentLoaded', function () {
-// 	const swiper = new Swiper('.swiper', {
-// 		speed: 400,
-// 		spaceBetween: 19,
-// 		autoplay: {
-// 			delay: 3000, // Задержка между слайдами в миллисекундах (например, 3000 = 3 секунды)
-// 			disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия (клика)
-// 		},
-// 		navigation: {
-// 			nextEl: '.swiper-button-next', // Класс кнопки для перехода к следующему слайду
-// 			prevEl: '.swiper-button-prev', // Класс кнопки для перехода к предыдущему слайду
-// 		},
-// 		pagination: {
-// 			el: '.swiper-pagination',
-// 			clickable: true,
-// 		},
-// 		loop: true,
-// 		slidesPerView: 2,
-// 		breakpoints: {
-// 			700: {
-// 				slidesPerView: 3
-// 			},
-// 			600: {
-// 				slidesPerView: 2
-// 			},
-// 			0: {
-// 				slidesPerView: 1.14,
-// 				spaceBetween: 16
-// 			}
-// 		}
-// 	});
-// })
 /******/ })()
 ;
 //# sourceMappingURL=view.js.map

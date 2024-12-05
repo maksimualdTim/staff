@@ -11,10 +11,10 @@
 .review {
   @include main-container();
 
-  border-radius: 25px;
+  border-radius: size(25px);
   background-color: bisque;
-  padding-top: 165px !important;
-  padding-bottom: 117px !important;
+  padding-top: size(165px) !important;
+  padding-bottom: size(117px) !important;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -23,9 +23,9 @@
 .review-section-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 51px;
+  margin-top: size(51px);
   align-items: end;
-  margin-bottom: 112px;
+  margin-bottom: size(112px);
 
 }
 
@@ -39,10 +39,11 @@
 
 .review-section-title {
   margin: 0;
-  font-size: 40px;
-  width: 530px;
+  font-size: size(40px);
+  width: size(530px);
   color: #fff;
   overflow: hidden;
+  font-weight: 500;
 }
 
 .review-section-desc-con {
@@ -50,14 +51,16 @@
 }
 
 .review-section-description {
-  width: 368px;
-  font-size: 16px;
-  line-height: 25px;
+  width: size(368px);
+  font-size: size(16px);
+  line-height: size(25px);
   color: rgba(255,255,255,0.4);
 }
 
 .review-section-desc-con svg{
-  margin-left: 26px;
+  margin-left: size(26px);
+  width: size(56px);
+  height: size(56px);
 }
 
 
@@ -67,8 +70,8 @@
 }
 .review-section-img img{
   position: absolute;
-  bottom: -329px;
-  right: -303px;
+  bottom: size(-329px);
+  right: size(-303px);
 }
 
 
@@ -83,40 +86,45 @@
 
 }
 
+.slick-slider .slick-arrow svg {
+  width: size(44px) !important;
+  height: size(44px) !important;
+}
+
 .slick-slider .slick-arrow:nth-child(1){
-  margin-right: 27px;
+  margin-right: size(27px);
 }
 .slick-slider .slick-arrow:last-child {
-  margin-left: 27px;
+  margin-left: size(27px);
 }
 
 .slick-track {
   //width: auto !important; /* Автоматическая ширина */
   //transform: none !important; /* Сброс ненужных трансформаций */
   transition: transform 0.5s ease-in-out; /* Плавность переключения */
-
-  height: 445px !important;
+  //transform:translate3d(size(155px), 0px, 0px) !important;
+  height: size(445px) !important;
 }
 
 .slider-item {
   position: relative;
   width: 100% !important;
-  max-width: 190px; /* Предельная ширина карточки */
-  height: 298px !important;
-  border-radius: 12px;
+  max-width: size(190px); /* Предельная ширина карточки */
+  height: size(298px) !important;
+  border-radius: size(12px);
   overflow: hidden;
   background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 23px;
+  margin-right: size(23px);
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out; /* Плавность размеров */
 }
 
 
 .slick-initialized .slick-slide {
   transition: 0.5s;
-  margin-top: 60px ;
+  margin-top: size(60px) ;
 }
 
 
@@ -142,8 +150,8 @@
 
 .slick-track .slick-active {
   width: 100% !important;
-  max-width: 285px; /* Предельная ширина карточки */
-  height: 445px !important;
+  max-width: size(285px); /* Предельная ширина карточки */
+  height: size(445px) !important;
   margin-top: 0px ;
   border: 2px solid white;
 }
@@ -173,8 +181,8 @@
 }
 
 .play-button {
-  width: 50px;
-  height: 50px;
+  width: size(50px);
+  height: size(50px);
   mask-size: contain;
   -webkit-mask-size: contain;
   pointer-events: all; /* Активируем клики */
@@ -183,8 +191,8 @@
 
 .video-info {
   position: absolute;
-  bottom: 25px;
-  left: 25px;
+  bottom: size(25px);
+  left: size(25px);
   color: white;
   font-family: Arial, sans-serif;
   pointer-events: none;
@@ -193,13 +201,13 @@
 
 .video-info h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: size(18px);
   font-weight: bold;
 }
 
 .video-info p {
-  margin: 13px 0 0;
-  font-size: 14px;
+  margin: size(13px) 0 0;
+  font-size: size(14px);
   color: rgba(255,255,255, 0.5);
 }
 
@@ -230,8 +238,8 @@
 
 .slick-dots .slick-active {
   background: white;
-  width: 34px !important;
-  height: 7px !important;
+  width: size(34px) !important;
+  height: size(7px) !important;
   border-radius: 100px;
 }
 
@@ -243,15 +251,15 @@
   display: none;
 }
 .slick-dots li button {
-  height: 7px !important;
+  height: size(7px) !important;
   padding: 0 !important;
-  width: 15px !important;
+  width: size(15px) !important;
 }
 .slick-dots li button:before {
-  line-height: 7px!important;
-  height: 7px !important;
-  font-size: 10px !important;
-  width: 15px !important;
+  line-height: size(7px)!important;
+  height: size(7px) !important;
+  font-size: size(10px) !important;
+  width: size(15px) !important;
 }
 
 
@@ -264,7 +272,7 @@
   //transform: translate3d(0px, 0px, 0px) !important;
 }
 .custom-dots-container {
-  margin-top: 52px;
+  margin-top: size(52px);
 }
 
 
