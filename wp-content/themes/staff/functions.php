@@ -24,6 +24,8 @@ require __DIR__ . '/blocks/header-block/header-block.php';
 require __DIR__ . '/blocks/card-type-sec-block/card-type-sec-block.php';
 require __DIR__ . '/blocks/economy-stages/economy-stages.php';
 
+require __DIR__ . '/functions-news.php';
+
 function my_custom_editor_styles() {
     add_editor_style('style.css');
 }
@@ -95,16 +97,11 @@ add_action( 'wp_enqueue_scripts', function () {
     if(is_singular("news")) {
         wp_enqueue_style("news.css", get_template_directory_uri() . '/news.css');
     }
-});
 
-add_shortcode( 'breadcrumbs-news', function() {
-    ob_start();
-    ?>
-    <div class="bread-crumbs">
-        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Блог")?></a><span>/</span><a href="#" class="sections__link"><?= get_the_title(); ?></a>
-    </div>
-  <?php
-	$output = ob_get_contents(); // всё, что вывели, окажется внутри $output
-	ob_end_clean();
-	return $output;
-} );
+    // 86 - blog page
+    if(is_page(pll_get_post(86))) {
+        wp_enqueue_style('output.css', get_template_directory_uri() . '/output.css');
+        wp_enqueue_style('pagination.css', get_template_directory_uri() . '/pagination.css');
+        wp_enqueue_style("blog.css", get_template_directory_uri() . '/blog.css');
+    }
+});
