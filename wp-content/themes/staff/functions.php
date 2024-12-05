@@ -89,3 +89,22 @@ function my_block_editor_assets() {
     ));
 }
 add_action( 'enqueue_block_editor_assets', 'my_block_editor_assets' );
+
+
+add_action( 'wp_enqueue_scripts', function () {
+    if(is_singular("news")) {
+        wp_enqueue_style("news.css", get_template_directory_uri() . '/news.css');
+    }
+});
+
+add_shortcode( 'breadcrumbs-news', function() {
+    ob_start();
+    ?>
+    <div class="bread-crumbs">
+        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Блог")?></a><span>/</span><a href="#" class="sections__link"><?= get_the_title(); ?></a>
+    </div>
+  <?php
+	$output = ob_get_contents(); // всё, что вывели, окажется внутри $output
+	ob_end_clean();
+	return $output;
+} );
