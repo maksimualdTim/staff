@@ -95,7 +95,9 @@
   .map-section-btn-mobile {
 	display: block;
 	width: fit-content;
-	margin-top: 21px;
+	margin-top: size(88px);
+	font-size: size(40px);
+	padding: size(65px) size(180px);
   }
   .map-section-map {
 	margin-top: 63px;
@@ -107,5 +109,10 @@
   }
   .map-title-container {
 	margin-top: 32px;
+  }
+
+  .map-section-map iframe {
+	height: size(1078px);
+	border-radius: 18px;
   }
 }

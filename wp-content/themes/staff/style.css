@@ -452,4 +452,5 @@ header {
 
 header .wp-container-core-columns-is-layout-3 {
  position: absolute;
+  z-index: 1000;
 }

@@ -98,17 +98,27 @@
 	font-size: 28px;
 	font-weight: 400;
 	line-height: 38px;
+	margin-top: size(96px);
+	margin-bottom: 0;
   }
   .credit-section-description {
 	width: 100%;
-	margin-top: 53px;
+	margin-top: size(143px);
 	font-size: 16px;
+	line-height: 25px;
   }
   .card-preview-btns {
 	display: flex;
 	flex-direction: column;
-	margin-top: 44px;
+	margin-top: size(119px);
+	font-size: 18px;
+
   }
+  .card-preview-btns a{
+	padding: size(76px) size(157px) ;
+	font-size: size(50px);
+  }
+
   .credit-section-btn{
 	width: fit-content;
   }
@@ -117,9 +127,10 @@
 	padding-top: 350px;
   }
   .credit-section-img img {
-	width: 100%;
-	top:0;
-	left: 80px;
+	width: size(1200px);
+	bottom: 0;
+	left: size(95px);
+
 	object-fit: contain;
   }
 

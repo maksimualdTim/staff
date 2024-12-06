@@ -104,16 +104,24 @@
     font-size: 28px;
     font-weight: 400;
     line-height: 38px;
+    margin-top: calc(4 * (1vw + 1vh));
+    margin-bottom: 0;
   }
   .credit-section-description {
     width: 100%;
-    margin-top: 53px;
+    margin-top: calc(5.9583333333 * (1vw + 1vh));
     font-size: 16px;
+    line-height: 25px;
   }
   .card-preview-btns {
     display: flex;
     flex-direction: column;
-    margin-top: 44px;
+    margin-top: calc(4.9583333333 * (1vw + 1vh));
+    font-size: 18px;
+  }
+  .card-preview-btns a {
+    padding: calc(3.1666666667 * (1vw + 1vh)) calc(6.5416666667 * (1vw + 1vh));
+    font-size: calc(2.0833333333 * (1vw + 1vh));
   }
   .credit-section-btn {
     width: -moz-fit-content;
@@ -123,9 +131,9 @@
     padding-top: 350px;
   }
   .credit-section-img img {
-    width: 100%;
-    top: 0;
-    left: 80px;
+    width: calc(50 * (1vw + 1vh));
+    bottom: 0;
+    left: calc(3.9583333333 * (1vw + 1vh));
     -o-object-fit: contain;
        object-fit: contain;
   }

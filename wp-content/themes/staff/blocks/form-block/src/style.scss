@@ -145,8 +145,18 @@
 	align-items: start;
   }
 
+  .call-request-container input{
+	padding: size(73px) size(73px);
+	font-size: size(44px);
+	border-radius: 18px;
+  }
+
   .call-request-container button{
-	margin-top: 16px;
+	margin-top: size(40px);
+	font-size: size(44px);
+	padding: size(73px) size(73px);
+	width: size(800px);
+	border-radius: size(40px);
   }
   .call-request-container input {
 	width: 100%;
@@ -154,10 +164,11 @@
   }
 
   .form-section-title {
-	margin-bottom: 54px;
+	margin-bottom: size(145px);
   }
   .call-request label {
-	margin-bottom: 21px;
+	font-size: 15px;
+	margin-bottom: size(60px);
   }
 
   .form-block-container {
@@ -169,11 +180,23 @@
 	padding: 0;
   }
   .form-block {
+	background-size: 131% !important;
 	padding-top: 73px !important;
 	padding-bottom: 53px !important;
 	margin-bottom: 65px;
   }
 
+  .agreement {
+	margin-top: size(148px);
+  }
+  .agreement .form-section-description {
+	font-size: size(35px);
+	margin-left: 13px;
+  }
+  .agreement .agreement-svg {
+	width: 32px;
+	height: 23px;
+  }
 }
 
 

@@ -101,13 +101,25 @@
 }
 
 @media (max-width: 600px) {
+  .header-uppertext {
+    font-size: 15px;
+  }
   .header-section-content {
     display: flex;
     flex-direction: column;
   }
   .header-section-content .header-section-btn {
     order: 4;
-    margin-top: 57px;
+    margin-top: calc(5.8333333333 * (1vw + 1vh));
+    font-size: calc(1.6666666667 * (1vw + 1vh));
+    border-radius: 18px;
+  }
+  .header-section-btn a {
+    padding: calc(2.0833333333 * (1vw + 1vh)) calc(4.7916666667 * (1vw + 1vh));
+    border-radius: 18px;
+  }
+  .header-section-btn svg {
+    margin: 0 calc(1.4583333333 * (1vw + 1vh));
   }
   .header-block-container {
     flex-direction: column;
@@ -120,24 +132,28 @@
     width: 100%;
     margin-bottom: 0;
     margin-top: 24px;
+    line-height: calc(4.5833333333 * (1vw + 1vh));
   }
   .header-section-under svg {
     display: none;
   }
   .header-section-description {
+    font-size: 16px;
+    line-height: calc(2.5 * (1vw + 1vh));
     margin-left: 0;
+    width: 100%;
   }
   .header-section-content {
     width: 100%;
   }
   .header-section-img {
     width: 100%;
-    padding-bottom: calc(16.6666666667 * (1vw + 1vh));
-    margin-top: 78px;
+    padding-bottom: calc(45.8333333333 * (1vw + 1vh));
+    margin-top: calc(8.25 * (1vw + 1vh));
     overflow-y: clip; /* Включаем вертикальный скролл */
   }
   .header-section-img img {
-    width: 822px;
+    width: calc(84.25 * (1vw + 1vh));
     top: 0;
     left: 50%; /* Сдвигаем к центру родителя */
     transform: translateX(-50%); /* Выравниваем центр элемента */

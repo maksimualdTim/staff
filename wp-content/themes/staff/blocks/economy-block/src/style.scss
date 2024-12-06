@@ -26,6 +26,7 @@
   font-size: size(40px);
   font-weight: 500;
   margin: 0;
+  color: #313131;
 }
 .economy-section-description-container {
   display: flex;
@@ -188,6 +189,10 @@
 @media (max-width: 600px) {
 
 
+  .economy{
+	padding-top: size(220px) !important;
+	padding-bottom: size(160px) !important;
+  }
 
   .economy-block-items, .economy-card-preview {
 	flex-direction: column;
@@ -196,6 +201,9 @@
   .economy-block-items {
 	margin-top: 60px;
   }
+  .economy-block-items, .economy-double-items {
+	gap: size(40px);
+  }
 
   .economy-section-description-container {
 	margin-top: 50px;
@@ -203,24 +211,48 @@
 	align-items: start;
   }
   .economy-section-description-container p{
-	margin-top: 27px;
-	line-height: 27px;
+	margin-top: size(57px);
+	line-height: size(62px);
+	font-size: size(43px);
+	width: 100%;
+	text-align: start;
   }
   .economy-section-title {
 	width: 100%;
 	font-size: 28px;
   }
 
+  .single-item-img img{
+	top: size(-180px);
+	width: size(650px);
+	z-index: 99;
+  }
+  .single-item-under {
+	position: relative;
+	z-index: 100;
+	font-size: 18px;
+	padding: size(50px) size(102px);
+  }
   .economy-single-item {
+	border-radius: 18px;
 	width: 100%;
-	padding-top: 66px;
+	padding-top: size(180px);
+	padding-bottom: size(138px);
+  }
+
+  .single-item-name {
+	font-size: 18px;
+	margin-top: size(140px);
+	margin-bottom: size(60px);
   }
   .economy-double-items {
 	flex-direction: column;
 	width: 100%;
   }
   .economy-double-items .economy-block-item-box {
+	padding: size(110px) size(94px);
 	width: 100%;
+	border-radius: 18px;
   }
 
   .single-item-num {
@@ -230,6 +262,44 @@
   .boxes-container-mobile {
 	display: flex;
 	margin-top: 23px;
+  }
+
+  .economy-double-items-title {
+	font-size: size(37px);
+	margin-bottom: size(87px);
+  }
+  .economy-double-items-name {
+	font-size: 48px;
+  }
+  .economy-double-items-desc {
+	font-size: 15px;
+	margin-top: size(64px);
+  }
+  .boxes-container-mobile div{
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+  }
+  .economy-double-items-img img {
+	width: size(1764px);
+	left: size(340px);
+	top: size(-440px);
+  }
+
+  .single-item-desc {
+	font-size: size(41px);
+	//font-size: 15px;
+	line-height: 20px;
+  }
+  .boxes-container {
+	display: none;
+  }
+
+  .economy-preview-btns {
+	margin-top: size(160px);
+  }
+  .economy-preview-btns a{
+	font-size: size(43px);
   }
 }
 

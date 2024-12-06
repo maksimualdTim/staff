@@ -92,6 +92,9 @@
 
 //MOBILE
 @media (max-width: 600px) {
+  .header-uppertext {
+	font-size: 15px;
+  }
 
   .header-section-content {
 	display: flex;
@@ -99,7 +102,16 @@
   }
   .header-section-content .header-section-btn {
 	order: 4;
-	margin-top: 57px;
+	margin-top: size(140px);
+	font-size: size(40px);
+	border-radius: 18px;
+  }
+  .header-section-btn a {
+	padding: size(50px) size(115px);
+	border-radius: 18px;
+  }
+  .header-section-btn svg {
+	margin: 0 size(35px);
   }
   .header-block-container {
 	flex-direction: column;
@@ -112,12 +124,16 @@
 	width: 100%;
 	margin-bottom: 0;
 	margin-top: 24px;
+	line-height: size(110px);
   }
   .header-section-under svg {
 	display: none;
   }
   .header-section-description {
+	font-size: 16px;
+	line-height: size(60px);
 	margin-left: 0;
+	width: 100%;
   }
 
   .header-section-content {
@@ -125,12 +141,12 @@
   }
   .header-section-img {
 	width: 100%;
-	padding-bottom: size(400px);
-	margin-top: 78px;
+	padding-bottom: size(1100px);
+	margin-top: size(198px);
 	overflow-y: clip; /* Включаем вертикальный скролл */
   }
   .header-section-img img{
-	width: 822px;
+	width: size(2022px);
 	top: 0;
 	left: 50%; /* Сдвигаем к центру родителя */
 	transform: translateX(-50%); /* Выравниваем центр элемента */

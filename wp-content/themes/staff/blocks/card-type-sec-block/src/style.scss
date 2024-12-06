@@ -301,8 +301,23 @@
   }
 
   .left-card-sec, .card-sec-text-mobile, .section__sub {
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: size(53px);
+	padding-left: size(53px);
+  }
+
+  .tab-span {
+	width: size(96px) !important;
+	height: size(96px) !important;
+	border-radius: 100%;
+	font-size: 12px;
+	margin-right: size(42px);
+  }
+
+
+  .tab {
+	padding: size(60px) size(55px);
+	font-size: 16px;
+	border-bottom: 2px solid #DBDBDB;
   }
 
   .card-sec-text {
@@ -311,6 +326,7 @@
   .card-sec-text-mobile {
 	display: block;
 	margin-top: 49px;
+	font-size: 14px;
   }
   .card-sec {
 	padding-top: 92px !important;
@@ -320,6 +336,14 @@
 	padding: 0 ;
   }
 
+  .swiper__navigation svg {
+	width: size(120px);
+	height: size(120px);
+  }
+
+  .swiper__navigation .swiper-custom-right {
+	margin-left: 18px;
+  }
   .card-section-content {
 	flex-direction: column;
   }
@@ -336,8 +360,10 @@
 	width: fit-content;
   }
   .card-sec .buttons  .btn:last-child{
-	  padding-left: 0px;
-	}
+	  padding: 0px;
+		font-size: size(40px);
+	margin-top: size(97px);
+  }
 
   .left-card-sec, .right-card-sec {
 	width: 100%;
@@ -357,6 +383,44 @@
 	margin-top: 33px;
   }
   .content-box {
-	padding-top: 38px;
+	padding-left: size(67px);
+	padding-right: size(67px);
+	padding-top: size(98px);
+	padding-bottom: size(170px);
+
+  }
+  .content-box-name-title ,.content-box-description-title {
+	margin-bottom: size(62px);
+	font-size: 14px;
+  }
+  .content-box-name {
+	margin-bottom: size(120px);
+	font-size: 24px;
+  }
+
+  .content-box-description {
+	font-size: 16px;
+	line-height: 28px;
+  }
+  .points-group {
+	margin-top: size(120px);
+  }
+
+  .content-box-point svg{
+	width: 21px;
+	height: 21px;
+	margin-right: 11px;
+  }
+  .content-box-point {
+	font-size: 16px;
+  }
+
+  .content-box .buttons {
+	margin-top: size(174px);
+  }
+  .card-sec .buttons .btn:first-child {
+	font-size: size(40px);
+	padding: size(73px) size(142px);
+	border-radius: 18px;
   }
 }

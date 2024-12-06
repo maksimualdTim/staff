@@ -132,7 +132,9 @@
     display: block;
     width: -moz-fit-content;
     width: fit-content;
-    margin-top: 21px;
+    margin-top: calc(3.6666666667 * (1vw + 1vh));
+    font-size: calc(1.6666666667 * (1vw + 1vh));
+    padding: calc(2.7083333333 * (1vw + 1vh)) calc(7.5 * (1vw + 1vh));
   }
   .map-section-map {
     margin-top: 63px;
@@ -143,5 +145,9 @@
   }
   .map-title-container {
     margin-top: 32px;
+  }
+  .map-section-map iframe {
+    height: calc(44.9166666667 * (1vw + 1vh));
+    border-radius: 18px;
   }
 }
