@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/psh5uyq.css");
+/* Основной стиль для переключателя */
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  width: calc(3.75 * (1vw + 1vh));
+  height: calc(2.7916666667 * (1vw + 1vh));
+  border-radius: calc(0.75 * (1vw + 1vh));
+  text-align: center;
+  border: 1px solid #E1E1E1;
+  text-transform: uppercase;
+}
+.language-switcher a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .language-switcher {
+    width: 90px;
+    height: 67px;
+    border-radius: 18px;
+  }
+}
+
+.language-button {
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  color: #1260F5; /* Цвет текста */
+  font-size: calc(0.625 * (1vw + 1vh));
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .language-button {
+    font-size: 15px;
+  }
+}
+.language-button svg {
+  width: calc(0.3333333333 * (1vw + 1vh));
+  height: calc(0.2083333333 * (1vw + 1vh));
+  position: relative;
+  top: -3px;
+  left: 6px;
+}
+@media (max-width: 600px) {
+  .language-button svg {
+    width: 8px;
+    height: 5px;
+  }
+}
+
+.language-button .arrow {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  list-style: none;
+  margin: 5px 0 0;
+  padding: 0;
+}
+
+.language-dropdown li {
+  padding: 10px;
+  font-size: calc(0.625 * (1vw + 1vh));
+  font-family: Arial, sans-serif;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .language-dropdown li {
+    font-size: 15px;
+  }
+}
+
+.language-dropdown li:hover {
+  background-color: #f0f0f0;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,260 @@
+@import "./../../wp-content/themes/staff/template.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 400;
+}
+.container {
+    @include main-container();
+}
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow-y: hidden;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+}
+.login-right {
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    width: size(654px);
+}
+.login-left {
+    flex-grow: 1;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: size(40px);
+    align-items: center;
+    margin-bottom: size(142px);
+    @media (max-width: 600px) {
+        margin-bottom: 142px;
+    }
+}
+.btns {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    width: size(109px);
+    height: size(40px);
+    a img{
+        height: 100%;
+        width: 100%;
+    }
+    @media (max-width: 600px) {
+        width: 109px;
+        height: 40px;
+    }
+}
+.title {
+    @include font-size(40px);
+    @include line-height(44px);
+    color: #313131;
+    font-weight: 400;
+    span {
+        color: $primaryColor;
+    }
+    @media (max-width: 600px) {
+        font-size: 30px;
+        line-height: 33px;
+    }
+}
+.langbtn {
+    width: size(90px);
+    height: size(67px);
+    border: 1px solid #E1E1E1;
+    background-color: white;
+    color: $primaryColor;
+    @include font-size(15px);
+    @include line-height(15px);
+    border-radius: size(18px);
+    position: relative;
+    span {
+        position: relative;
+        top: 42%;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        color: #0E4BC1;
+        background-color: #fff;
+        border: 1px solid #E1E1E1;
+    }
+}
+.dropdown-toggle::after {
+    content: "";
+    border: none; /* Убирает границы */
+    margin: 0; /* Убирает отступы */
+    vertical-align: baseline; /* Возвращает стандартное выравнивание */
+    width: size(8px);
+    height: size(5px);
+    background-image: url(/cabinet/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: max-content;
+    min-height: max-content;
+    position: relative;
+    top: 42%;
+    transform: translateY(-50%);
+}
+.contacts_btn {
+    @media (max-width: 600px) {
+        display: none;
+    }
+    a {
+        border:  1px solid $primaryColor;
+        border-radius: size(18px);
+        @include font-size(18px);
+        @include line-height(18px);
+        font-weight: 500;
+        color: $primaryColor;
+        text-decoration: none;
+        padding-top: size(24px);
+        padding-bottom: size(24px);
+        padding-right: size(56px);
+        padding-left: size(56px);
+        margin-left: size(12px);
+    }
+}
+.subtitle {
+    @include font-size(14px);
+    color: #292D51;
+    @include line-height(16px);
+    margin-top: size(41px);
+}
+.form {
+    margin-top: size(36px);
+    label {
+        display: block;
+        color: #0E4BC1;
+        font-weight: 300;
+        @include font-size(13px);
+        @include line-height(18px);
+        margin-bottom: size(8px);
+    }
+    fieldset {
+        flex-grow: 1;
+        border: none;
+        padding: 0;
+    }
+    input#login,
+    input#password {
+        width: 100%;
+        padding: size(18px);
+        border-radius: size(10px);
+        box-sizing: border-box;
+        border: 1px solid #F8F8F8;
+        @include font-size(14px);
+        font-weight: 300;
+        @include line-height(19px);
+        color: #313131;
+        background-color: #F8F8F8;
+        &::placeholder {
+            color: #000;
+            opacity: .4;
+            @include font-size(14px);
+            font-weight: 300;
+            @include line-height(19px);
+        }
+        &:focus {
+            border: 1px solid $primaryColor;
+        }
+    }
+}
+.loginbtn {
+    background: linear-gradient(270deg, #578CF2 0%, #1260F5 100%);
+    box-shadow: 0px 4px 200px 0px rgba(18, 96, 245, 0.1);
+    color: #fff;
+    font-weight: 500;
+    @include font-size(15px);
+    @include line-height(21px);
+    cursor: pointer;
+    padding: size(20px) size(95px);
+    border: none;
+    border-radius: size(10px);
+    margin-top: size(18px);
+    @media (max-width: 600px) {
+        width: 100%;
+        margin-top: 26px;
+    }
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+    column-gap: size(19px);
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.contacts {
+    margin-top: size(102px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media (max-width: 600px) {
+        margin-top: 102px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    a {
+        color: $primaryColor;
+        @include font-size(16px);
+        @include line-height(17px);
+        font-weight: 400;
+        text-decoration: none;
+    }
+    &__problems {
+        @include font-size(14px);
+        @include line-height(15px);
+        color: #54545480;
+        margin-bottom: size(13px);
+    }
+
+    &__materials {
+        svg {
+            width: size(15px);
+            height: size(18px);
+            position: relative;
+            top: 3px;
+            @media (max-width: 600px) {
+                width: 15px;
+                height: 18px;
+            }
+        }
+        @media (max-width: 600px) {
+            margin-top: 60px;
+        }
+    }
+}
+.errors {
+    color: red;
+    margin-top: size(20px);
+}
+
+.login-right {
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: size(500px);
+    }
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+.fieldset_login {
+    @media (max-width: 600px) {
+        margin-bottom: 27px;
+    }
+}

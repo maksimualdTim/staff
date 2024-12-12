@@ -29,6 +29,7 @@ require __DIR__ . '/blocks/registration-stages-block/registration-stages-block.p
 require __DIR__ . '/blocks/platform-block/platform-block.php';
 
 require __DIR__ . '/functions-news.php';
+require __DIR__ . '/functions-cabinet.php';
 
 function my_custom_editor_styles() {
     add_editor_style('style.css');

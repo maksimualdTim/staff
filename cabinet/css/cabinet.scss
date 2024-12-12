@@ -1,0 +1,273 @@
+@import "./../../wp-content/themes/staff/template.scss";
+
+.container {
+    max-width: 100%;
+}
+
+.header {
+    margin-bottom: size(55px);
+}
+.logout {
+    color: rgba(239, 102, 48, 1);
+    @include font-size(18px);
+    @include line-height(20px);
+    font-weight: 400;
+    text-decoration: none;
+    svg {
+        width: size(14px);
+        height: size(14px);
+        @media (max-width: 600px) {
+            width: 14px;
+            height: 14px;
+        }
+        position: relative;
+        top: 1px;
+    }
+}
+.title {
+    margin-top: size(55px);
+    margin-bottom: size(48px);
+}
+.iframe {
+    width: 100%;
+    height: size(588px);
+    border-radius: size(5px);
+    background-color: rgba(226, 226, 226, 1);
+    @media (max-width: 600px) {
+        height: 588px;
+    }
+}
+
+.news__content_single > h1,
+.news__content_single > h2,
+.news__content_single > h3,
+.news__content_single > h4,
+.news__content_single > h5,
+.news__content_single > h6 {
+    color: #1260F5;
+    @include font-size(20px);
+    @include line-height(32px);
+    font-weight: 600;
+    margin-top: size(74px);
+    margin-bottom: size(37px);
+}
+
+.news__content_single > p {
+    color: #000000;
+    opacity: .6;
+    @include font-size(17px);
+    @include line-height(27px);
+    font-weight: 400;
+    margin-bottom: size(37px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.news__content_single {
+    padding-bottom: size(80px);
+    @media (max-width: 600px) {
+        padding-bottom: 0;
+    }
+}
+.contacts {
+    padding-bottom: size(55px);
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+        margin-top: 0;
+        padding-bottom: 115px;
+    }
+}
+.contacts__materials {
+    @media (max-width: 600px) {
+        margin-top: 101px;
+        margin-bottom: 101px;
+    }
+}
+
+.footer {
+    margin-bottom: 0;
+    @include main-container();
+    background: linear-gradient(180deg, #1F1F1F 0%, #000000 100%);
+    border-radius: size(25px) size(25px) 0 0;
+    padding-top: size(119px);
+    padding-bottom: size(38px);
+    display: flex;
+    color: white;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    justify-content: space-between;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &__title {
+        opacity: .5;
+        @include font-size(13px);
+        font-weight: 500;
+        @include line-height(30px);
+    }
+
+    &__column {
+        font-weight: 500;
+        @include font-size(15px);
+        max-width: size(327px);
+        & > ul {
+            row-gap: size(12px);
+        }
+        @media (max-width: 600px) {
+            max-width: 327px;
+
+            &:nth-child(2) {
+                order: 1;
+            }
+            &:nth-child(3) {
+                order: 2;
+                margin-top: 20px;
+            }
+            &:nth-child(1) {
+                order: 4;
+                margin-top: 111px;
+            }
+            &:nth-child(4) {
+                order: 3;
+            }
+        }
+    }
+
+    &__subtitle {
+        opacity: .5;
+        @include font-size(13px);
+        font-weight: 500;
+        @include line-height(23px);
+    }
+
+    &__phone {
+        font-weight: 500;
+        @include font-size(17px);
+        @include line-height(30px);
+        margin-top: size(5px);
+        margin-bottom: size(15px);
+        & > a {
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            margin: 0;
+        }
+    }
+    &__address {
+        font-weight: 500;
+        @include font-size(15px);
+        @include line-height(27px);
+        margin-bottom: size(20px);
+        margin-top: size(5px);
+        @media (max-width: 781px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__email {
+        opacity: .9;
+        font-weight: 600;
+        @include font-size(15px);
+        margin-bottom: size(25px);
+        @include line-height(18px);
+        & > a {
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__socials {
+        margin-top: size(20px);
+        padding-left: 0;
+        @media (max-width: 781px) {
+            margin-top: 25px;
+        }
+    }
+
+    &__logo {
+        & > a {
+            & > img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    &__logotext {
+        opacity: .5;
+        margin-top: size(47px);
+        @include font-size(14px);
+        @include line-height(21px);
+    }
+
+
+
+    &__column1 {
+        @media (max-width: 781px) {
+            width: 45%;
+            order: 3;
+        }
+    }
+    &__column2 {
+        @media (max-width: 781px) {
+            width: 45%;
+            order: 1;
+        }
+    }
+    &__column3 {
+        @media (max-width: 781px) {
+            width: 45%;
+            order: 2;
+        }
+    }
+    &__column4 {
+        @media (max-width: 781px) {
+            order: 4;
+            width: 45%;
+        }
+    }
+}
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column4,
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column1,
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column3,
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column2{
+    @media (max-width: 781px) {
+        flex-basis: auto !important;
+    }
+}
+.wp-social-link.wp-block-social-link {
+    color: #000;
+    background-color: #fff;
+}
+
+.footer__bottom {
+    @include main-container();
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: size(38px);
+}
+
+.custom-logo {
+    width: size(97px) !important;
+    height: size(34px) !important;
+    @media (max-width: 781px) {
+        width: 97px !important;
+        height: 34px !important;
+    }
+}
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px,1px,1px,1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
