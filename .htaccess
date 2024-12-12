@@ -3,14 +3,23 @@
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
 # dynamically generated, and should only be modified via WordPress filters.
 # Any changes to the directives between these markers will be overwritten.
-<IfModule mod_rewrite.c>
+# BEGIN WordPress
+
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /staff/
+RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /staff/index.php [L]
-</IfModule>
+RewriteRule . /index.php [L]
 
 # END WordPress
+
+
+# Custom rule for /cabinet
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} ^/cabinet(/.*)?$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^cabinet(/.*)?$ /cabinet/index.php [L]
+</IfModule>
