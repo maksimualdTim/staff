@@ -400,7 +400,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/review-block","version":"0.1.0","title":"Review Block","category":"staff-category","icon":"format-status","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"items":{"type":"array","default":[]},"subSectionText":{"type":"string"},"subSectionNum":{"type":"string"},"title":{"type":"string"},"descriptionText":{"type":"string"},"imageUrl":{"type":"string"},"bgUrl":{"type":"string"}},"supports":{"html":false},"textdomain":"review-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/review-block","version":"0.1.1","title":"Review Block","category":"staff-category","icon":"format-status","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"items":{"type":"array","default":[]},"subSectionText":{"type":"string"},"subSectionNum":{"type":"string"},"title":{"type":"string"},"descriptionText":{"type":"string"},"imageUrl":{"type":"string"},"bgUrl":{"type":"string"}},"supports":{"html":false},"textdomain":"review-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

@@ -10,6 +10,7 @@
 
 .economy {
   @include main-container();
+  background: #fff !important;
 }
 
 
@@ -305,4 +306,82 @@
 
 
 
+
+
+@media (max-width: 432px) {
+
+
+  .economy{
+	padding-top: size(220px) !important;
+	padding-bottom: size(160px) !important;
+  }
+
+  .economy .section__sub {
+	padding: 0 !important;
+  }
+
+
+
+  .economy-section-description-container p{
+	margin-top: size(57px);
+	line-height: size(62px);
+	font-size: size(43px);
+
+  }
+
+
+  .single-item-img img{
+	top: size(-180px);
+	width: size(650px);
+  }
+  .single-item-under {
+
+	padding: size(50px) size(102px);
+  }
+  .economy-single-item {
+
+	padding-top: size(180px);
+	padding-bottom: size(138px);
+  }
+
+  .single-item-name {
+	margin-top: size(140px);
+	margin-bottom: size(60px);
+  }
+
+  .economy-double-items .economy-block-item-box {
+	padding: size(110px) size(94px);
+
+  }
+
+
+  .economy-double-items-title {
+	font-size: size(37px);
+	margin-bottom: size(87px);
+  }
+
+  .economy-double-items-desc {
+	margin-top: size(64px);
+  }
+
+  .economy-double-items-img img {
+	width: size(1764px);
+	left: size(340px);
+	top: size(-440px);
+  }
+
+  .single-item-desc {
+	font-size: size(41px);
+	//font-size: 15px;
+  }
+
+
+  .economy-preview-btns {
+	margin-top: 60px;
+  }
+  .economy-preview-btns a{
+	font-size: 18px;
+
+  }
+}
 

@@ -349,7 +349,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/header-block","version":"0.1.0","title":"Header Block","category":"staff-category","icon":"align-full-width","description":"Header block","example":{},"attributes":{"subSectionText":{"type":"string","default":""},"title":{"type":"string","default":""},"buttonText":{"type":"string","default":"Кнопка"},"buttonUrl":{"type":"string","default":"#"},"underFromText":{"type":"string","default":""},"imageUrl":{"type":"string"}},"supports":{"html":false},"textdomain":"header-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/header-block","version":"0.1.1","title":"Header Block","category":"staff-category","icon":"align-full-width","description":"Header block","example":{},"attributes":{"subSectionText":{"type":"string","default":""},"title":{"type":"string","default":""},"buttonText":{"type":"string","default":"Кнопка"},"buttonUrl":{"type":"string","default":"#"},"underFromText":{"type":"string","default":""},"imageUrl":{"type":"string"}},"supports":{"html":false},"textdomain":"header-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

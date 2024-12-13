@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const openButton = document.querySelector('.svg-open');
     const closeButton = document.querySelector('.svg-close');
     const navigation = document.querySelector('.header-mobile-container-navigation');
+    const mainContainer = document.querySelector('.home');
 
     const updateButtons = (isOpen) => {
         openButton.style.display = isOpen ? 'none' : 'block';
@@ -27,8 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleNavigation = (isOpen) => {
         if (isOpen) {
             navigation.classList.add('open');
+            mainContainer.style.overflow = 'hidden';
+
         } else {
             navigation.classList.remove('open');
+            mainContainer.style.overflow = 'visible';
         }
         updateButtons(isOpen);
     };

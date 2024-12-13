@@ -276,7 +276,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/platform-block","version":"0.1.0","title":"Platform Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"items":{"type":"array","default":[]}},"supports":{"html":false},"textdomain":"platform-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/platform-block","version":"0.1.1","title":"Platform Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"items":{"type":"array","default":[]}},"supports":{"html":false},"textdomain":"platform-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

@@ -476,7 +476,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/economy-block","version":"0.1.0","title":"Economy Block","category":"staff-category","icon":"smiley","description":"Economy block","example":{},"attributes":{"items":{"type":"array","default":[]},"singleItem":{"type":"array","default":[]},"subSectionText":{"type":"string"},"subSectionNum":{"type":"string"},"title":{"type":"string"},"sideText":{"type":"string"},"btnText":{"type":"string","default":"Кнопка 1"},"btnUrl":{"type":"string","default":"#"}},"supports":{"html":false},"textdomain":"economy-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/economy-block","version":"0.1.1","title":"Economy Block","category":"staff-category","icon":"smiley","description":"Economy block","example":{},"attributes":{"items":{"type":"array","default":[]},"singleItem":{"type":"array","default":[]},"subSectionText":{"type":"string"},"subSectionNum":{"type":"string"},"title":{"type":"string"},"sideText":{"type":"string"},"btnText":{"type":"string","default":"Кнопка 1"},"btnUrl":{"type":"string","default":"#"}},"supports":{"html":false},"textdomain":"economy-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

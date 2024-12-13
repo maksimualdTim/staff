@@ -195,5 +195,34 @@
     height: 23px;
   }
 }
+@media (max-width: 432px) {
+  .call-request-container input {
+    padding: 27px 25px;
+    font-size: 18px;
+    border-radius: 18px;
+  }
+  .call-request-container button {
+    margin-top: 16px;
+    font-size: 18px;
+    padding: 27px 25px;
+    width: 246px;
+    border-radius: 18px;
+  }
+  .form-section-title {
+    margin-bottom: 54px;
+  }
+  .call-request label {
+    margin-bottom: 21px;
+  }
+  .agreement {
+    margin-top: 52px;
+  }
+  .agreement .form-section-description {
+    font-size: 13px;
+  }
+  .agreement svg path {
+    width: 100% !important;
+  }
+}
 
 /*# sourceMappingURL=style-index.css.map*/

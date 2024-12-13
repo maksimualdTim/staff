@@ -320,7 +320,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/economy-stages","version":"0.1.0","title":"Economy Stages","category":"staff-category","icon":"calendar-alt","description":"Этапы формирования и миссия компании","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"},"items":{"type":"array","default":[]}},"supports":{"html":false},"textdomain":"economy-stages","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/economy-stages","version":"0.1.1","title":"Economy Stages","category":"staff-category","icon":"calendar-alt","description":"Этапы формирования и миссия компании","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"},"items":{"type":"array","default":[]}},"supports":{"html":false},"textdomain":"economy-stages","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

@@ -1,18 +1,18 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', function () {
-    wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
-    wp_enqueue_style('slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
-    wp_enqueue_style('slick-slider-theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css');
-    wp_enqueue_style('theme-style', get_stylesheet_uri());
+    wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css' ,[], '6.7.2');
+    wp_enqueue_style('slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', [], '6.7.2');
+    wp_enqueue_style('slick-slider-theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', [], '6.7.2');
+    wp_enqueue_style('theme-style', get_stylesheet_uri(), [], '6.7.2');
 
 
 
-    wp_enqueue_script('menu-dropdown', get_template_directory_uri() . '/js/menu-dropdown.js', '1.0', true);
-    wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.7.1.min.js', '1.0', true);
-    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
+    wp_enqueue_script('menu-dropdown', get_template_directory_uri() . '/js/menu-dropdown.js', '1.0', '6.7.2');
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.7.1.min.js', '1.0', '6.7.2');
+    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], '6.7.2');
     // Подключение скриптов Slick Slider
-    wp_enqueue_script('slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', ['jquery'], null, true);
+    wp_enqueue_script('slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', ['jquery'], '6.7.2', true);
 });
 
 require __DIR__ . '/blocks/news-slider-block/news-slider-block.php';

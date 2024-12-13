@@ -142,9 +142,24 @@
   }
 }
 @media (max-width: 432px) {
+  .credit .section__sub {
+    padding: 0 !important;
+  }
+  .credit-section-title {
+    margin-top: 36px;
+  }
   .card-preview-btns a {
     padding: 27px 57px;
     font-size: 18px;
+  }
+  .credit-section-img img {
+    width: 410px;
+  }
+  .credit-section-description {
+    margin-top: 53px;
+  }
+  .card-preview-btns {
+    margin-top: 43px;
   }
 }
 
