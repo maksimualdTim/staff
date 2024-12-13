@@ -270,3 +270,31 @@ header .wp-container-core-columns-is-layout-3 {
     position: absolute;
     z-index: 1000;
 }
+
+
+.header-mobile-container-head, .header-mobile-container-navigation {
+    @include main-container();
+    background: #356DD9;
+    border-radius: 18px;
+    margin-top: 10px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+
+
+//
+//.header-mobile {
+//    display: none !important;
+//}
+@media (max-width: 600px) {
+
+    .header {
+        display: none !important;
+    }
+    .header-mobile {
+        display: block !important;
+    }
+
+}

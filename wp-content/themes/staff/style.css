@@ -420,6 +420,185 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
 }
 
 
+
+
+
+
+
+
+
+header {
+  position: relative;
+}
+
+header .wp-container-core-columns-is-layout-3 {
+ position: absolute;
+  z-index: 1000;
+}
+
+
+
+
+.header-mobile {
+  padding-right: calc(1.9 * (1vw + 1vh));
+  padding-left: calc(1.9 * (1vw + 1vh));
+  position: relative;
+}
+
+
+.header-mobile-logo a img{
+  filter: brightness(0) invert(1);
+}
+.header-mobile-container-head {
+  padding-right: calc(2.6 * (1vw + 1vh));
+  padding-left: calc(2.6 * (1vw + 1vh));
+  background: #356DD9;
+  border-radius: 18px;
+  margin-top: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-mobile-container-navigation {
+  background: #356DD9;
+  border-radius: 18px;
+  margin-top: 12px !important;
+  position: absolute;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 calc(2.6 * (1vw + 1vh));
+  transition: height 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+  z-index: 9999;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92% !important;
+  box-sizing: border-box;
+}
+
+.header-mobile-container-navigation.open {
+  max-height: 1000px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+
+.svg-open {
+  display: block;
+}
+
+.svg-close {
+  display: none;
+}
+
+
+
+
+.header-mobile-container-navigation .mobile__subtitle {
+  margin-bottom: 12px;
+}
+
+.header-mobile-container-navigation .mobile__subtitle:first-child {
+  margin-bottom: 39px;
+}
+
+
+
+
+
+.header-mobile-container-navigation nav ul{
+  flex-direction: column;
+  align-items: start;
+}
+
+
+.header-mobile-container-navigation nav ul li a , .mobile-menu__contacts__link{
+  font-size: 24px;
+  color: #ffffff !important;
+  margin-bottom: 28px;
+  text-decoration: none;
+}
+
+.mobile-menu__contacts__link {
+  /*margin-bottom: 64px;*/
+  display: block;
+}
+
+
+.header-mobile-container-navigation nav ul .current-menu-item a{
+  color: rgba(255,255,255,0.5) !important;
+}
+
+/*.svg-close {*/
+/*  display: none;*/
+/*}*/
+.svg-close, .svg-open {
+  cursor: pointer;
+}
+
+.mobile__subtitle {
+  color: rgba(255,255,255,0.6) !important;
+  font-size: 15px;
+}
+
+.mobile__phone, .mobile__address , .mobile__email{
+  margin: 0;
+}
+
+
+.mobile__address {
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 36px;
+}
+.mobile__phone {
+  margin-bottom: 28px;
+  font-size: 24px;
+}
+
+
+.mobile__phone a, .mobile__address a, .mobile__email a{
+  text-decoration: none;
+}
+
+.mobile__email {
+
+}
+
+.header-mobile-container-navigation .wp-block-social-link-anchor svg path {
+  fill: #356DD9;
+}
+
+.mobile_menu_language div{
+  margin: 0;
+}
+.mobile_menu_language li a{
+
+  color: #ffffff;
+  border-radius: 18px;
+  background-color: rgba(255,255,255, 0.31);
+  margin-bottom: 55px;
+  display: block;
+}
+
+
+
+
+/*.header-mobile {*/
+/*  display: none !important;*/
+/*}*/
+@media (max-width: 600px) {
+
+  .header {
+    display: none !important;
+  }
+  .header-mobile {
+    display: block !important;
+  }
+
+}
+
+
 @media (max-width: 600px) {
   .form-block {
     background: url("img/contact-form-mobile-bg.png") no-repeat center center;
@@ -442,15 +621,3 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
 
 }
 
-
-
-
-
-header {
-  position: relative;
-}
-
-header .wp-container-core-columns-is-layout-3 {
- position: absolute;
-  z-index: 1000;
-}
