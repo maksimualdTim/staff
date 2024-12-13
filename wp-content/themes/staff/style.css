@@ -443,6 +443,7 @@ header .wp-container-core-columns-is-layout-3 {
   padding-right: calc(1.9 * (1vw + 1vh));
   padding-left: calc(1.9 * (1vw + 1vh));
   position: relative;
+  display: none !important;
 }
 
 

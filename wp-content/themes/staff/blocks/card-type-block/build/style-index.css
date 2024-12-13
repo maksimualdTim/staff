@@ -141,5 +141,11 @@
     margin-top: 13px;
   }
 }
+@media (max-width: 432px) {
+  .card-preview-btns a {
+    padding: 27px 57px;
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=style-index.css.map*/

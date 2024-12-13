@@ -262,6 +262,7 @@ body {
     background-size: contain;
 }
 
+
 header {
     position: relative;
 }
@@ -272,29 +273,176 @@ header .wp-container-core-columns-is-layout-3 {
 }
 
 
-.header-mobile-container-head, .header-mobile-container-navigation {
-    @include main-container();
-    background: #356DD9;
-    border-radius: 18px;
-    margin-top: 10px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 
+.header-mobile {
+    padding-right: calc(1.9 * (1vw + 1vh));
+    padding-left: calc(1.9 * (1vw + 1vh));
+    position: relative;
+    display: none !important;
+
+    &-logo {
+        a {
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    &-container {
+        &-head {
+            padding-right: calc(2.6 * (1vw + 1vh));
+            padding-left: calc(2.6 * (1vw + 1vh));
+            background: #356DD9;
+            border-radius: 18px;
+            margin-top: 10px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        &-navigation {
+            background: #356DD9;
+            border-radius: 18px;
+            margin-top: 12px !important;
+            position: absolute;
+            overflow: hidden;
+            max-height: 0;
+            padding: 0 calc(2.6 * (1vw + 1vh));
+            transition: height 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+            z-index: 9999;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92% !important;
+            box-sizing: border-box;
+
+            &.open {
+                max-height: 1000px;
+                padding-top: 48px;
+                padding-bottom: 48px;
+            }
+
+            .mobile__subtitle {
+                margin-bottom: 12px;
+
+                &:first-child {
+                    margin-bottom: 39px;
+                }
+            }
+
+            nav {
+                ul {
+                    flex-direction: column;
+                    align-items: start;
+
+                    li {
+                        a {
+                            font-size: 24px;
+                            color: #ffffff !important;
+                            margin-bottom: 28px;
+                            text-decoration: none;
+
+                            &.current-menu-item {
+                                color: rgba(255, 255, 255, 0.5) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mobile-menu__contacts__link {
+                display: block;
+            }
+
+            .wp-block-social-link-anchor svg path {
+                fill: #356DD9;
+            }
+        }
+    }
+
+    .mobile__subtitle {
+        color: rgba(255, 255, 255, 0.6) !important;
+        font-size: 15px;
+    }
+
+    .mobile__phone {
+        margin-bottom: 28px;
+        font-size: 24px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .mobile__address {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 36px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .mobile__email {
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .mobile_menu_language {
+        div {
+            margin: 0;
+        }
+
+        li {
+            a {
+                color: #ffffff;
+                border-radius: 18px;
+                background-color: rgba(255, 255, 255, 0.31);
+                margin-bottom: 55px;
+                display: block;
+            }
+        }
+    }
+
+    .svg-close,
+    .svg-open {
+        cursor: pointer;
+
+        &.svg-open {
+            display: block;
+        }
+
+        &.svg-close {
+            display: none;
+        }
+    }
 }
 
-
-
-//
-//.header-mobile {
-//    display: none !important;
-//}
+// Media queries
 @media (max-width: 600px) {
-
     .header {
         display: none !important;
     }
+
     .header-mobile {
         display: block !important;
     }
 
+    .form-block {
+        background: url("img/contact-form-mobile-bg.png") no-repeat center center;
+        background-size: cover;
+        border-radius: 18px;
+    }
+
+    .tab-container .content {
+        background: url("img/test.png") no-repeat center center;
+        background-size: cover;
+        border-radius: 18px;
+    }
+
+    .card-sec {
+        background: linear-gradient(to top, #202020, #1a1a1a);
+        border-radius: 18px;
+    }
 }
