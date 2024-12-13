@@ -48,7 +48,7 @@
 				<?=$attributes['title']?>
 			</h3>
 			<div class="advantages__blocktext">
-				<?=$attributes['descriprionText']?>
+				<?=$attributes['descriptionText']?>
 			</div>
 			<div class="advantages__blocklink">
 				<?=$attributes['link']?>
