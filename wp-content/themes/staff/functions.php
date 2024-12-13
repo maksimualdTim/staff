@@ -111,3 +111,4 @@ add_action( 'wp_enqueue_scripts', function () {
         wp_enqueue_style("blog.css", get_template_directory_uri() . '/blog.css');
     }
 });
+
