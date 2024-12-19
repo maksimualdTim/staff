@@ -110,5 +110,18 @@ add_action( 'wp_enqueue_scripts', function () {
         wp_enqueue_style('pagination.css', get_template_directory_uri() . '/pagination.css');
         wp_enqueue_style("blog.css", get_template_directory_uri() . '/blog.css');
     }
+    
+    if(is_page_template("contacts")) {
+        wp_enqueue_style("contacts.css", get_template_directory_uri() . '/contacts.css');
+    }
 });
 
+add_shortcode("breadcrumbs-contacts", function() {
+    ob_start();
+    ?>
+    <div class="bread-crumbs">
+        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Контакты")?></a>
+    </div>
+    <?php
+    return ob_get_clean();
+});
