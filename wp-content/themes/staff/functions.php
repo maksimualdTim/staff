@@ -114,6 +114,10 @@ add_action( 'wp_enqueue_scripts', function () {
     if(is_page_template("contacts")) {
         wp_enqueue_style("contacts.css", get_template_directory_uri() . '/contacts.css');
     }
+    
+    if(is_page_template('partners')) {
+        wp_enqueue_style("partners.css", get_template_directory_uri() . '/partners.css');
+    }
 });
 
 add_shortcode("breadcrumbs-contacts", function() {
@@ -121,6 +125,16 @@ add_shortcode("breadcrumbs-contacts", function() {
     ?>
     <div class="bread-crumbs">
         <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Контакты")?></a>
+    </div>
+    <?php
+    return ob_get_clean();
+});
+
+add_shortcode("breadcrumbs-partners", function() {
+    ob_start();
+    ?>
+    <div class="bread-crumbs">
+        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Контакты")?></a><span>/</span><a href="#" class="sections__link">Стать партнером</a>
     </div>
     <?php
     return ob_get_clean();
