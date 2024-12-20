@@ -34,6 +34,7 @@
 }
 .review .section__sub .section__text , .review .section__sub .section__number{
   color: rgba(255,255,255,0.7) !important;
+  opacity: 1;
 }
 
 
@@ -99,10 +100,7 @@
 }
 
 .slick-track {
-  //width: auto !important; /* Автоматическая ширина */
-  //transform: none !important; /* Сброс ненужных трансформаций */
   transition: transform 0.5s ease-in-out; /* Плавность переключения */
-  //transform:translate3d(size(155px), 0px, 0px) !important;
   height: size(445px) !important;
 }
 
@@ -358,6 +356,10 @@
 
   .slick-initialized .slick-slide {
 	margin-top: 60px;
+  }
+
+  .slick-track {
+	height: 445px !important;
   }
 
   .slick-track .slick-active {

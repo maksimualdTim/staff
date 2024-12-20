@@ -404,6 +404,11 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   background-size: cover;
 }
 
+
+.about-header {
+  background: url("img/about-pg-bg.png") no-repeat;
+  background-size: cover;
+}
 .card-sec {
   background: url("img/bg1.png") no-repeat;
   background-size: cover;
@@ -444,6 +449,8 @@ header .wp-container-core-columns-is-layout-3 {
   padding-left: calc(1.9 * (1vw + 1vh));
   position: relative;
   display: none !important;
+  /*overflow-y: scroll;*/
+  /*height: 100vh;*/
 }
 
 
@@ -475,12 +482,15 @@ header .wp-container-core-columns-is-layout-3 {
   transform: translateX(-50%);
   width: 92% !important;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 .header-mobile-container-navigation.open {
+  height: 80vh;
   max-height: 1000px;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 9999;
 }
 
 
@@ -585,9 +595,6 @@ header .wp-container-core-columns-is-layout-3 {
 
 
 
-/*.header-mobile {*/
-/*  display: none !important;*/
-/*}*/
 @media (max-width: 600px) {
 
   .header {
@@ -597,10 +604,6 @@ header .wp-container-core-columns-is-layout-3 {
     display: block !important;
   }
 
-}
-
-
-@media (max-width: 600px) {
   .form-block {
     background: url("img/contact-form-mobile-bg.png") no-repeat center center;
     background-size: cover;
@@ -616,9 +619,14 @@ header .wp-container-core-columns-is-layout-3 {
 
   .card-sec {
     background: linear-gradient(to top, #202020, #1a1a1a);
-    border-radius: 18px;
   }
 
 
+  .header-mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 16px;
+  }
 }
+
 

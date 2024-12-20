@@ -19,6 +19,7 @@
   padding-left: calc(5 * (1vw + 1vh));
   padding-right: calc(5 * (1vw + 1vh));
   box-sizing: border-box;
+  overflow: hidden;
 }
 @media screen and (max-width: 1050px) {
   .credit {
@@ -93,7 +94,7 @@
 
 @media (max-width: 600px) {
   .credit {
-    padding-bottom: 70px !important;
+    padding-bottom: 0 !important;
     padding-top: 94px !important;
     overflow: hidden;
   }
@@ -119,26 +120,32 @@
     margin-top: calc(4.9583333333 * (1vw + 1vh));
     font-size: 18px;
   }
-  .card-preview-btns a {
-    padding: calc(3.1666666667 * (1vw + 1vh)) calc(6.5416666667 * (1vw + 1vh));
-    font-size: calc(2.0833333333 * (1vw + 1vh));
-  }
   .credit-section-btn {
     width: -moz-fit-content;
     width: fit-content;
   }
   .credit-section-img {
-    padding-top: 350px;
+    padding-bottom: 452px;
   }
   .credit-section-img img {
-    width: calc(50 * (1vw + 1vh));
+    width: 630px;
     bottom: 0;
-    right: calc(3.9583333333 * (1vw + 1vh));
+    right: 17px;
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .card-preview-btns a {
+    border-radius: 18px;
+  }
+  .card-preview-btns .btn-left {
+    padding: 27px 57px;
+    margin-left: 0px;
+    font-size: 18px;
+  }
   .card-preview-btns .btn-right {
+    padding: 27px 53px;
     margin-top: 13px;
+    font-size: 16px;
   }
 }
 @media (max-width: 432px) {
@@ -147,13 +154,17 @@
   }
   .credit-section-title {
     margin-top: 36px;
+    line-height: 120%;
   }
-  .card-preview-btns a {
+  .card-preview-btns .btn-left {
     padding: 27px 57px;
-    font-size: 18px;
+  }
+  .card-preview-btns .btn-right {
+    padding: 27px 53px;
   }
   .credit-section-img img {
-    width: 410px;
+    width: 468px;
+    right: 17px;
   }
   .credit-section-description {
     margin-top: 53px;

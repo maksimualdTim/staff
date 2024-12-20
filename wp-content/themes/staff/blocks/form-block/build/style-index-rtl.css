@@ -191,8 +191,9 @@
     margin-right: 13px;
   }
   .agreement .agreement-svg {
-    width: 32px;
-    height: 23px;
+    flex-shrink: 0;
+    width: 21px;
+    height: auto;
   }
 }
 @media (max-width: 432px) {
@@ -210,6 +211,8 @@
   }
   .form-section-title {
     margin-bottom: 54px;
+    width: 82%;
+    line-height: 120%;
   }
   .call-request label {
     margin-bottom: 21px;

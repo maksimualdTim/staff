@@ -46,6 +46,7 @@
 
 .review .section__sub .section__text, .review .section__sub .section__number {
   color: rgba(255, 255, 255, 0.7) !important;
+  opacity: 1;
 }
 
 .review-section-title {
@@ -321,6 +322,9 @@
   }
   .slick-initialized .slick-slide {
     margin-top: 60px;
+  }
+  .slick-track {
+    height: 445px !important;
   }
   .slick-track .slick-active {
     width: 100% !important;

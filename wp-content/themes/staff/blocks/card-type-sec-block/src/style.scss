@@ -75,11 +75,11 @@
 
 .card-sec .section__text ,.card-sec .section__number{
  color: rgba(255, 255,255, 0.7);
-}
-
-.card-sec .section__text {
+  opacity: 1;
 
 }
+
+
 
 
 
@@ -121,6 +121,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.4;
 }
 .tab-span {
   display: flex;
@@ -136,6 +137,7 @@
 .tab.active {
   border-bottom: 2px solid #fff;
   color: #fff;
+  opacity: 1;
 }
 
 
@@ -298,6 +300,7 @@
   .card-sec {
 	padding-right: 0 !important;
 	padding-left: 0 !important;
+	border-radius: 25px;
   }
 
   .left-card-sec, .card-sec-text-mobile, .section__sub {
@@ -315,7 +318,7 @@
 
 
   .tab {
-	padding: size(60px) size(55px);
+	padding: size(60px) 0;
 	font-size: 16px;
 	border-bottom: 2px solid #DBDBDB;
   }
@@ -327,6 +330,7 @@
 	display: block;
 	margin-top: 49px;
 	font-size: 14px;
+	line-height: 150%;
   }
   .card-sec {
 	padding-top: 92px !important;
@@ -413,6 +417,7 @@
   }
   .content-box-point {
 	font-size: 16px;
+	margin-bottom: 18px;
   }
 
   .content-box .buttons {
@@ -422,5 +427,110 @@
 	font-size: size(40px);
 	padding: size(73px) size(142px);
 	border-radius: 18px;
+  }
+
+
+  .card-sec .swiper {
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom: size(110px);
+  }
+  .card-sec .swiper-wrapper {
+	width: 100%;
+	height: auto;
+  	//transform: translate3d(-388.386px, 0px, 0px) !important;
+
+  }
+  .swiper-backface-hidden .swiper-slide {
+
+  }
+
+
+  //.card-sec .swiper-slide img {
+	//width: 100%;
+	//height: 100%;
+	//object-fit: cover;
+  //}
+}
+
+
+
+
+@media (max-width: 432px) {
+  .card-sec {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+  }
+
+  .left-card-sec, .card-sec-text-mobile, .section__sub {
+	padding-right: 21px;
+	padding-left: 21px;
+  }
+
+  .card-sec-title {
+	font-weight: 400;
+	line-height: 120%;
+	margin-top: 33px;
+	margin-bottom: 42px;
+  }
+
+  .tab-span {
+	width: 21px !important;
+	height: 21px !important;
+	margin-right: 10px;
+  }
+
+
+
+  .card-sec .buttons  .btn:first-child{
+	width: fit-content;
+	padding: 24px 55px ;
+	font-size: 16px;
+	border-radius: 18px;
+	color: #0F0F0F;
+  }
+
+  .card-sec .buttons  .btn:last-child{
+	padding: 0px;
+	font-size: 16px;
+	margin-top: 37px;
+  }
+
+
+  .content-box {
+	padding: 38px 25px 64px;
+  }
+
+  .content-box-name-title ,.content-box-description-title {
+	margin-bottom: 23px;
+  }
+  .content-box-name {
+	margin-bottom: 49px;
+  }
+
+  .content-box-description {
+	font-size: 16px;
+	line-height: 28px;
+  }
+  .points-group {
+	margin-top: 49px;
+  }
+
+  .content-box-point svg{
+	width: 21px;
+	height: 21px;
+	margin-right: 11px;
+  }
+  .content-box-point {
+	font-size: 16px;
+  }
+
+  .content-box .buttons {
+	margin-top: 69px;
+  }
+
+  .swiper__navigation svg {
+	width: 46px;
+	height: 46px;
   }
 }

@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			nextEl: '.swiper-custom-right',
 			prevEl: '.swiper-custom-left',
 		},
-		// autoplay: {
-		// 	delay: 3000,
-		// },
+		autoplay: {
+			delay: 3000,
+		},
 	});
 });

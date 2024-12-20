@@ -7,8 +7,88 @@
 
 @import '../../../template.scss';
 
-.registration-stages {
+.platform-block {
   @include main-container();
   background-color: #fff;
 }
 
+
+
+.platform-block__item {
+  margin-bottom: size(100px);
+}
+
+.platform-block__item__text {
+  margin-bottom: size(64px);
+}
+
+.platform-block__item__title {
+  font-size: size(40px);
+  margin: 0 ;
+  margin-bottom: size(38px);
+  font-weight: 400;
+}
+
+.platform-block__item__description {
+  border-left: #1260F5 solid 1px;
+  color: rgba(0,0,0, 0.4);
+  padding: size(10px) size(31px);
+  line-height: 160%;
+  font-size: size(16px);
+  width: size(363px);
+}
+
+.platform-block__item__img img{
+  width: 100%;
+  border-radius: size(30px);
+}
+
+
+
+
+@media (max-width: 600px) {
+  .platform-block__item {
+	margin-bottom: 75px;
+  }
+
+  .platform-block__item__text {
+	margin-bottom: 39px;
+  }
+
+  .platform-block__item__title {
+	font-size: 28px;
+	margin-bottom: 39px;
+  }
+
+  .platform-block__item__description {
+	padding: 0;
+	border: none;
+	font-size: 16px;
+	width: 100%;
+  }
+
+  .platform-block__item__img img{
+
+  }
+}
+
+
+@media (max-width: 432px) {
+  .platform-block__item {
+  }
+
+  .platform-block__item__text {
+  }
+
+  .platform-block__item__title {
+
+  }
+
+  .platform-block__item__description {
+
+  }
+
+  .platform-block__item__img img{
+
+  }
+}

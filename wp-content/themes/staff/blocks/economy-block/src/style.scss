@@ -233,6 +233,7 @@
 	z-index: 100;
 	font-size: 18px;
 	padding: size(50px) size(102px);
+	border-radius: 18px;
   }
   .economy-single-item {
 	border-radius: 18px;
@@ -282,9 +283,11 @@
 	margin-right: 5px;
   }
   .economy-double-items-img img {
-	width: size(1764px);
-	left: size(340px);
-	top: size(-440px);
+	width: auto !important;
+	height: 238px;
+	left: 17%;
+	top: 50%;
+	transform: translateY(-69%) translateX(17%);
   }
 
   .single-item-desc {
@@ -321,59 +324,71 @@
   }
 
 
-
+  .economy-section-title {
+	line-height: 120%;
+  }
   .economy-section-description-container p{
-	margin-top: size(57px);
-	line-height: size(62px);
-	font-size: size(43px);
+	margin-top: 20px;
+	line-height: 160%;
+	font-size: 16px;
 
   }
 
 
   .single-item-img img{
-	top: size(-180px);
-	width: size(650px);
+	top: -65px;
+	width: 231px;
   }
+
   .single-item-under {
-
-	padding: size(50px) size(102px);
-  }
-  .economy-single-item {
-
-	padding-top: size(180px);
-	padding-bottom: size(138px);
+	padding: 18px 38px;
+	font-size: 18px;
   }
 
   .single-item-name {
-	margin-top: size(140px);
-	margin-bottom: size(60px);
-  }
-
-  .economy-double-items .economy-block-item-box {
-	padding: size(110px) size(94px);
-
-  }
-
-
-  .economy-double-items-title {
-	font-size: size(37px);
-	margin-bottom: size(87px);
-  }
-
-  .economy-double-items-desc {
-	margin-top: size(64px);
-  }
-
-  .economy-double-items-img img {
-	width: size(1764px);
-	left: size(340px);
-	top: size(-440px);
+	margin-top: 52px;
+	margin-bottom: 22px;
   }
 
   .single-item-desc {
-	font-size: size(41px);
-	//font-size: 15px;
+	font-size: 15px;
+	line-height: 150%;
   }
+
+  .economy-single-item {
+	padding-top: 65px;
+	padding-bottom: 50px;
+  }
+
+  .economy-double-items .economy-block-item-box {
+	padding: 40px 45px 51px 35px;
+  }
+
+  .economy-double-items-title{
+	  margin-bottom: 31px;
+  }
+
+
+
+
+  .economy-double-items-title {
+	font-size: 15px;
+	margin-bottom: 31px;
+  }
+  .economy-double-items-name {
+	font-size: 48px;
+  }
+
+  .economy-double-items-desc {
+	margin-top: 24px;
+	font-size: 15px;
+  }
+
+  .boxes-container-mobile {
+	margin-top: 19px;
+  }
+
+
 
 
   .economy-preview-btns {

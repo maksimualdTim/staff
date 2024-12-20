@@ -7,38 +7,105 @@
 
 @import '../../../template.scss';
 
-.platform-block {
+.registration-stages {
   @include main-container();
   background-color: #fff;
 }
 
 
-.platform-block {
-
+.registration-stages-block__stage {
+  border: #cacaca solid size(1px);
+  border-radius: size(18px);
+  padding: size(60px) size(121px);
+  margin-bottom: size(20px);
+  display: flex;
+  align-items: center;
 }
 
-.platform-block__items{
-
+.registration-stage__number {
+  font-size: size(200px);
+  font-weight: bold;
+  color: #1260F5;
 }
 
-.platform-block__item {
 
+.registration-stages-title {
+  margin-bottom: size(43px);
+  color: #1260F5;
+  font-size: size(30px);
+  font-weight: 400;
 }
-.platform-block__item__text {
 
+.stage__content {
+  margin-left: size(133px);
 }
-.platform-block__item__title {
-  font-size: size(40px);
-  margin-bottom: size(37px);
+.registration-block-stage__title {
   color: #313131;
-
+  font-size: size(23px);
+  margin: 0 0 size(49px);
 }
-.platform-block__item__description {
+
+.registration-block-stage__text {
+  font-weight: 400;
+  font-size: size(15px);
+  line-height: 160%;
   color: rgba(0,0,0, 0.4);
-  font-size: size(16px);
-  margin-bottom: size(63px);
+
 }
 
-.platform-block__item__img{
+.registration-block-stage__link {
+  border-radius: size(18px);
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(to left, #578CF2, #1260F5);
+  padding: size(27px) size(31px);
+  display: block;
+  width: fit-content;
+  margin-top: size(44px);
+}
+
+//MOBILE
+@media (max-width: 600px) {
+
+  .registration-stages-block__stage {
+	flex-direction: column;
+	border: #cacaca solid 1px;
+	border-radius: 18px;
+	padding: 41px 40px;
+	margin-bottom: 15px;
+	align-items: start;
+  }
+
+  .registration-stage__number {
+	font-size: 50px;
+	margin-bottom: 34px;
+	font-weight: bold;
+  }
+
+
+  .registration-stages-title {
+	margin-bottom: 62px;
+	font-size: 23px;
+  }
+
+  .stage__content {
+	margin-left: 0;
+  }
+  .registration-block-stage__title {
+	margin-bottom: 37px;
+	font-size: 23px;
+	font-weight: 400;
+  }
+
+  .registration-block-stage__text {
+	font-size: 14px;
+  }
+
+  .registration-block-stage__link {
+	margin-top: 42px;
+	font-size: 15px;
+	padding: 27px 31px;
+  }
+
 
 }

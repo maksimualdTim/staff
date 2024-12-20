@@ -15,9 +15,10 @@ $items= $attributes['items'] ?? [];
 			<div class="platform-block__item">
 
 				<div class="platform-block__item__text">
-					<h3 class="platform-block__item__title"><?= esc_html($item['title']); ?></h3>
+					<h3 class="platform-block__item__title"><?= $item['title'] ?></h3>
 
 					<p class="platform-block__item__description">
+
 						<?= esc_html($item['text']); ?>
 					</p>
 				</div>

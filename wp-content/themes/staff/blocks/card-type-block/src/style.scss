@@ -13,7 +13,7 @@
   padding-top: size(200px) !important;
   padding-bottom: size(200px) !important;
   @include main-container();
-
+  overflow: hidden;
 }
 
 
@@ -87,7 +87,7 @@
 @media (max-width: 600px) {
 
   .credit {
-	padding-bottom: 70px !important;
+	padding-bottom: 0 !important;
 	padding-top: 94px !important;
 	overflow: hidden;
   }
@@ -114,29 +114,38 @@
 	font-size: 18px;
 
   }
-  .card-preview-btns a{
-	padding: size(76px) size(157px) ;
-	font-size: size(50px);
-  }
+
 
   .credit-section-btn{
 	width: fit-content;
   }
 
   .credit-section-img {
-	padding-top: 350px;
+	padding-bottom: 452px;
   }
   .credit-section-img img {
-	width: size(1200px);
+	width: 630px;
 	bottom: 0;
-	left: size(95px);
+	left: 17px;
 
 	object-fit: contain;
   }
 
-  .card-preview-btns .btn-right {
-	margin-top: 13px;
+  .card-preview-btns a{
+	border-radius: 18px;
   }
+  .card-preview-btns .btn-left {
+	padding: 27px 57px;
+	margin-right: 0px;
+	font-size: 18px;
+  }
+
+  .card-preview-btns .btn-right{
+	padding: 27px 53px;
+	margin-top: 13px;
+	font-size: 16px;
+  }
+
 }
 @media (max-width: 432px) {
 
@@ -146,13 +155,20 @@
 
   .credit-section-title {
 	margin-top: 36px;
+	line-height: 120%;
+	//font-weight: 300;
   }
-  .card-preview-btns a {
+  .card-preview-btns .btn-left {
 	padding: 27px 57px;
-	font-size: 18px;
   }
+
+  .card-preview-btns .btn-right{
+	padding: 27px 53px;
+  }
+
   .credit-section-img img {
-	width: 410px;
+	width: 468px;
+	left: 17px;
   }
   .credit-section-description {
 	margin-top: 53px;

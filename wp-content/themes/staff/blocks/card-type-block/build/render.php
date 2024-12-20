@@ -17,7 +17,7 @@
 
 	<div class="credit-section-content">
 		<div class="card-preview">
-			<h2 class="credit-section-title"><?= esc_html($attributes['title']); ?></h2>
+			<h2 class="credit-section-title"><?= $attributes['title'] ?></h2>
 			<p class="credit-section-description"><?= esc_html($attributes['descriptionText']); ?></p>
 			<div class="card-preview-btns">
 				<a href="<?= esc_url($attributes['firstButtonUrl']); ?> " class="credit-section-btn btn-left"><?= esc_html($attributes['firstButtonText']); ?> </a>

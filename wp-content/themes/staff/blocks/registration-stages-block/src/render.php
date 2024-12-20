@@ -29,9 +29,12 @@ $items= $attributes['items'] ?? [];
 						<?= esc_html($item['text']); ?>
 					</div>
 
-					<a href="<?= esc_url($item['btnUrl']); ?>" class="registration-block-stage__link">
-						Подробнее
-					</a>
+					<?php if (!empty($item['btnUrl'])): ?>
+						<a href="<?= esc_url($item['btnUrl']); ?>" class="registration-block-stage__link">
+							Platform presentation →
+						</a>
+					<?php endif; ?>
+
 				</div>
 			</div>
 		<?php endforeach; ?>

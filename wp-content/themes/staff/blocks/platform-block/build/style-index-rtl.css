@@ -11,7 +11,7 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.registration-stages {
+.platform-block {
   width: 100%;
   padding-left: calc(5 * (1vw + 1vh));
   padding-right: calc(5 * (1vw + 1vh));
@@ -19,8 +19,56 @@
   background-color: #fff;
 }
 @media screen and (max-width: 1050px) {
-  .registration-stages {
+  .platform-block {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+.platform-block__item {
+  margin-bottom: calc(4.1666666667 * (1vw + 1vh));
+}
+
+.platform-block__item__text {
+  margin-bottom: calc(2.6666666667 * (1vw + 1vh));
+}
+
+.platform-block__item__title {
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  margin: 0;
+  margin-bottom: calc(1.5833333333 * (1vw + 1vh));
+  font-weight: 400;
+}
+
+.platform-block__item__description {
+  border-right: #1260F5 solid 1px;
+  color: rgba(0, 0, 0, 0.4);
+  padding: calc(0.4166666667 * (1vw + 1vh)) calc(1.2916666667 * (1vw + 1vh));
+  line-height: 160%;
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  width: calc(15.125 * (1vw + 1vh));
+}
+
+.platform-block__item__img img {
+  width: 100%;
+  border-radius: calc(1.25 * (1vw + 1vh));
+}
+
+@media (max-width: 600px) {
+  .platform-block__item {
+    margin-bottom: 75px;
+  }
+  .platform-block__item__text {
+    margin-bottom: 39px;
+  }
+  .platform-block__item__title {
+    font-size: 28px;
+    margin-bottom: 39px;
+  }
+  .platform-block__item__description {
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    width: 100%;
   }
 }
