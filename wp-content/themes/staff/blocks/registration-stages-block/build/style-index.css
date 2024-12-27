@@ -74,6 +74,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin-top: calc(1.8333333333 * (1vw + 1vh));
+  font-size: calc(0.625 * (1vw + 1vh));
 }
 
 @media (max-width: 600px) {

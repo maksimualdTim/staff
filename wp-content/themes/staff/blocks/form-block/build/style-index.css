@@ -26,7 +26,6 @@
 }
 
 .form-block-container {
-  background: linear-gradient(to left, #5AD7FF, #1A64F6);
   border-radius: calc(0.75 * (1vw + 1vh));
   padding: calc(2.7916666667 * (1vw + 1vh)) calc(3.6666666667 * (1vw + 1vh)) calc(2.7916666667 * (1vw + 1vh)) calc(3.6666666667 * (1vw + 1vh));
   display: flex;
@@ -42,7 +41,7 @@
   color: #fff;
   line-height: calc(2.4166666667 * (1vw + 1vh));
   font-weight: 300;
-  width: 60%;
+  width: 100%;
   margin-bottom: calc(1.9166666667 * (1vw + 1vh));
   margin-top: 0px;
 }
@@ -108,10 +107,10 @@
 
 .form-section-img img {
   position: absolute;
-  top: calc(-7.625 * (1vw + 1vh));
-  right: calc(-7.7083333333 * (1vw + 1vh));
+  top: calc(-2.9166666667 * (1vw + 1vh));
+  right: calc(-3.75 * (1vw + 1vh));
   z-index: 10;
-  width: calc(22.3333333333 * (1vw + 1vh));
+  width: calc(19.375 * (1vw + 1vh));
   height: -moz-max-content;
   height: max-content;
 }
@@ -126,6 +125,10 @@
   margin-left: calc(0.5 * (1vw + 1vh));
   font-size: calc(0.5416666667 * (1vw + 1vh));
   color: rgba(255, 255, 255, 0.7);
+}
+
+.agreement .agreement-svg {
+  width: calc(0.9583333333 * (1vw + 1vh));
 }
 
 @media (max-width: 600px) {

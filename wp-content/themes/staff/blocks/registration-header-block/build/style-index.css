@@ -1,0 +1,302 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.registration-header-block {
+  width: 100%;
+  padding-right: calc(5 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+  padding-top: calc(6.4583333333 * (1vw + 1vh)) !important;
+}
+@media screen and (max-width: 1050px) {
+  .registration-header-block {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.bread-crumbs {
+  margin-bottom: calc(4.1666666667 * (1vw + 1vh));
+}
+
+.bread-crumbs a {
+  text-decoration: none;
+  font-size: calc(0.625 * (1vw + 1vh));
+}
+
+.bread-crumbs a:first-child {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.bread-crumbs a:last-child, .bread-crumbs span {
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: calc(0.75 * (1vw + 1vh));
+}
+
+.registration-header-block-container {
+  flex: 1;
+}
+
+.registration-header-section-content, .registration-header-section-form {
+  flex: 1;
+}
+
+.registration-header-section-form {
+  background: #fff;
+  padding: calc(1.7916666667 * (1vw + 1vh)) calc(1.2916666667 * (1vw + 1vh)) calc(1.5 * (1vw + 1vh)) calc(1.2916666667 * (1vw + 1vh));
+  border-radius: calc(0.75 * (1vw + 1vh));
+}
+
+.registration-header-block-container {
+  display: flex;
+}
+
+.registration-header-uppertext {
+  font-size: calc(0.625 * (1vw + 1vh));
+  margin-bottom: calc(1.625 * (1vw + 1vh));
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.registration-header-section-title {
+  color: #313131;
+  font-size: calc(2.5 * (1vw + 1vh));
+  line-height: 110%;
+  font-weight: 400;
+  margin-bottom: calc(3.4583333333 * (1vw + 1vh));
+}
+
+.registration-header-section-under {
+  padding-left: calc(1.3333333333 * (1vw + 1vh));
+  border-left: calc(0.0833333333 * (1vw + 1vh)) #1260F5 solid;
+  padding-top: calc(0.375 * (1vw + 1vh));
+  padding-bottom: calc(0.375 * (1vw + 1vh));
+  width: 53%;
+}
+
+.registration-header-section-description {
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.registration__form_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: calc(2.1666666667 * (1vw + 1vh));
+}
+
+.registration__form_heading_header {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  font-weight: 400;
+}
+
+.registration__form_heading_steps {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.registration__form_heading_steps span {
+  color: #1260F5;
+  border: calc(0.0208333333 * (1vw + 1vh)) solid #1260F5;
+  height: 0;
+  width: calc(1.375 * (1vw + 1vh));
+}
+
+.registration__form_heading_steps .step__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: solid #1260F5 calc(0.0416666667 * (1vw + 1vh));
+  width: calc(1.2083333333 * (1vw + 1vh));
+  height: calc(1.2083333333 * (1vw + 1vh));
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  line-height: 0;
+  vertical-align: middle;
+  padding-top: calc(0.125 * (1vw + 1vh));
+  box-sizing: border-box;
+  color: #1260F5;
+  background: #fff;
+}
+
+.bg-black {
+  background: #1260F5 !important;
+  color: white !important;
+}
+
+.registration-header-section-form form {
+  background: #fff;
+}
+
+.step-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step-content p {
+  display: block;
+  width: 100%;
+  margin-top: calc(0.8333333333 * (1vw + 1vh));
+}
+
+.step-content p button {
+  margin-top: 0;
+}
+
+.step-content p .uacf7-next {
+  float: right !important;
+}
+
+.registration__form_label {
+  width: 50% !important;
+}
+
+.registration__form_label span:first-child {
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  font-weight: 300 !important;
+  color: #0E4BC1;
+  margin-bottom: calc(0.5 * (1vw + 1vh));
+}
+
+.registration__form_label span:last-child {
+  margin: 0 !important;
+}
+
+.registration__form_input {
+  background-color: #F8F8F8;
+  border: none !important;
+  border-radius: calc(0.4166666667 * (1vw + 1vh)) !important;
+  padding: calc(0.7083333333 * (1vw + 1vh)) calc(0.7916666667 * (1vw + 1vh)) !important;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.registration__form_input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  font-weight: 300 !important;
+  line-height: 300px;
+}
+
+.registration__form_input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  font-weight: 300 !important;
+  line-height: 300px;
+}
+
+.step-content p .uacf7-next {
+  border: calc(0.0416666667 * (1vw + 1vh)) solid #1260F5;
+  color: #1260F5;
+  background: #fff;
+  border-radius: calc(0.4166666667 * (1vw + 1vh));
+  padding: calc(0.7916666667 * (1vw + 1vh)) calc(3.6666666667 * (1vw + 1vh));
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+}
+
+@media (max-width: 600px) {
+  .bread-crumbs {
+    margin-bottom: 72px;
+  }
+  .bread-crumbs a {
+    font-size: 15px;
+  }
+  .bread-crumbs a:last-child, .bread-crumbs span {
+    margin-left: 18px;
+  }
+  .registration-header-block {
+    padding-top: 17px !important;
+    padding-bottom: 72px !important;
+  }
+  .registration-header-block-container {
+    margin-top: 72px !important;
+    flex-direction: column;
+  }
+  .registration-header-section-content {
+    margin-bottom: 60px;
+  }
+  .registration-header-uppertext {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  .registration-header-section-title {
+    margin-top: 0px;
+    margin-bottom: 42px;
+    font-size: 34px;
+    line-height: 110%;
+  }
+  .registration-header-section-under {
+    padding-left: 0;
+    border-left: none;
+    width: 100%;
+  }
+  .registration-header-section-under p {
+    font-size: 16px !important;
+    line-height: 160%;
+  }
+  .registration-header-section-form {
+    padding: 43px 24px;
+  }
+  .registration__form_heading {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 34px;
+  }
+  .registration__form_heading_header {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .registration__form_heading_steps .step__item {
+    width: 29px;
+    height: 29px;
+    font-size: 14px;
+    padding-top: 3px;
+  }
+  .registration__form_label span:first-child {
+    margin-bottom: 13px;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .registration__form_label {
+    width: 100% !important;
+    margin-bottom: 24px !important;
+  }
+  .registration__form_input {
+    width: -webkit-fill-available;
+    border-radius: 10px !important;
+    padding: 20px !important;
+  }
+  .registration__form_input::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 300 !important;
+    line-height: 300px;
+  }
+  .registration__form_input::placeholder {
+    font-size: 14px;
+    font-weight: 300 !important;
+    line-height: 300px;
+  }
+  .step-content p .uacf7-next {
+    width: 100%;
+    font-size: 14px;
+    border-width: 1px;
+    padding: 19px 0;
+    border-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

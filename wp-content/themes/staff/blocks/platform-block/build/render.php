@@ -8,7 +8,8 @@ $items= $attributes['items'] ?? [];
 
 
 
-<section class="platform-block section" <?= get_block_wrapper_attributes(); ?>>
+<section class="" <?= get_block_wrapper_attributes(); ?>>
+
 
 	<div class="platform-block__items" <?= get_block_wrapper_attributes(); ?>>
 		<?php foreach ($items as $key => $item): ?>

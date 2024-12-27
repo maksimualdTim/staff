@@ -9,7 +9,6 @@
 
 .platform-block {
   @include main-container();
-  background-color: #fff;
 }
 
 
@@ -43,6 +42,33 @@
   border-radius: size(30px);
 }
 
+
+.platform-block__item__img button{
+  position: unset;
+}
+
+.bread-crumbs {
+  color: #000;
+  opacity: .6;
+  @include font-size(15px);
+  @include line-height(16px);
+  padding-top: size(152px);
+  margin-bottom: size(83px);
+  a {
+	color: #000;
+	text-decoration: none;
+	&:last-child {
+	  opacity: .3;
+	  cursor: default;
+	  pointer-events: none;
+	}
+  }
+  span {
+	opacity: 0.2;
+	padding-right: size(19px);
+	padding-left: size(19px);
+  }
+}
 
 
 

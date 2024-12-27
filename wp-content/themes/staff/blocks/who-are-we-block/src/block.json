@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/who-are-we-block",
+	"version": "0.1.0",
+	"title": "Who Are We Block",
+	"category": "staff-category",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+	  "subSectionText": {
+		"type": "string"
+	  },
+	  "subSectionNum": {
+		"type": "string"
+	  },
+	  "title": {
+		"type": "string"
+	  },
+	  "contentBox": {
+		"type": "array",
+		"default": []
+	  }
+	},
+	"supports": {
+		  "html": false
+	  },
+	"textdomain": "who-are-we-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
