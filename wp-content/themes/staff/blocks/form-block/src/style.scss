@@ -17,7 +17,7 @@
 
 
 .form-block-container {
-  background: linear-gradient(to left, #5AD7FF, #1A64F6);
+  //background: linear-gradient(to left, #5AD7FF, #1A64F6);
   border-radius: size(18px);
   padding: size(67px) size(88px) size(67px) size(88px);
   display: flex;
@@ -33,7 +33,7 @@
   color: #fff;
   line-height: size(58px);
   font-weight: 300;
-  width: 60%;
+  width: 100%;
   margin-bottom: size(46px);
   margin-top: 0px;
 }
@@ -98,10 +98,10 @@
 
 .form-section-img img {
   position: absolute;
-  top: size(-183px);
-  right: size(-185px);
+  top: size(-70px);
+  right: size(-90px);
   z-index: 10;
-  width: size(536px);
+  width: size(465px);
   height: -moz-max-content;
   height: max-content;
 }
@@ -121,6 +121,10 @@
 }
 
 
+
+.agreement .agreement-svg {
+  width: size(23px);
+}
 
 //Mobile
 
@@ -199,9 +203,6 @@
 	height: auto;
   }
 }
-
-
-
 
 @media (max-width: 432px) {
 

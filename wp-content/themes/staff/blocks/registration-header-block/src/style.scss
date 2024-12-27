@@ -1,0 +1,315 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../template.scss';
+
+.registration-header-block {
+  @include main-container();
+
+  padding-top: size(155px) !important;
+}
+
+
+.bread-crumbs {
+  margin-bottom: size(100px);
+}
+
+.bread-crumbs a{
+  text-decoration: none;
+  font-size: size(15px);
+}
+
+.bread-crumbs a:first-child{
+  color: rgba(0,0,0, 0.6);
+}
+.bread-crumbs a:last-child, .bread-crumbs span {
+  color: rgba(0,0,0, 0.3);
+  margin-left: size(18px);
+}
+
+.registration-header-block-container {
+  flex: 1;
+}
+.registration-header-section-content, .registration-header-section-form {
+	flex: 1;
+}
+.registration-header-section-form {
+	//padding-left: size(81px);
+  background: #fff;
+  padding: size(43px) size(31px) size(36px) size(31px);
+  border-radius: size(18px);
+
+}
+
+.registration-header-block-container {
+  display: flex;
+}
+
+.registration-header-uppertext {
+  font-size: size(15px);
+  margin-bottom: size(39px);
+  color: rgba(0,0,0, 0.3);
+}
+
+.registration-header-section-title {
+  color: #313131;
+  font-size: size(60px);
+  line-height: 110%;
+  font-weight: 400;
+  margin-bottom: size(83px);
+}
+
+.registration-header-section-under {
+  padding-left: size(32px);
+  border-left: size(2px) #1260F5 solid;
+  padding-top: size(9px);
+  padding-bottom: size(9px);
+  width: 53%;
+}
+
+.registration-header-section-description {
+  font-size: size(16px);
+  color: rgba(0,0,0, 0.4);
+}
+
+
+.registration__form_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: size(52px);
+  //padding-top: size(43px);
+  //padding-left: size(31px);
+  //padding-right: size(31px);
+}
+
+.registration__form_heading_header {
+  margin: 0;
+  color: rgba(0,0,0, 0.8);
+  font-size: size(16px);
+  font-weight: 400;
+}
+.registration__form_heading_steps {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.registration__form_heading_steps span{
+  color: #1260F5;
+  border: size(0.5px) solid #1260F5;
+  height: 0;
+  width: size(33px);
+}
+
+.registration__form_heading_steps .step__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: solid #1260F5 size(1px);
+  width: size(29px);
+  height: size(29px);
+  font-size: size(14px);
+  line-height: 0;
+  vertical-align: middle;
+  padding-top: size(3px);
+  box-sizing: border-box;
+  color: #1260F5;
+  background: #fff;
+}
+
+
+
+.bg-black {
+  background: #1260F5 !important;
+  color: white !important;
+}
+
+
+
+//FORM
+
+.registration-header-section-form form{
+  background: #fff;
+}
+
+.registration__form_heading_header {
+
+}
+
+.step-content {
+  display: flex;
+  flex-wrap: wrap;
+  //padding: size(49px) size(31px) size(36px) size(31px);
+}
+
+.step-content p{
+  display: block;
+  width: 100%;
+  margin-top: size(20px);
+}
+.step-content p button{
+  margin-top: 0;
+}
+.step-content p .uacf7-next{
+  float: right !important;
+}
+.step-start {
+
+}
+
+.step-end {
+
+}
+
+.registration__form_label {
+  width: 50% !important;
+}
+
+.registration__form_label span:first-child{
+  font-size: size(14px);
+  font-weight: 300 !important;
+  color: #0E4BC1;
+  margin-bottom: size(12px);
+}
+.registration__form_label span:last-child{
+  margin: 0!important;
+}
+.registration__form_input {
+  background-color: #F8F8F8;
+  border: none !important;
+  border-radius: size(10px) !important;
+  padding: size(17px) size(19px) !important;
+  width: min-content;
+}
+
+.registration__form_input::placeholder {
+  color: rgba(0,0,0, 0.4);
+  font-size: size(14px);
+  font-weight: 300 !important;
+  line-height: 300px;
+}
+
+
+
+.registration-header-section-form form.uacf7-next {
+
+}
+.step-content p .uacf7-next {
+  border: size(1px) solid #1260F5;
+  color: #1260F5;
+  background: #fff;
+  border-radius: size(10px);
+  padding: size(19px) size(88px);
+  font-size: size(14px);
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+  .bread-crumbs {
+	margin-bottom: 72px;
+  }
+  .bread-crumbs a{
+	font-size: 15px;
+  }
+  .bread-crumbs a:last-child, .bread-crumbs span {
+	margin-left: 18px;
+  }
+
+  .registration-header-block {
+	padding-top: 17px !important;
+	padding-bottom: 72px !important;
+  }
+  .registration-header-block-container {
+	margin-top: 72px !important;
+	flex-direction: column;
+  }
+
+  .registration-header-section-content {
+	margin-bottom: 60px;
+  }
+  .registration-header-uppertext {
+	font-size: 15px;
+	margin-bottom: 28px;
+  }
+  .registration-header-section-title {
+	margin-top: 0px;
+	margin-bottom: 42px;
+	font-size: 34px;
+	line-height: 110%;
+  }
+  .registration-header-section-under {
+	padding-left: 0;
+	border-left: none;
+	width: 100%;
+  }
+  .registration-header-section-under p{
+	font-size: 16px !important;
+	line-height: 160%;
+  }
+
+  .registration-header-section-form {
+	padding: 43px 24px;
+  }
+  .registration__form_heading {
+	flex-direction: column;
+	align-items: start;
+	margin-bottom: 34px;
+  }
+  .registration__form_heading_header {
+	font-size: 16px;
+	margin-bottom: 30px;
+  }
+  .registration__form_heading_steps {
+
+  }
+  .registration__form_heading_steps .step__item{
+	width: 29px;
+	height: 29px;
+	font-size: 14px;
+	padding-top: 3px;
+  }
+
+
+  .registration__form_label span:first-child {
+	margin-bottom: 13px;
+	font-size: 14px;
+	margin-top: 0;
+  }
+  .registration__form_label {
+	width: 100% !important;
+	margin-bottom: 24px !important;
+  }
+
+  .registration__form_input {
+	width: -webkit-fill-available;
+	border-radius: 10px !important;
+	padding: 20px !important;
+  }
+
+  .registration__form_input::placeholder {
+	font-size: 14px;
+	font-weight: 300 !important;
+	line-height: 300px;
+  }
+
+  .step-content p .uacf7-next {
+	width: 100%;
+	font-size: 14px;
+	border-width: 1px;
+	padding: 19px 0;
+	border-radius: 10px;
+  }
+
+}

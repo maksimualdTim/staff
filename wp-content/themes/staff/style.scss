@@ -90,6 +90,17 @@ body {
         }
     }
 }
+.menu__contacts__btn {
+    min-width: min-content;
+    .wp-block-buttons {
+        .wp-block-button {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+
 
 .footer {
     margin-bottom: 0;

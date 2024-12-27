@@ -1,0 +1,202 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.we_are_block {
+  width: 100%;
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+  background: #fff;
+}
+@media screen and (max-width: 1050px) {
+  .we_are_block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.we_are_block_admin {
+  background: #2ea2cc;
+}
+
+.we_are_block_admin .card-type-content-box {
+  background: #c1c1c1;
+}
+
+.remove-content-bx-btn {
+  display: block;
+}
+
+.who-sec-title {
+  color: #313131;
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  margin-top: calc(3.125 * (1vw + 1vh));
+  margin-bottom: calc(1.7083333333 * (1vw + 1vh));
+  font-weight: 400;
+}
+
+/* Общий контейнер */
+/* Табы */
+.tabs {
+  margin-bottom: calc(1.5416666667 * (1vw + 1vh));
+  border-radius: calc(0.75 * (1vw + 1vh));
+  border: calc(0.0416666667 * (1vw + 1vh)) solid #1260F5;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tab {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1260F5;
+  font-size: calc(0.7083333333 * (1vw + 1vh));
+  padding: calc(0.625 * (1vw + 1vh)) 0;
+}
+
+.tab svg {
+  margin-left: calc(0.4583333333 * (1vw + 1vh));
+  width: calc(1.125 * (1vw + 1vh));
+  height: calc(1.125 * (1vw + 1vh));
+}
+
+.tab svg path {
+  fill: #1260F5;
+}
+
+.tab.active {
+  color: #fff;
+  background: linear-gradient(to right, #578CF2, #1260F5);
+}
+
+.tab.active svg path {
+  fill: #fff;
+}
+
+/* Контент */
+.content {
+  border-radius: calc(0.75 * (1vw + 1vh));
+  background: #F5F5F5;
+  position: relative;
+  padding: calc(2.8333333333 * (1vw + 1vh)) calc(2.7916666667 * (1vw + 1vh)) calc(3.1666666667 * (1vw + 1vh)) calc(2.7916666667 * (1vw + 1vh));
+}
+
+.content-box {
+  display: none;
+  align-items: end;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.content-box div {
+  flex: 1;
+}
+
+.content-box.active {
+  display: flex;
+}
+
+.who-content-box-name {
+  color: #313131;
+  font-size: calc(1.2916666667 * (1vw + 1vh));
+  font-weight: 400;
+  margin-bottom: calc(2.625 * (1vw + 1vh));
+}
+
+.who-content-box-description {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.625 * (1vw + 1vh));
+  line-height: 160%;
+}
+
+.content-box .content-box-right {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.content-box .content-box-right .who-content-box-button {
+  border-radius: calc(0.75 * (1vw + 1vh));
+  background: linear-gradient(to right, #578CF2, #1260F5);
+  color: white;
+  text-decoration: none;
+  font-size: calc(0.625 * (1vw + 1vh));
+  padding: calc(1.125 * (1vw + 1vh)) calc(2.125 * (1vw + 1vh));
+}
+
+/* Анимация */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 600px) {
+  .content-box.active {
+    flex-direction: column;
+  }
+  .who-sec-title {
+    font-size: 28px;
+    margin-bottom: 42px;
+    margin-top: 42px;
+  }
+  .tabs {
+    margin-bottom: 17px;
+    border-radius: 18px;
+  }
+  .tab {
+    font-size: 15px;
+    padding: 21px 0;
+  }
+  .tab svg {
+    margin-left: 11px;
+    width: 27px;
+    height: 27px;
+  }
+  .who-section-content .content {
+    padding: 48px 30px;
+  }
+  .content-box {
+    align-items: start;
+  }
+  .content-box .content-box-right {
+    justify-content: start;
+    align-items: end;
+  }
+  .who-content-box-name {
+    font-size: 23px;
+    margin-bottom: 41px;
+    line-height: 120%;
+    font-weight: 400;
+  }
+  .who-content-box-description {
+    font-size: 15px;
+    margin-bottom: 119px;
+  }
+  .content-box .content-box-right .who-content-box-button {
+    border-radius: 18px;
+    font-size: 15px;
+    padding: 27px 51px;
+  }
+}

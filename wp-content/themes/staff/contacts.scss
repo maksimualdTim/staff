@@ -131,12 +131,20 @@ iframe {
     }
 }
 
-:where(.wp-block-columns.is-layout-flex) {
+
+.contacts__columns {
     gap: size(130px);
     @media (max-width: 781px) {
         gap: 0;
     }
 }
+
+//:where(.wp-block-columns.is-layout-flex) {
+//    //gap: size(130px);
+//    @media (max-width: 781px) {
+//        gap: 0;
+//    }
+//}
 .contact__socials {
     .wp-social-link {
         background-color: #BEBEBE;

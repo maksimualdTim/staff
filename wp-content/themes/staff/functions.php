@@ -28,6 +28,8 @@ require __DIR__ . '/blocks/economy-stages/economy-stages.php';
 require __DIR__ . '/blocks/about-header-block/about-header-block.php';
 require __DIR__ . '/blocks/registration-stages-block/registration-stages-block.php';
 require __DIR__ . '/blocks/platform-block/platform-block.php';
+require __DIR__ . '/blocks/who-are-we-block/who-are-we-block.php';
+require __DIR__ . '/blocks/registration-header-block/registration-header-block.php';
 
 require __DIR__ . '/functions-news.php';
 require __DIR__ . '/functions-cabinet.php';

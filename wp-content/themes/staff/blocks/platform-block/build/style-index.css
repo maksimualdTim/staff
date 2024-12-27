@@ -16,7 +16,6 @@
   padding-right: calc(5 * (1vw + 1vh));
   padding-left: calc(5 * (1vw + 1vh));
   box-sizing: border-box;
-  background-color: #fff;
 }
 @media screen and (max-width: 1050px) {
   .platform-block {
@@ -52,6 +51,43 @@
 .platform-block__item__img img {
   width: 100%;
   border-radius: calc(1.25 * (1vw + 1vh));
+}
+
+.platform-block__item__img button {
+  position: unset;
+}
+
+.bread-crumbs {
+  color: #000;
+  opacity: 0.6;
+  font-size: calc(0.625 * (1vw + 1vh));
+  line-height: calc(0.6666666667 * (1vw + 1vh));
+  padding-top: calc(6.3333333333 * (1vw + 1vh));
+  margin-bottom: calc(3.4583333333 * (1vw + 1vh));
+}
+@media (max-width: 600px) {
+  .bread-crumbs {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .bread-crumbs {
+    line-height: 16px;
+  }
+}
+.bread-crumbs a {
+  color: #000;
+  text-decoration: none;
+}
+.bread-crumbs a:last-child {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.bread-crumbs span {
+  opacity: 0.2;
+  padding-right: calc(0.7916666667 * (1vw + 1vh));
+  padding-left: calc(0.7916666667 * (1vw + 1vh));
 }
 
 @media (max-width: 600px) {

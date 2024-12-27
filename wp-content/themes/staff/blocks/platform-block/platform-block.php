@@ -28,3 +28,17 @@ function create_block_platform_block_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'create_block_platform_block_block_init' );
+
+
+add_shortcode( 'platform-breadcrumbs', function() {
+	$blog_page_link = get_page_link(pll_get_post(86));
+	ob_start();
+	?>
+	<div class="bread-crumbs">
+		<a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="<?=$blog_page_link?>" class="sections__link"><?=pll__("Оформление")?></a><span>/</span><a href="#" class="sections__link"><?= get_the_title(); ?></a>
+	</div>
+	<?php
+	$output = ob_get_contents(); // всё, что вывели, окажется внутри $output
+	ob_end_clean();
+	return $output;
+} );
