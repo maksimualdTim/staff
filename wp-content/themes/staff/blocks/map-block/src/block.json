@@ -9,32 +9,32 @@
 	"description": "Блок с картой",
 	"example": {},
 	"attributes": {
-	  "subSectionText": {
-		"type": "string",
-		"default": ""
-	  },
-	  "title": {
-		"type": "string",
-		"default": ""
-	  },
-	  "buttonText": {
-		"type": "string",
-		"default": "Кнопка"
-	  },
-	  "buttonUrl": {
-		"type": "string",
-		"default": "#"
-	  },
-	  "mapEmbed": {
-		"type": "string",
-		"default": ""
-	  },
-	  "imageUrl": {
-		"type": "string"
-	  },
-	  "bgUrl": {
-		"type": "string"
-	  }
+		"subSectionText": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Кнопка"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": "#"
+		},
+		"mapEmbed": {
+			"type": "string",
+			"default": ""
+		},
+		"imageUrl": {
+			"type": "string"
+		},
+		"bgUrl": {
+			"type": "string"
+		}
 	},
 	"supports": {
 		"html": false

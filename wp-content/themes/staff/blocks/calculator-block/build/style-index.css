@@ -1,0 +1,398 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.section {
+  padding-top: calc(3.3333333333 * (1vw + 1vh));
+  padding-bottom: calc(3.3333333333 * (1vw + 1vh));
+}
+.section__sub {
+  display: flex;
+  -moz-column-gap: calc(0.625 * (1vw + 1vh));
+       column-gap: calc(0.625 * (1vw + 1vh));
+  align-items: center;
+  margin-bottom: 62px !important;
+}
+.section__text {
+  color: #fff !important;
+  opacity: 1 !important;
+  font-size: calc(0.625 * (1vw + 1vh));
+  line-height: calc(0.6666666667 * (1vw + 1vh));
+}
+@media (max-width: 600px) {
+  .section__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .section__text {
+    line-height: 16px;
+  }
+}
+.section__line {
+  background-color: #fff !important;
+  height: 1px;
+  width: calc(2.2916666667 * (1vw + 1vh));
+}
+@media (max-width: 600px) {
+  .section__line {
+    width: 55px;
+  }
+}
+
+.calculator {
+  width: 100%;
+  padding-right: calc(5 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin-top: calc(6.25 * (1vw + 1vh));
+}
+@media screen and (max-width: 1050px) {
+  .calculator {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.calculator__container {
+  background: rgba(7.6, 70.14, 151.94, 0.4);
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  padding: 19px 19px 19px 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calculator-title {
+  font-size: calc(1.5 * (1vw + 1vh));
+  font-weight: 400;
+  color: #fff;
+  line-height: 120%;
+  max-width: calc(14.75 * (1vw + 1vh));
+  margin: 0;
+  margin-bottom: calc(2.2083333333 * (1vw + 1vh));
+}
+.calculator__results-box {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.5416666667 * (1vw + 1vh));
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.calculator__results-text {
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  font-weight: 400;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 100%;
+}
+.calculator__results {
+  color: #fff;
+  font-size: calc(4 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 110%;
+}
+.calculator__wrapper {
+  width: 50%;
+}
+.calculator__card {
+  padding: 43px 49px;
+  border-radius: 25px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(1.875 * (1vw + 1vh));
+  width: 50%;
+}
+.calculator__content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.8333333333 * (1vw + 1vh));
+  align-items: flex-start;
+  width: 100%;
+}
+.calculator__content-text {
+  color: #1260F5;
+  font-size: calc(0.7083333333 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 160%;
+}
+.calculator__results-box-mobi {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.calculator__range {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.calculator__fleet-size[type=range] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+}
+
+.calculator__fleet-size[type=range]:focus {
+  outline: none;
+}
+
+.calculator__fleet-size[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  background: rgba(18, 96, 245, 0.09);
+  border-radius: 15px;
+  border: none;
+}
+
+.calculator__fleet-size[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border: none;
+  height: 44px;
+  width: 81px;
+  border-radius: 15px;
+  background: linear-gradient(270deg, #578CF2 0%, #1260F5 100%);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -18px;
+}
+
+.calculator__value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 78px;
+  transform: translate(0, 2px);
+  z-index: 2;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  pointer-events: none;
+}
+
+.gallons__value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 78px;
+  transform: translate(0, 2px);
+  z-index: 2;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  pointer-events: none;
+}
+
+.calculator__fleet-size[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(18, 96, 245, 0.09);
+}
+
+.calculator__fleet-size[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  background: rgba(18, 96, 245, 0.09);
+  border-radius: 15px;
+  border: none;
+}
+
+.calculator__fleet-size[type=range]::-moz-range-thumb {
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border: none;
+  height: 44px;
+  width: 81px;
+  border-radius: 15px;
+  background: rgba(18, 96, 245, 0.09);
+  cursor: pointer;
+  margin-top: -18px;
+}
+
+.calculator__fleet-size[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+
+.calculator__fleet-size[type=range]::-ms-fill-lower {
+  background: rgba(18, 96, 245, 0.09);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+}
+
+.calculator__fleet-size[type=range]::-ms-fill-upper {
+  background: rgba(18, 96, 245, 0.09);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+}
+
+.calculator__fleet-size[type=range]::-ms-thumb {
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border: none;
+  height: 44px;
+  width: 81px;
+  border-radius: 15px;
+  background: rgba(18, 96, 245, 0.09);
+  cursor: pointer;
+  margin-top: -18px;
+}
+
+.calculator__fleet-size[type=range]:focus::-ms-fill-lower {
+  background: rgba(18, 96, 245, 0.09);
+}
+
+.calculator__fleet-size[type=range]:focus::-ms-fill-upper {
+  background: rgba(18, 96, 245, 0.09);
+}
+
+.fill-up-container {
+  display: flex;
+  gap: calc(0.5416666667 * (1vw + 1vh));
+  width: 100%;
+  justify-content: space-between;
+}
+
+.fill-up-btn {
+  width: calc(3.4166666667 * (1vw + 1vh));
+  height: calc(1.8333333333 * (1vw + 1vh));
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border-radius: 10px;
+  border: 1px #E6E6E6 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  background: #fff;
+  color: #313131;
+  font-size: calc(0.75 * (1vw + 1vh));
+  font-weight: 500;
+  padding: 0;
+  line-height: 110%;
+}
+
+.fill-up-btn.active {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding-top: calc(3.3333333333 * (1vw + 1vh));
+    padding-bottom: calc(3.3333333333 * (1vw + 1vh));
+  }
+  .section__sub {
+    gap: 15px !important;
+    margin-bottom: 30px !important;
+  }
+  .section__text {
+    color: rgba(0, 0, 0, 0.3) !important;
+    font-size: 15px !important;
+    line-height: 110% !important;
+    opacity: 1 !important;
+  }
+  .section__line {
+    background-color: #1260F5 !important;
+    height: 1px;
+    width: 55px !important;
+  }
+  .calculator {
+    background: #fff;
+  }
+  .calculator__container {
+    flex-direction: column;
+    background: #fff;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .calculator-title {
+    font-size: 28px;
+    color: #313131 !important;
+    max-width: 100%;
+    margin-bottom: 58px;
+  }
+  .calculator-title mark {
+    color: #313131 !important;
+  }
+  .calculator__results-box {
+    display: none;
+  }
+  .calculator__results-box-mobi {
+    display: flex;
+  }
+  .calculator__results-text {
+    color: #545454;
+    font-size: 16px;
+  }
+  .calculator__results {
+    color: #1260F5;
+    font-size: 64px;
+  }
+  .calculator__wrapper {
+    width: 100%;
+  }
+  .calculator__card {
+    padding: 0;
+    border-radius: 0;
+    gap: 32px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .calculator__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .calculator__content-text {
+    font-size: 17px;
+  }
+  .fill-up-container {
+    gap: 13px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .fill-up-btn {
+    width: 82px;
+    height: 44px;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

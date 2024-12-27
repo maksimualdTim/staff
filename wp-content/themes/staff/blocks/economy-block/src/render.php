@@ -125,7 +125,5 @@ $maxContentBoxes = 1;  // Максимальное количество блок
 				<a href="<?= esc_url($attributes['btnUrl']); ?>"  class="economy-section-btn "><?= $attributes['btnText']?></a>
 			</div>
 		<?php endif; ?>
-
-
 	</div>
 </section>

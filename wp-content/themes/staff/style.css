@@ -424,9 +424,10 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   background-size: cover;
 }
 
-
-
-
+.calculator {
+  background: url('img/calculator-bg.png') no-repeat;
+  background-size: cover;
+}
 
 
 
@@ -434,6 +435,7 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
 
 header {
   position: relative;
+  background-color: #000;
 }
 
 header .wp-container-core-columns-is-layout-3 {
@@ -593,7 +595,13 @@ header .wp-container-core-columns-is-layout-3 {
 }
 
 
-
+@media (max-width: 992px) {
+  .calculator {
+    background: #fff;
+    border-radius: 0;
+  }
+  
+}
 
 @media (max-width: 600px) {
 

@@ -29,6 +29,10 @@ require __DIR__ . '/blocks/about-header-block/about-header-block.php';
 require __DIR__ . '/blocks/registration-stages-block/registration-stages-block.php';
 require __DIR__ . '/blocks/platform-block/platform-block.php';
 
+require __DIR__ . '/blocks/salon-map-block/salon-map-block.php';
+require __DIR__ . '/blocks/calculator-block/calculator-block.php';
+
+
 require __DIR__ . '/functions-news.php';
 require __DIR__ . '/functions-cabinet.php';
 

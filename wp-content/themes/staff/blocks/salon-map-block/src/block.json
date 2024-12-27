@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/salon-map-block",
+	"version": "0.1.0",
+	"title": "Salon Map Block",
+	"category": "staff-category",
+	"icon": "smiley",
+	"description": "Блок с картой карта салонов",
+	"example": {},
+	"attributes": {
+	  "items": {
+		"type": "array",
+		"default": []
+	  },
+	  "subSectionText": {
+		"type": "string"
+	  },
+	  "title": {
+		"type": "string"
+	  },
+	  "btnText": {
+		"type": "string",
+		"default": "Кнопка 1"
+	  },
+	  "btnUrl": {
+		"type": "string",
+		"default": "#"
+	  }
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "salon-map-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

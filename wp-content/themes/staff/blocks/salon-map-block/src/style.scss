@@ -1,0 +1,335 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ @import '../../../template.scss';
+
+
+ .salon-map {
+	 @include main-container();
+	 background-repeat: no-repeat;
+	 margin-top: size(60px);
+ }
+
+ .section {
+		padding-top: size(80px);
+		padding-bottom: size(80px);
+ 
+	 &__sub {
+		display: flex;
+		column-gap: size(15px);
+		align-items: center;
+		margin-bottom: size(32px);
+	 }
+	 &__text {
+		color: #000;
+		opacity: .3;
+		@include font-size(15px);
+		@include line-height(16px);
+	 }
+ 
+	 &__line {
+		background-color: $primaryColor;
+		height: 1px;
+		@include width(55px);
+	 }
+ }
+
+.salon-map-content {
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+	margin-bottom: size(32px);
+}
+ 
+ .salon-map-section-title {
+	 font-size: size(48px);
+	 margin: 0px;
+	 font-weight: 400;
+	 color: #313131;
+ }
+ .salon-map-section-btn {
+	 font-size: size(16px);
+	 border: #1260F5 solid 1px;
+	 font-weight: 500;
+	 border-radius: size(18px);
+	 height: fit-content;
+	 text-decoration: none;
+	 color: #1260F5;
+	 padding: size(25px) size(78px);
+ }
+
+.salon__map-wrapper {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.salon__map-img {
+	width: 100%;
+	height: 100%;
+}
+
+.left-map {
+	transition: all 0.5s ease;
+	fill: #1260F5;
+	fill-opacity: 0.22;
+}
+
+.left-map:hover {
+	transition: all 0.5s ease;
+	fill-opacity: 1;
+	fill: #1260F5;
+}
+
+.part {
+	fill: #C9D7FD;
+	transition: all 0.5s ease;
+}
+.left-map:hover > .part {
+	transition: all 0.5s ease;
+	fill: #1260F5;
+}
+
+.partActive {
+	transition: all 0.5s ease;
+	fill: #1260F5;
+}
+
+.top-map {
+	fill: #C9D7FD;
+	transition: all 0.5s ease;
+}
+
+.top-map:hover {
+	fill: #1260F5;
+	transition: all 0.5s ease;
+}
+
+.bottom-map {
+	fill: #C9D7FD;
+	transition: all 0.5s ease;
+}
+
+.bottom-map:hover {
+	fill: #1260F5;
+	transition: all 0.5s ease;
+}
+.right-map {
+	fill: #C9D7FD;
+	transition: all 0.5s ease;
+}
+
+.right-map:hover {
+	fill: #1260F5;
+	transition: all 0.5s ease;
+}
+
+.colorActive {
+	transition: all 0.5s ease;
+	fill-opacity: 1;
+	fill: #1260F5;
+}
+
+.pulser__wrapper {
+	position: absolute;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	cursor: pointer;
+	transition: all 0s;
+}
+
+.pulser {
+  width: 17px;
+  height: 17px;
+  background: #1260F5;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pulser::after {
+  animation: pulse 1200ms ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(3.5);
+    opacity: 1;
+  }
+}
+
+.pulser::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle {
+	width: size(220px);
+	height: size(220px);
+	background-color: #fff;
+	border-radius: 50%;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	gap: 13px;
+	display: flex;
+	position: absolute;
+	bottom: -100px;
+	right: -95px;
+	transform: scale(0);
+	transition: all 0.5s ease;
+}
+
+.circle__info-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+.circle__info {
+	color: #1260F5;
+	font-weight: 400;
+	font-size: size(55px);
+	line-height: size(60.5px);
+}
+.circle__gallon {
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: 400;
+	font-size: size(14px);
+	line-height: size(15.4px);
+}
+.circle__text {
+	color: #1260F5;
+	font-weight: 400;
+	font-size: size(14px);
+	line-height: size(15.4px);
+	max-width: size(163px);
+}
+.circleActive {
+	transform: scale(1);
+	transition: all 0.5s ease;
+}
+
+.pulser:hover>.circle {
+	transform: scale(1);
+	transition: all 0.5s ease;
+}
+
+.left-side {
+	top: 34%;
+	left: 21%;
+}
+.right-side {
+	top: 21%;
+	right: 9%;
+}
+.top-side {
+	top: 32%;
+	right: 42%;
+}
+
+.bottom-side {
+	bottom: 32%;
+	right: 40%;
+}
+
+.circle-mobi {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	#pulserLeft {
+		display: none;
+	}
+	#pulserRight {
+		display: none;
+	}
+	#pulserTop {
+		display: none;
+	}	
+	#pulserBottom {
+		display: none;
+	}
+
+	.circle-mobi {
+		flex-direction: column;
+		text-align: left;
+		align-items: flex-start;
+		gap: 17px;
+	}
+
+	.circle-mobi-active {
+		display: flex;
+	}
+	.circle__info {
+		font-size: 48px; 
+		line-height: 110%;
+	}
+	.circle__gallon {
+		font-size: 14px;
+		line-height: 110%;
+	}
+
+	.circle__text {
+		font-size: 16px;
+		line-height: 110%;
+		max-width: 100%;
+	}
+
+	.left-side-mobi {
+		top: 27%;
+	}
+	.top-side-mobi {
+		top: 26%;
+	}
+	.bottom-side-mobi {
+		bottom: 45%;
+	}
+
+	.right-side-mobi {
+		top: 15%;
+	}
+}
+
+
+ @media (max-width: 600px) {
+	.section__sub {
+		margin-bottom: 30px;
+		column-gap: 15px !important;
+	}
+	.salon-map-content {
+		align-items: flex-start;
+		gap: 43px;
+		flex-direction: column;
+		margin-bottom: 68px;	
+	}
+
+	.salon-map-section-title {
+		font-size: 28px;
+		line-height: 33.6px;
+		color: #313131;
+	}
+
+	.salon-map-section-btn {
+		font-size: 16px;
+		border-radius: 18px;
+		padding: 24px 69px;
+	}
+ }
