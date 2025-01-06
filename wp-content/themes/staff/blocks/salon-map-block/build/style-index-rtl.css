@@ -37,29 +37,30 @@
   align-items: center;
   margin-bottom: calc(1.3333333333 * (1vw + 1vh));
 }
-.section__text {
-  color: #000;
-  opacity: 0.3;
+
+.section__salon-text {
+  color: rgba(0, 0, 0, 0.3);
   font-size: calc(0.625 * (1vw + 1vh));
   line-height: calc(0.6666666667 * (1vw + 1vh));
 }
 @media (max-width: 600px) {
-  .section__text {
+  .section__salon-text {
     font-size: 15px;
   }
 }
 @media (max-width: 600px) {
-  .section__text {
+  .section__salon-text {
     line-height: 16px;
   }
 }
-.section__line {
+
+.section__salon-line {
   background-color: #1260F5;
   height: 1px;
   width: calc(2.2916666667 * (1vw + 1vh));
 }
 @media (max-width: 600px) {
-  .section__line {
+  .section__salon-line {
     width: 55px;
   }
 }
@@ -265,22 +266,26 @@
   transition: all 0.5s ease;
 }
 
-.left-side {
+.leftSide {
+  position: absolute;
   top: 34%;
   right: 21%;
 }
 
-.right-side {
+.rightSide {
+  position: absolute;
   top: 21%;
   left: 9%;
 }
 
-.top-side {
+.topSide {
+  position: absolute;
   top: 32%;
   left: 42%;
 }
 
-.bottom-side {
+.bottomSide {
+  position: absolute;
   bottom: 32%;
   left: 40%;
 }

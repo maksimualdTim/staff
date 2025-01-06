@@ -9,24 +9,28 @@
 	"description": "Блок с картой карта салонов",
 	"example": {},
 	"attributes": {
-	  "items": {
-		"type": "array",
-		"default": []
-	  },
-	  "subSectionText": {
-		"type": "string"
-	  },
-	  "title": {
-		"type": "string"
-	  },
-	  "btnText": {
-		"type": "string",
-		"default": "Кнопка 1"
-	  },
-	  "btnUrl": {
-		"type": "string",
-		"default": "#"
-	  }
+		"items": {
+			"type": "array",
+			"default": []
+		},
+		"subSectionText": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"btnText": {
+			"type": "string",
+			"default": "Кнопка 1"
+		},
+		"btnUrl": {
+			"type": "string",
+			"default": "#"
+		},
+		"mapInfo": {
+			"type": "array",
+			"default": []
+		}
 	},
 	"supports": {
 		"html": false

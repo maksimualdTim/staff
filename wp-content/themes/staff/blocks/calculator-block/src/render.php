@@ -48,7 +48,7 @@
 
 					<div class="calculator__range">
 						<span id="gallonsValue"class="gallons__value">50</span>
-						<input class="calculator__fleet-size" id="gallons-fillup" type="range" value="50"  min="50" max="250" step="50">
+						<input class="calculator__fleet-size" id="gallons-fillup" type="range" value="50"  min="50" max="250" step="1">
 					</div>
 				</div>
 

@@ -63,8 +63,23 @@ function Edit({
     subSectionText,
     title,
     btnText,
-    btnUrl
+    btnUrl,
+    mapInfo = []
   } = attributes;
+  const updatemapInfo = (index, field, value) => {
+    const updatedBoxes = mapInfo.map((box, i) => {
+      if (i === index) {
+        return {
+          ...box,
+          [field]: value
+        };
+      }
+      return box;
+    });
+    setAttributes({
+      mapInfo: updatedBoxes
+    });
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
@@ -105,9 +120,9 @@ function Edit({
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "section__sub",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "section__line"
+          className: "section__salon-line"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "section__text",
+          className: "section__salon-text",
           children: subSectionText
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -126,7 +141,107 @@ function Edit({
           className: "salon-map-section-btn",
           children: btnText
         })]
-      })]
+      }), mapInfo.map((box, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            id: "pulserLeft",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+              title: "\u041A\u0430\u0440\u0442\u0430 \u041B\u0435\u0432\u0430\u044F \u0447\u0430\u0441\u0442\u044C",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                class: "circle__info-wrapper",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("priceGallon", "your-text-domain"),
+                  value: box.priceGallon,
+                  onChange: value => updatemapInfo(index, "priceGallon", value)
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("gallonText", "your-text-domain"),
+                  value: box.gallonText,
+                  onChange: value => updatemapInfo(index, "gallonText", value)
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("saleGallonStatesText", "your-text-domain"),
+                value: box.saleGallonStatesText,
+                onChange: value => updatemapInfo(index, "saleGallonStatesText", value)
+              })]
+            })
+          })
+        }, index)
+      }, index)), mapInfo.map((box, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            id: "pulserRight",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+              title: "\u041A\u0430\u0440\u0442\u0430 \u041F\u0440\u0430\u0432\u0430\u044F \u0447\u0430\u0441\u0442\u044C",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                class: "circle__info-wrapper",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("rightPriceGallon", "your-text-domain"),
+                  value: box.rightPriceGallon,
+                  onChange: value => updatemapInfo(index, "rightPriceGallon", value)
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("rightGallonText", "your-text-domain"),
+                  value: box.rightGallonText,
+                  onChange: value => updatemapInfo(index, "rightGallonText", value)
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("rightSaleGallonStatesText", "your-text-domain"),
+                value: box.rightSaleGallonStatesText,
+                onChange: value => updatemapInfo(index, "rightSaleGallonStatesText", value)
+              })]
+            })
+          })
+        }, index)
+      }, index)), mapInfo.map((box, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            id: "pulserTop",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+              title: "\u041A\u0430\u0440\u0442\u0430 \u0412\u0435\u0440\u0445\u043D\u044F\u044F \u0447\u0430\u0441\u0442\u044C",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                class: "circle__info-wrapper",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("topPriceGallon", "your-text-domain"),
+                  value: box.topPriceGallon,
+                  onChange: value => updatemapInfo(index, "topPriceGallon", value)
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("topGallonText", "your-text-domain"),
+                  value: box.topGallonText,
+                  onChange: value => updatemapInfo(index, "topGallonText", value)
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("topSaleGallonStatesText", "your-text-domain"),
+                value: box.topSaleGallonStatesText,
+                onChange: value => updatemapInfo(index, "topSaleGallonStatesText", value)
+              })]
+            })
+          })
+        }, index)
+      }, index)), mapInfo.map((box, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            id: "pulserBottom",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+              title: "\u041A\u0430\u0440\u0442\u0430 \u041D\u0438\u0436\u043D\u044F\u044F \u0447\u0430\u0441\u0442\u044C",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                class: "circle__info-wrapper",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("bottomPriceGallon", "your-text-domain"),
+                  value: box.bottomPriceGallon,
+                  onChange: value => updatemapInfo(index, "bottomPriceGallon", value)
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("bottomGallonText", "your-text-domain"),
+                  value: box.bottomGallonText,
+                  onChange: value => updatemapInfo(index, "bottomGallonText", value)
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("bottomSaleGallonStatesText", "your-text-domain"),
+                value: box.bottomSaleGallonStatesText,
+                onChange: value => updatemapInfo(index, "bottomSaleGallonStatesText", value)
+              })]
+            })
+          })
+        }, index)
+      }, index))]
     })]
   });
 }
@@ -261,7 +376,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/salon-map-block","version":"0.1.0","title":"Salon Map Block","category":"staff-category","icon":"smiley","description":"Блок с картой карта салонов","example":{},"attributes":{"items":{"type":"array","default":[]},"subSectionText":{"type":"string"},"title":{"type":"string"},"btnText":{"type":"string","default":"Кнопка 1"},"btnUrl":{"type":"string","default":"#"}},"supports":{"html":false},"textdomain":"salon-map-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/salon-map-block","version":"0.1.0","title":"Salon Map Block","category":"staff-category","icon":"smiley","description":"Блок с картой карта салонов","example":{},"attributes":{"items":{"type":"array","default":[]},"subSectionText":{"type":"string"},"title":{"type":"string"},"btnText":{"type":"string","default":"Кнопка 1"},"btnUrl":{"type":"string","default":"#"},"mapInfo":{"type":"array","default":[]}},"supports":{"html":false},"textdomain":"salon-map-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

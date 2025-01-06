@@ -26,23 +26,46 @@
 
 /* eslint-disable no-console */
 
-const slider = document.getElementById("fleet-size");
+const fleetSize = document.getElementById("fleet-size");
 const rangeValue = document.getElementById("rangeValue");
-slider.addEventListener("input", e => {
+fleetSize.addEventListener("input", e => {
   let num = e.target.value;
   let position = -1 * num;
   rangeValue.style.left = num + '%';
   rangeValue.style.transform = 'translate(' + position + '%, 2px)';
   rangeValue.innerText = num;
 });
+
+// const gallonsFillUp = document.getElementById("gallons-fillup");
+// const gallonsValue = document.getElementById("gallonsValue");
+
+// gallonsFillUp.addEventListener("input", (e) => {
+//   let num = Math.max(1, Math.min(100, e.target.value));
+// 	let position = -1 * num;
+
+// 	gallonsValue.style.left = (num + '%');
+// 	gallonsValue.style.transform = 'translate(' + position + '%, 2px)';
+// 	gallonsValue.innerText = num;
+// });
+
 const gallonsFillUp = document.getElementById("gallons-fillup");
 const gallonsValue = document.getElementById("gallonsValue");
 gallonsFillUp.addEventListener("input", e => {
-  let num = e.target.value;
-  let position = -1 * num;
-  gallonsValue.style.left = num + '%';
+  // Получаем текущее значение input
+  let currentValue = e.target.value;
+
+  // Нормализуем значение от 50-250 в диапазон 1-100
+  let minValue = 50;
+  let maxValue = 250;
+  let normalizedValue = (currentValue - minValue) / (maxValue - minValue) * 99 + 1;
+
+  // Рассчитываем позицию для transform
+  let position = -1 * normalizedValue;
+
+  // Применяем стили
+  gallonsValue.style.left = normalizedValue + '%';
   gallonsValue.style.transform = 'translate(' + position + '%, 2px)';
-  gallonsValue.innerText = num;
+  gallonsValue.innerText = currentValue; // Округляем для отображения
 });
 let fillUpsPerWeek = 1;
 

@@ -26,6 +26,10 @@
     "btnUrl": {
       "type": "string",
       "default": "#"
+    },
+    "mapInfo": {
+      "type": "array",
+      "default": []
     }
   },
   "supports": {

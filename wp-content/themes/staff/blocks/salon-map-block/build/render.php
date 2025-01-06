@@ -4,10 +4,14 @@
  */
 ?>
 
+<?php
+$mapInfo = isset( $attributes['mapInfo'] ) ? $attributes['mapInfo'] : [];
+?>
+
 <section class="salon-map section" <?= get_block_wrapper_attributes() ?>>
 	<div class="section__sub">
-		<div class="section__line"></div>
-		<div class="section__text"><?= $attributes['subSectionText'] ?></div>
+		<div class="section__salon-line"></div>
+		<div class="section__salon-text"><?= $attributes['subSectionText'] ?></div>
 	</div>
 
 		<div class="salon-map-content">
@@ -91,53 +95,87 @@
 				</g>
 		</svg>
 
-		<div class="pulser__wrapper left-side" id="leftSide">
-				<div class="pulser"> 
+		<?php foreach ($mapInfo as $index => $box) : ?>
+		<div class="pulser__wrapper leftSide" id="leftSide">
+			<div class="pulser"> 
 						<div class="circle" id="pulserLeft">
 							<div class="circle__info-wrapper">
-								<span class="circle__info">42¢</span>
-								<span class="circle__gallon">of/gallon</span>
+							<?php if (!empty($box['priceGallon'])) : ?>
+								<span class="circle__info"><?php echo esc_html($box['priceGallon']); ?>¢</span>
+							<?php endif; ?>
+							<?php if (!empty($box['gallonText'])) : ?>
+								<span class="circle__gallon"><?php echo esc_html($box['gallonText']); ?></span>
+							<?php endif; ?>
 							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
+							<?php if (!empty($box['saleGallonStatesText'])) : ?>
+							<span class="circle__text"><?php echo esc_html($box['saleGallonStatesText']); ?></span>
+							<?php endif; ?>
 						</div>
 				</div>
 			</div>
+			<?php endforeach;?>
 
-			<div class="pulser__wrapper right-side" id="rightSide">
-				<div class="pulser">
+			<?php foreach ($mapInfo as $index => $box) : ?>
+		<div class="pulser__wrapper rightSide" id="rightSide">
+			<div class="pulser"> 
 						<div class="circle" id="pulserRight">
 							<div class="circle__info-wrapper">
-								<span class="circle__info">42¢</span>
-								<span class="circle__gallon">of/gallon</span>
+							<?php if (!empty($box['rightPriceGallon'])) : ?>
+								<span class="circle__info"><?php echo esc_html($box['rightPriceGallon']); ?>¢</span>
+							<?php endif; ?>
+							<?php if (!empty($box['rightGallonText'])) : ?>
+								<span class="circle__gallon"><?php echo esc_html($box['rightGallonText']); ?></span>
+							<?php endif; ?>
 							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
+							<?php if (!empty($box['rightSaleGallonStatesText'])) : ?>
+							<span class="circle__text"><?php echo esc_html($box['rightSaleGallonStatesText']); ?></span>
+							<?php endif; ?>
 						</div>
 				</div>
 			</div>
+			<?php endforeach;?>
 
-			<div class="pulser__wrapper top-side" id="topSide">
-				<div class="pulser">
+			<?php foreach ($mapInfo as $index => $box) : ?>
+		<div class="pulser__wrapper topSide" id="topSide">
+			<div class="pulser"> 
 						<div class="circle" id="pulserTop">
 							<div class="circle__info-wrapper">
-								<span class="circle__info">42¢</span>
-								<span class="circle__gallon">of/gallon</span>
+							<?php if (!empty($box['topPriceGallon'])) : ?>
+								<span class="circle__info"><?php echo esc_html($box['topPriceGallon']); ?>¢</span>
+							<?php endif; ?>
+							<?php if (!empty($box['topGallonText'])) : ?>
+								<span class="circle__gallon"><?php echo esc_html($box['topGallonText']); ?></span>
+							<?php endif; ?>
 							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
+							<?php if (!empty($box['topSaleGallonStatesText'])) : ?>
+							<span class="circle__text"><?php echo esc_html($box['topSaleGallonStatesText']); ?></span>
+							<?php endif; ?>
 						</div>
 				</div>
 			</div>
+			<?php endforeach;?>
 
-			<div class="pulser__wrapper bottom-side" id="bottomSide">
-				<div class="pulser">
+
+
+			<?php foreach ($mapInfo as $index => $box) : ?>
+		<div class="pulser__wrapper bottomSide" id="bottomSide">
+			<div class="pulser"> 
 						<div class="circle" id="pulserBottom">
 							<div class="circle__info-wrapper">
-								<span class="circle__info">42¢</span>
-								<span class="circle__gallon">of/gallon</span>
+							<?php if (!empty($box['topPriceGallon'])) : ?>
+								<span class="circle__info"><?php echo esc_html($box['bottomPriceGallon']); ?>¢</span>
+							<?php endif; ?>
+							<?php if (!empty($box['bottomGallonText'])) : ?>
+								<span class="circle__gallon"><?php echo esc_html($box['bottomGallonText']); ?></span>
+							<?php endif; ?>
 							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
+							<?php if (!empty($box['bottomSaleGallonStatesText'])) : ?>
+							<span class="circle__text"><?php echo esc_html($box['bottomSaleGallonStatesText']); ?></span>
+							<?php endif; ?>
 						</div>
 				</div>
 			</div>
+			<?php endforeach;?>
 
 
 			<div class="circle-mobi" id="pulserLeftMobi">

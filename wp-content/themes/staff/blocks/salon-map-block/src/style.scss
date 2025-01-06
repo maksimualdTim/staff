@@ -24,18 +24,17 @@
 		align-items: center;
 		margin-bottom: size(32px);
 	 }
-	 &__text {
-		color: #000;
-		opacity: .3;
-		@include font-size(15px);
-		@include line-height(16px);
-	 }
- 
-	 &__line {
-		background-color: $primaryColor;
-		height: 1px;
-		@include width(55px);
-	 }
+ }
+ .section__salon-text {
+	color: rgba(0, 0, 0, 0.30);
+	@include font-size(15px);
+	@include line-height(16px);
+ }
+
+ .section__salon-line {
+	background-color: $primaryColor;
+	height: 1px;
+	@include width(55px);
  }
 
 .salon-map-content {
@@ -232,20 +231,24 @@
 	transition: all 0.5s ease;
 }
 
-.left-side {
+.leftSide {
+	position: absolute;
 	top: 34%;
 	left: 21%;
 }
-.right-side {
+.rightSide {
+	position: absolute;
 	top: 21%;
 	right: 9%;
 }
-.top-side {
+.topSide {
+	position: absolute;
 	top: 32%;
 	right: 42%;
 }
 
-.bottom-side {
+.bottomSide {
+	position: absolute;
 	bottom: 32%;
 	right: 40%;
 }
