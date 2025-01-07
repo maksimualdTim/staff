@@ -33,6 +33,7 @@ require __DIR__ . '/blocks/registration-header-block/registration-header-block.p
 
 require __DIR__ . '/blocks/salon-map-block/salon-map-block.php';
 require __DIR__ . '/blocks/calculator-block/calculator-block.php';
+require __DIR__ . '/blocks/referal-program-block/referal-program-block.php';
 
 
 require __DIR__ . '/functions-news.php';

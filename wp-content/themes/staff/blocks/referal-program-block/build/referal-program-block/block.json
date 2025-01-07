@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/referal-program-block",
+  "version": "0.1.0",
+  "title": "Referal Program Block",
+  "category": "staff-category",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "attributes": {
+    "subSectionText": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "referal-program-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,149 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referal-program-block/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referal-program-block/style.scss (1) ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.section {
+  padding-top: calc(3.3333333333 * (1vw + 1vh));
+  padding-bottom: calc(3.3333333333 * (1vw + 1vh));
+}
+
+.referal-program {
+  width: 100%;
+  padding-right: calc(5 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  margin-top: calc(2.5 * (1vw + 1vh));
+}
+@media screen and (max-width: 1050px) {
+  .referal-program {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.referal-program__sub {
+  display: flex;
+  -moz-column-gap: calc(0.625 * (1vw + 1vh));
+       column-gap: calc(0.625 * (1vw + 1vh));
+  align-items: center;
+  margin-bottom: 32px;
+}
+.referal-program__text {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: calc(0.625 * (1vw + 1vh));
+  line-height: calc(0.6666666667 * (1vw + 1vh));
+}
+@media (max-width: 600px) {
+  .referal-program__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .referal-program__text {
+    line-height: 16px;
+  }
+}
+.referal-program__line {
+  background-color: #1260F5;
+  height: 1px;
+  width: calc(2.2916666667 * (1vw + 1vh));
+}
+@media (max-width: 600px) {
+  .referal-program__line {
+    width: 55px;
+  }
+}
+.referal-program__title {
+  font-size: calc(2 * (1vw + 1vh));
+  margin: 0;
+  margin-bottom: 72px;
+  font-weight: 400;
+  color: #313131;
+}
+.referal-program__list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+}
+.referal-program__item {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  align-items: flex-start;
+}
+.referal-program__number {
+  width: 57px;
+  height: 57px;
+  background: #1260F5;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  font-size: calc(0.8333333333 * (1vw + 1vh));
+  font-weight: 600;
+  line-height: 160%;
+}
+.referal-program__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.referal-program-content__title {
+  color: #000;
+  font-size: calc(0.8333333333 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+.referal-program-content__text {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 160%;
+}
+
+@media (max-width: 992px) {
+  .referal-program__text {
+    font-size: 15px;
+    line-height: 110%;
+  }
+  .referal-program__line {
+    background-color: #1260F5;
+    height: 1px;
+    width: 55px;
+  }
+  .referal-program__title {
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 43px;
+  }
+  .referal-program__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .referal-program__number {
+    font-size: 20px;
+  }
+  .referal-program-content__title {
+    font-size: 20px;
+  }
+  .referal-program-content__text {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
