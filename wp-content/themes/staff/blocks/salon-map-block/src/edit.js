@@ -103,7 +103,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<div key={index}>
 						<div key={index}>
 							<div id="pulserLeft">
-								<PanelBody title="Карта Левая часть">
+								<PanelBody title="WESTERN">
 									<div class="circle__info-wrapper">
 										<TextControl
 											label={__("priceGallon", "your-text-domain")}
@@ -137,7 +137,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<div key={index}>
 						<div key={index}>
 							<div id="pulserRight">
-								<PanelBody title="Карта Правая часть">
+								<PanelBody title="NORTHEAST">
 									<div class="circle__info-wrapper">
 										<TextControl
 											label={__("rightPriceGallon", "your-text-domain")}
@@ -171,7 +171,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<div key={index}>
 						<div key={index}>
 							<div id="pulserTop">
-								<PanelBody title="Карта Верхняя часть">
+								<PanelBody title="CENTRAL">
 									<div class="circle__info-wrapper">
 										<TextControl
 											label={__("topPriceGallon", "your-text-domain")}
@@ -205,7 +205,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<div key={index}>
 						<div key={index}>
 							<div id="pulserBottom">
-								<PanelBody title="Карта Нижняя часть">
+								<PanelBody title="SOUTHERN">
 									<div class="circle__info-wrapper">
 										<TextControl
 											label={__("bottomPriceGallon", "your-text-domain")}

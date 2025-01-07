@@ -178,37 +178,70 @@ $mapInfo = isset( $attributes['mapInfo'] ) ? $attributes['mapInfo'] : [];
 			<?php endforeach;?>
 
 
-			<div class="circle-mobi" id="pulserLeftMobi">
-							<div class="circle__info-wrapper">
-								<span class="circle__info">42¢</span>
-								<span class="circle__gallon">of/gallon</span>
+			<?php foreach ($mapInfo as $index => $box) : ?>
+				<div class="circle-mobi" id="pulserLeftMobi">
+								<div class="circle__info-wrapper">
+								<?php if (!empty($box['priceGallon'])) : ?>
+									<span class="circle__info"><?php echo esc_html($box['priceGallon']); ?>¢</span>
+								<?php endif; ?>
+								<?php if (!empty($box['gallonText'])) : ?>
+									<span class="circle__gallon"><?php echo esc_html($box['gallonText']); ?></span>
+								<?php endif; ?>
+								</div>
+								<?php if (!empty($box['saleGallonStatesText'])) : ?>
+								<span class="circle__text"><?php echo esc_html($box['saleGallonStatesText']); ?></span>
+								<?php endif; ?>
 							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
-						</div>
+			<?php endforeach;?>
+			
+			<?php foreach ($mapInfo as $index => $box) : ?>
+				<div class="circle-mobi" id="pulserRightMobi">
+					<div class="circle__info-wrapper">
+					<?php if (!empty($box['rightPriceGallon'])) : ?>
+						<span class="circle__info"><?php echo esc_html($box['rightPriceGallon']); ?>¢</span>
+					<?php endif; ?>
+					<?php if (!empty($box['rightGallonText'])) : ?>
+						<span class="circle__gallon"><?php echo esc_html($box['rightGallonText']); ?></span>
+					<?php endif; ?>
+					</div>
+					<?php if (!empty($box['rightSaleGallonStatesText'])) : ?>
+					<span class="circle__text"><?php echo esc_html($box['rightSaleGallonStatesText']); ?></span>
+					<?php endif; ?>
+				</div>
+			<?php endforeach;?>
 
-						<div class="circle-mobi" id="pulserRightMobi">
-							<div class="circle__info-wrapper">
-								<span class="circle__info">40¢</span>
-								<span class="circle__gallon">of/gallon</span>
-							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
-						</div>
 
-						<div class="circle-mobi" id="pulserTopMobi">
-							<div class="circle__info-wrapper">
-								<span class="circle__info">44¢</span>
-								<span class="circle__gallon">of/gallon</span>
-							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
-						</div>
+			<?php foreach ($mapInfo as $index => $box) : ?>
+				<div class="circle-mobi" id="pulserTopMobi">
+					<div class="circle__info-wrapper">
+					<?php if (!empty($box['topPriceGallon'])) : ?>
+						<span class="circle__info"><?php echo esc_html($box['topPriceGallon']); ?>¢</span>
+					<?php endif; ?>
+					<?php if (!empty($box['topGallonText'])) : ?>
+						<span class="circle__gallon"><?php echo esc_html($box['topGallonText']); ?></span>
+					<?php endif; ?>
+					</div>
+					<?php if (!empty($box['topSaleGallonStatesText'])) : ?>
+					<span class="circle__text"><?php echo esc_html($box['topSaleGallonStatesText']); ?></span>
+					<?php endif; ?>
+				</div>
+			<?php endforeach;?>
 
-						<div class="circle-mobi" id="pulserBottomMobi">
-							<div class="circle__info-wrapper">
-								<span class="circle__info">41¢</span>
-								<span class="circle__gallon">of/gallon</span>
-							</div>
-							<span class="circle__text">Средняя скидка по штату</span>
-						</div>
+			<?php foreach ($mapInfo as $index => $box) : ?>
+				<div class="circle-mobi" id="pulserBottomMobi">
+					<div class="circle__info-wrapper">
+					<?php if (!empty($box['topPriceGallon'])) : ?>
+						<span class="circle__info"><?php echo esc_html($box['bottomPriceGallon']); ?>¢</span>
+					<?php endif; ?>
+					<?php if (!empty($box['bottomGallonText'])) : ?>
+						<span class="circle__gallon"><?php echo esc_html($box['bottomGallonText']); ?></span>
+					<?php endif; ?>
+					</div>
+					<?php if (!empty($box['bottomSaleGallonStatesText'])) : ?>
+					<span class="circle__text"><?php echo esc_html($box['bottomSaleGallonStatesText']); ?></span>
+					<?php endif; ?>
+				</div>
+			<?php endforeach;?>
 
 	</div>
 
