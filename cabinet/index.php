@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 if(!$_SESSION["is_auth"]) {
     header("Location: " . "/cabinet/login.php");
     exit;
@@ -9,6 +10,10 @@ if(!$_SESSION["is_auth"]) {
 require __DIR__ . '/bootstrap.php';
 $description_post = get_post(pll_get_post(1));
 
+global $wpdb;
+$table_name = $wpdb->prefix . 'clients';
+$data = $wpdb->get_results( "SELECT * FROM $table_name WHERE id=" . $_SESSION['client_id'], ARRAY_A );
+$data = $data[0];
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +38,11 @@ $description_post = get_post(pll_get_post(1));
 </svg>
 Выйти</a>
         <h1 class="title"><?=pll__("<span>Персональный</span> кабинет")?></h1>
+        <?php if(empty($data["analytics_script"])):?>
         <iframe src="" frameborder="0" class="iframe"></iframe>
+        <?php else:?>
+        <?=$data["analytics_script"]?>
+        <?php endif;?>
         <div class="news__content_single">
             <?=$description_post->post_content?>
         </div>
