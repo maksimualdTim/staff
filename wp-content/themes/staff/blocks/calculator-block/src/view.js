@@ -34,19 +34,6 @@ fleetSize.addEventListener("input", (e) => {
 	rangeValue.innerText = num;
 });
 
-// const gallonsFillUp = document.getElementById("gallons-fillup");
-// const gallonsValue = document.getElementById("gallonsValue");
-
-// gallonsFillUp.addEventListener("input", (e) => {
-//   let num = Math.max(1, Math.min(100, e.target.value));
-// 	let position = -1 * num;
-
-  
-// 	gallonsValue.style.left = (num + '%');
-// 	gallonsValue.style.transform = 'translate(' + position + '%, 2px)';
-// 	gallonsValue.innerText = num;
-// });
-
 const gallonsFillUp = document.getElementById("gallons-fillup");
 const gallonsValue = document.getElementById("gallonsValue");
 
@@ -114,13 +101,13 @@ function calculateSavings() {
 	const savingsPerGallon = 0.6;
 
 	const annualSavings =
-		fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp * 52; // 52 weeks
+		fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp; // 52 weeks
 	document.getElementById(
 		"savings-result",
 	).innerText = `$${annualSavings.toLocaleString()}`;
 
 	const annualSavingsMobi =
-		fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp * 52; // 52 weeks
+		fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp; // 52 weeks
 	document.getElementById(
 		"savings-result-mobi",
 	).innerText = `$${annualSavingsMobi.toLocaleString()}`;
@@ -152,18 +139,5 @@ document.querySelectorAll(".fill-up-btn").forEach((button) => {
 // Load saved inputs on page load
 loadInputs();
 calculateSavings();
-
-// const rangeInput = document.getElementById('test');
-// const rangeText = document.getAnimations('range-text');
-
-// rangeInput.addEventListener('change', (e) => {
-// 	console.log(e.target.value);
-//   let newVal = e.target.value;
-//   let negNewVal = -1 * newVal;
-
-//   rangeText.style.left = (newVal + '%'); //Set range left position
-//   rangeText.style.transform = 'translate(' + negNewVal + '%, 2px)'; //Set range translate to correct
-//   rangeText.textContent = newVal; //Set range text equal to input position
-// })
 
 /* eslint-enable no-console */

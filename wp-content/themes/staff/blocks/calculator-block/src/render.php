@@ -7,7 +7,7 @@
 <section class="calculator section" <?= get_block_wrapper_attributes(); ?>>
 		<div class="calculator__container">
 			<div class="calculator__wrapper">
-				<div class="section__sub">
+				<div class="section__sub sub__content">
 					<div class="section__line"></div>
 					<div class="section__text"><?= $attributes['subSectionText'] ?></div>
 				</div>
@@ -15,7 +15,7 @@
 				<h2 class="calculator-title"> <?= $attributes['title'] ?></h2>
 		
 				<div class="calculator__results-box">
-					<span class="calculator__results-text">Annual Savings</span>
+					<span class="calculator__results-text"><?= $attributes['annualText'] ?></span>
 					<div id="savings-result" class="calculator__results">$0</div>
 				</div>
 			</div>

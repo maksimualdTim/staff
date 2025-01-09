@@ -16,59 +16,63 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 @import './template.scss';
 
 div {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-p,ul {
+
+p,
+ul {
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #FCF8FF;
-	font-family: "inter-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wght" 400;
+    font-family: "inter-variable", sans-serif;
+    font-variation-settings: "slnt"0, "wght"400;
     overflow-x: hidden;
 }
 
 .section {
-	padding-top: size(80px);
-	padding-bottom: size(80px);
+    padding-top: size(80px);
+    padding-bottom: size(80px);
 
-	&__sub {
-		display: flex;
-		column-gap: size(15px);
-		align-items: center;
-	}
-	&__text {
-		color: #000;
-		opacity: .3;
-		@include font-size(15px);
-		@include line-height(16px);
-	}
+    &__sub {
+        display: flex;
+        column-gap: size(15px);
+        align-items: center;
+    }
 
-	&__line {
-		background-color: $primaryColor;
-		height: 1px;
-		@include width(55px);
-	}
+    &__text {
+        color: #000;
+        opacity: .3;
+        @include font-size(15px);
+        @include line-height(16px);
+    }
 
-	&__number {
-		color: #89B1FF;
-		@include font-size(15px);
-		@include line-height(16px);
-		margin-left: size(50px);
-	}
+    &__line {
+        background-color: $primaryColor;
+        height: 1px;
+        @include width(55px);
+    }
+
+    &__number {
+        color: #89B1FF;
+        @include font-size(15px);
+        @include line-height(16px);
+        margin-left: size(50px);
+    }
 }
 
 .bg {
-	opacity: 0.15;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: 1;
-  }
+    opacity: 0.15;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
 
 .header {
     @include main-container();
@@ -79,9 +83,11 @@ body {
         nav {
             ul {
                 column-gap: size(38px);
+
                 .current-menu-item {
                     color: $primaryColor;
                 }
+
                 .wp-block-navigation-item {
                     @include font-size(17px);
                     @include line-height(17px);
@@ -90,8 +96,10 @@ body {
         }
     }
 }
+
 .menu__contacts__btn {
     min-width: min-content;
+
     .wp-block-buttons {
         .wp-block-button {
             display: flex;
@@ -123,7 +131,8 @@ body {
         opacity: .7;
         @include line-height(22px);
         max-width: size(187px);
-        & > ul {
+
+        &>ul {
             row-gap: size(12px);
         }
     }
@@ -141,16 +150,19 @@ body {
         @include line-height(30px);
         margin-top: size(7px);
         margin-bottom: size(15px);
-        & > a {
+
+        &>a {
             text-decoration: none;
         }
     }
+
     &__address {
         font-weight: 500;
         @include font-size(15px);
         @include line-height(27px);
         margin-bottom: size(20px);
         margin-top: size(7px);
+
         @media (max-width: 781px) {
             margin-bottom: 40px;
             margin-top: 15px;
@@ -162,13 +174,15 @@ body {
         font-weight: 600;
         @include font-size(15px);
         @include line-height(18px);
-        & > a {
+
+        &>a {
             text-decoration: none;
         }
     }
 
     &__socials {
         margin-top: size(20px);
+
         @media (max-width: 781px) {
             margin-top: 25px;
         }
@@ -177,12 +191,14 @@ body {
     &__logo {
         margin-top: size(173px);
         margin-bottom: size(27px);
-        & > a {
-            & > img {
+
+        &>a {
+            &>img {
                 filter: brightness(0) invert(1);
             }
         }
     }
+
     &__logotext {
         opacity: .5;
         @include font-size(14px);
@@ -197,18 +213,21 @@ body {
             order: 3;
         }
     }
+
     &__column2 {
         @media (max-width: 781px) {
             width: 45%;
             order: 1;
         }
     }
+
     &__column3 {
         @media (max-width: 781px) {
             width: 45%;
             order: 2;
         }
     }
+
     &__column4 {
         @media (max-width: 781px) {
             order: 4;
@@ -216,14 +235,16 @@ body {
         }
     }
 }
-.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column4,
-.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column1,
-.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column3,
-.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.footer__column2{
+
+.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column.footer__column4,
+.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column.footer__column1,
+.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column.footer__column3,
+.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column.footer__column2 {
     @media (max-width: 781px) {
         flex-basis: auto !important;
     }
 }
+
 .wp-social-link.wp-block-social-link {
     color: #000;
     background-color: #fff;
@@ -239,6 +260,7 @@ body {
 .custom-logo {
     width: size(97px) !important;
     height: size(34px) !important;
+
     @media (max-width: 781px) {
         width: 97px !important;
         height: 34px !important;
@@ -269,8 +291,13 @@ body {
 }
 
 .swiper {
-    background: url("img/rectangle.png") no-repeat center center ;
+    background: url("img/rectangle.png") no-repeat center center;
     background-size: contain;
+}
+
+.salon-header-block {
+    background: url("img/card-type-bg.png") no-repeat;
+    background-size: cover;
 }
 
 .calculator {
@@ -436,8 +463,8 @@ header .wp-container-core-columns-is-layout-3 {
 
 @media (max-width: 992px) {
     .calculator {
-      background: #fff;
-      border-radius: 0;
+        background: #fff;
+        border-radius: 0;
     }
 }
 
@@ -468,7 +495,3 @@ header .wp-container-core-columns-is-layout-3 {
         border-radius: 18px;
     }
 }
-
-
-  
-  

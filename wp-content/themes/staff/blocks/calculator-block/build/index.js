@@ -29,31 +29,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
-* React hook that is used to mark the block wrapper element.
-* It provides all the necessary props like the class name.
-*
-* @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
-*/
+ * React hook that is used to mark the block wrapper element.
+ * It provides all the necessary props like the class name.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
+ */
 
 
 
 
 /**
-* Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
-* Those files can contain any CSS code that gets applied to the editor.
-*
-* @see https://www.npmjs.com/package/@wordpress/scripts#using-css
-*/
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * Those files can contain any CSS code that gets applied to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
 
 
 /**
-* The edit function describes the structure of your block in the context of the
-* editor. This represents what the editor will render when the block is used.
-*
-* @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
-*
-* @return {Element} Element to render.
-*/
+ * The edit function describes the structure of your block in the context of the
+ * editor. This represents what the editor will render when the block is used.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
+ *
+ * @return {Element} Element to render.
+ */
 
 function Edit({
   attributes,
@@ -61,7 +61,8 @@ function Edit({
 }) {
   const {
     subSectionText,
-    title
+    title,
+    annualText
   } = attributes;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
@@ -79,11 +80,17 @@ function Edit({
           onChange: value => setAttributes({
             title: value
           })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u0435\u0436\u0435\u0433\u043E\u0434\u043D\u0430\u044F \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u044F",
+          value: annualText,
+          onChange: value => setAttributes({
+            annualText: value
+          })
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
       ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
-        className: "calculator section"
+        className: 'calculator section'
       }),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "section__sub",
@@ -102,6 +109,9 @@ function Edit({
           title: val
         }),
         className: "calculator-title"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+        className: "calculator__results-text",
+        children: annualText
       })]
     })]
   });
@@ -237,7 +247,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/calculator-block","version":"0.1.0","title":"Calculator Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"}},"supports":{"html":false},"textdomain":"calculator-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/calculator-block","version":"0.1.0","title":"Calculator Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"},"annualText":{"type":"string"}},"supports":{"html":false},"textdomain":"calculator-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

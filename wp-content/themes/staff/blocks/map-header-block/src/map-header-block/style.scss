@@ -1,0 +1,177 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../../template.scss';
+
+.salon-header-block {
+  width: 100%;
+  box-sizing: border-box;
+	overflow: hidden;
+  padding-top: 125px;
+  padding-bottom: calc(0 * (1vw + 1vh));
+  padding-right: calc(0 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+}
+
+@media screen and (max-width: 1050px) {
+  .salon-header-block {
+    padding-left: 20px;
+  }
+}
+
+.header-block-container {
+	display: flex;
+	align-items: center;
+}
+
+
+.header-section-content {
+	width: 50%;
+}
+
+.header-section-img {
+	width: 50%;
+	position: relative;
+	right: -3%;
+}
+
+.header-section-img img {
+	width: 100% !important;
+	height: auto !important;
+	object-fit: cover !important;
+}
+
+.header-uppertext {
+	font-size: size(17px);
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-section-title {
+	margin-top: size(36px);
+	font-size: size(60px);
+	font-weight: 500;
+	color: #313131;
+	max-width: size(590px);
+}
+
+.map-header-btn {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	gap: 11px;
+	margin-bottom: size(86px);
+}
+
+.map-header-btn a {
+	text-decoration: none;
+	border-radius: size(18px);
+	background: linear-gradient(270deg, #578CF2 0%, #1260F5 100%);
+	box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.10);
+	color: #fff;
+	padding: size(22px) size(45px);
+	font-size: size(16px);
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.map-header-btn a:nth-child(2) {
+	color: #1260F5;
+	border: 1px solid #1260F5;
+	background: #fff;
+}
+
+.header-section-description {
+	font-size: size(16px);
+	color: rgba(0, 0, 0, 0.4);
+	width: size(350px);
+	line-height: size(25px);
+}
+
+
+
+//MOBILE
+@media (max-width: 600px) {
+	.salon-header-block {
+		padding-bottom: 0 !important;
+		padding-top: 140px !important;
+		padding-right: 20px !important;
+	}
+
+	.header-uppertext {
+		font-size: 15px;
+		line-height: 110%;
+	}
+
+	.header-section-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header-section-content .map-header-btn {
+		order: 4;
+		margin-top: 55px;
+		margin-bottom: 0;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.map-header-btn a {
+		padding: 26px 47px;
+		border-radius: 18px;
+		font-size: 16px;
+		line-height: 100%;
+	}
+
+	.header-block-container {
+		flex-direction: column;
+	}
+
+	.header-section-under {
+		margin-top: 48px;
+	}
+
+	.header-section-title {
+		font-size: 34px;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 48px;
+		margin-top: 19px;
+		line-height: 110%;
+
+	}
+
+	.header-section-description {
+		font-size: 16px;
+		line-height: size(60px);
+		width: 100%;
+	}
+
+	.header-section-content {
+		width: 100%;
+	}
+
+	.header-section-img {
+		width: 100%;
+		overflow-y: clip;
+		top: 130px;
+		right: 0;
+	}
+}
+
+//MOBILE
+@media (max-width: 432px) {
+	.map-header-btn a {
+		padding: 26px 47px;
+		border-radius: 18px;
+	}
+
+	.header-section-img {
+		padding-bottom: 0 !important;
+		margin-top: 0 !important;
+	}
+
+}

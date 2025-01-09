@@ -175,16 +175,16 @@ function Edit({
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 class: "circle__info-wrapper",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("rightPriceGallon", "your-text-domain"),
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("priceGallon", "your-text-domain"),
                   value: box.rightPriceGallon,
                   onChange: value => updatemapInfo(index, "rightPriceGallon", value)
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("rightGallonText", "your-text-domain"),
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("gallonText", "your-text-domain"),
                   value: box.rightGallonText,
                   onChange: value => updatemapInfo(index, "rightGallonText", value)
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("rightSaleGallonStatesText", "your-text-domain"),
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("saleGallonStatesText", "your-text-domain"),
                 value: box.rightSaleGallonStatesText,
                 onChange: value => updatemapInfo(index, "rightSaleGallonStatesText", value)
               })]
@@ -200,16 +200,16 @@ function Edit({
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 class: "circle__info-wrapper",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("topPriceGallon", "your-text-domain"),
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("priceGallon", "your-text-domain"),
                   value: box.topPriceGallon,
                   onChange: value => updatemapInfo(index, "topPriceGallon", value)
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("topGallonText", "your-text-domain"),
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("gallonText", "your-text-domain"),
                   value: box.topGallonText,
                   onChange: value => updatemapInfo(index, "topGallonText", value)
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("topSaleGallonStatesText", "your-text-domain"),
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("saleGallonStatesText", "your-text-domain"),
                 value: box.topSaleGallonStatesText,
                 onChange: value => updatemapInfo(index, "topSaleGallonStatesText", value)
               })]
@@ -225,16 +225,16 @@ function Edit({
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 class: "circle__info-wrapper",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("bottomPriceGallon", "your-text-domain"),
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("priceGallon", "your-text-domain"),
                   value: box.bottomPriceGallon,
                   onChange: value => updatemapInfo(index, "bottomPriceGallon", value)
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("bottomGallonText", "your-text-domain"),
+                  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("gallonText", "your-text-domain"),
                   value: box.bottomGallonText,
                   onChange: value => updatemapInfo(index, "bottomGallonText", value)
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("bottomSaleGallonStatesText", "your-text-domain"),
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("saleGallonStatesText", "your-text-domain"),
                 value: box.bottomSaleGallonStatesText,
                 onChange: value => updatemapInfo(index, "bottomSaleGallonStatesText", value)
               })]

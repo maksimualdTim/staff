@@ -1,0 +1,165 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/map-header-block/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/map-header-block/style.scss (1) ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.salon-header-block {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 125px;
+  padding-bottom: calc(0 * (1vw + 1vh));
+  padding-left: calc(0 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+}
+
+@media screen and (max-width: 1050px) {
+  .salon-header-block {
+    padding-right: 20px;
+  }
+}
+.header-block-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-section-content {
+  width: 50%;
+}
+
+.header-section-img {
+  width: 50%;
+  position: relative;
+  left: -3%;
+}
+
+.header-section-img img {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.header-uppertext {
+  font-size: calc(0.7083333333 * (1vw + 1vh));
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-section-title {
+  margin-top: calc(1.5 * (1vw + 1vh));
+  font-size: calc(2.5 * (1vw + 1vh));
+  font-weight: 500;
+  color: #313131;
+  max-width: calc(24.5833333333 * (1vw + 1vh));
+}
+
+.map-header-btn {
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 11px;
+  margin-bottom: calc(3.5833333333 * (1vw + 1vh));
+}
+
+.map-header-btn a {
+  text-decoration: none;
+  border-radius: calc(0.75 * (1vw + 1vh));
+  background: linear-gradient(-270deg, #578CF2 0%, #1260F5 100%);
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  color: #fff;
+  padding: calc(0.9166666667 * (1vw + 1vh)) calc(1.875 * (1vw + 1vh));
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.map-header-btn a:nth-child(2) {
+  color: #1260F5;
+  border: 1px solid #1260F5;
+  background: #fff;
+}
+
+.header-section-description {
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  color: rgba(0, 0, 0, 0.4);
+  width: calc(14.5833333333 * (1vw + 1vh));
+  line-height: calc(1.0416666667 * (1vw + 1vh));
+}
+
+@media (max-width: 600px) {
+  .salon-header-block {
+    padding-bottom: 0 !important;
+    padding-top: 140px !important;
+    padding-left: 20px !important;
+  }
+  .header-uppertext {
+    font-size: 15px;
+    line-height: 110%;
+  }
+  .header-section-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-section-content .map-header-btn {
+    order: 4;
+    margin-top: 55px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .map-header-btn a {
+    padding: 26px 47px;
+    border-radius: 18px;
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .header-block-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .header-section-under {
+    margin-top: 48px;
+  }
+  .header-section-title {
+    font-size: 34px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 48px;
+    margin-top: 19px;
+    line-height: 110%;
+  }
+  .header-section-description {
+    font-size: 16px;
+    line-height: calc(2.5 * (1vw + 1vh));
+    width: 100%;
+  }
+  .header-section-content {
+    width: 100%;
+  }
+  .header-section-img {
+    width: 100%;
+    overflow-y: clip;
+    top: 130px;
+    left: 0;
+  }
+}
+@media (max-width: 432px) {
+  .map-header-btn a {
+    padding: 26px 47px;
+    border-radius: 18px;
+  }
+  .header-section-img {
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+}

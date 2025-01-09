@@ -140,14 +140,14 @@ export default function Edit({ attributes, setAttributes }) {
 								<PanelBody title="NORTHEAST">
 									<div class="circle__info-wrapper">
 										<TextControl
-											label={__("rightPriceGallon", "your-text-domain")}
+											label={__("priceGallon", "your-text-domain")}
 											value={box.rightPriceGallon}
 											onChange={(value) =>
 												updatemapInfo(index, "rightPriceGallon", value)
 											}
 										/>
 										<TextareaControl
-											label={__("rightGallonText", "your-text-domain")}
+											label={__("gallonText", "your-text-domain")}
 											value={box.rightGallonText}
 											onChange={(value) =>
 												updatemapInfo(index, "rightGallonText", value)
@@ -155,7 +155,7 @@ export default function Edit({ attributes, setAttributes }) {
 										/>
 									</div>
 									<TextareaControl
-										label={__("rightSaleGallonStatesText", "your-text-domain")}
+										label={__("saleGallonStatesText", "your-text-domain")}
 										value={box.rightSaleGallonStatesText}
 										onChange={(value) =>
 											updatemapInfo(index, "rightSaleGallonStatesText", value)
@@ -174,14 +174,14 @@ export default function Edit({ attributes, setAttributes }) {
 								<PanelBody title="CENTRAL">
 									<div class="circle__info-wrapper">
 										<TextControl
-											label={__("topPriceGallon", "your-text-domain")}
+											label={__("priceGallon", "your-text-domain")}
 											value={box.topPriceGallon}
 											onChange={(value) =>
 												updatemapInfo(index, "topPriceGallon", value)
 											}
 										/>
 										<TextareaControl
-											label={__("topGallonText", "your-text-domain")}
+											label={__("gallonText", "your-text-domain")}
 											value={box.topGallonText}
 											onChange={(value) =>
 												updatemapInfo(index, "topGallonText", value)
@@ -189,7 +189,7 @@ export default function Edit({ attributes, setAttributes }) {
 										/>
 									</div>
 									<TextareaControl
-										label={__("topSaleGallonStatesText", "your-text-domain")}
+										label={__("saleGallonStatesText", "your-text-domain")}
 										value={box.topSaleGallonStatesText}
 										onChange={(value) =>
 											updatemapInfo(index, "topSaleGallonStatesText", value)
@@ -208,14 +208,14 @@ export default function Edit({ attributes, setAttributes }) {
 								<PanelBody title="SOUTHERN">
 									<div class="circle__info-wrapper">
 										<TextControl
-											label={__("bottomPriceGallon", "your-text-domain")}
+											label={__("priceGallon", "your-text-domain")}
 											value={box.bottomPriceGallon}
 											onChange={(value) =>
 												updatemapInfo(index, "bottomPriceGallon", value)
 											}
 										/>
 										<TextareaControl
-											label={__("bottomGallonText", "your-text-domain")}
+											label={__("gallonText", "your-text-domain")}
 											value={box.bottomGallonText}
 											onChange={(value) =>
 												updatemapInfo(index, "bottomGallonText", value)
@@ -223,7 +223,7 @@ export default function Edit({ attributes, setAttributes }) {
 										/>
 									</div>
 									<TextareaControl
-										label={__("bottomSaleGallonStatesText", "your-text-domain")}
+										label={__("saleGallonStatesText", "your-text-domain")}
 										value={box.bottomSaleGallonStatesText}
 										onChange={(value) =>
 											updatemapInfo(index, "bottomSaleGallonStatesText", value)

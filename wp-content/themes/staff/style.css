@@ -436,9 +436,13 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   background: url("img/card-type-bg.png") no-repeat;
   background-size: cover;
 }
-
+.salon-header-block {
+  background: url("img/card-type-bg.png") no-repeat;
+  background-size: cover;
+}
 .calculator {
   background: url('img/calculator-bg.png') no-repeat;
+  background-size: cover;
 }
 .who-section-content .tab-container .content  {
   background: url("img/who-bg.png") no-repeat;
