@@ -31,6 +31,7 @@ require __DIR__ . '/blocks/platform-block/platform-block.php';
 require __DIR__ . '/blocks/who-are-we-block/who-are-we-block.php';
 require __DIR__ . '/blocks/registration-header-block/registration-header-block.php';
 
+require __DIR__ . '/blocks/order-form-block/order-form-block.php';
 require __DIR__ . '/blocks/map-header-block/map-header-block.php';
 require __DIR__ . '/blocks/salon-map-block/salon-map-block.php';
 require __DIR__ . '/blocks/calculator-block/calculator-block.php';

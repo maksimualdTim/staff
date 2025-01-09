@@ -1,0 +1,94 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../../template.scss';
+
+.order-form-block {
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-top: calc(8.3333333333 * (1vw + 1vh));
+	padding-bottom: calc(8.3333333333 * (1vw + 1vh));
+	padding-right: calc(5 * (1vw + 1vh));
+	padding-left: calc(5 * (1vw + 1vh));
+}
+
+.order-form-sub {
+	display: flex;
+	column-gap: size(15px);
+	align-items: center;
+	margin-bottom: size(32px);
+}
+
+.order-form-line {
+	background-color: $primaryColor;
+	height: 1px;
+	@include width(55px);
+}
+
+.order-form-text {
+	color: rgba(0, 0, 0, 0.30);
+	@include font-size(15px);
+	@include line-height(16px);
+}
+
+.order-form-block-container {
+	display: flex;
+	align-items: center;
+}
+
+.order-form-section-title {
+	font-size: size(40px);
+	font-weight: 500;
+	color: #313131;
+	line-height: 130%;
+	max-width: size(850px);
+	margin-bottom: 55px;
+}
+
+.order-form-wrapper {
+	display: flex;
+	align-items: center;
+	gap: size(12px);
+}
+
+.order-form-section-description {
+	font-size: size(13px);
+	color: rgba(0, 0, 0, 0.4);
+	width: size(450px);
+	line-height: 140%;
+}
+
+@media screen and (max-width: 1050px) {
+	.order-form-block {
+		padding-left: 20px;
+	}
+}
+
+//MOBILE
+@media (max-width: 992px) {
+	.order-form-block {
+		padding-bottom: 0 !important;
+		padding-top: 140px !important;
+		padding-right: 20px !important;
+	}
+
+	.order-form-section-title {
+		font-size: 34px;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 39px;
+		line-height: 110%;
+
+	}
+
+	.order-form-section-description {
+		font-size: 16px;
+		line-height: size(60px);
+		width: 100%;
+	}
+}

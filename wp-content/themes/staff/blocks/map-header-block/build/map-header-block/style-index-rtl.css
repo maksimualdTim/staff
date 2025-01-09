@@ -15,8 +15,8 @@
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  padding-top: 125px;
-  padding-bottom: calc(0 * (1vw + 1vh));
+  padding-top: calc(8.3333333333 * (1vw + 1vh));
+  padding-bottom: calc(8.3333333333 * (1vw + 1vh));
   padding-left: calc(0 * (1vw + 1vh));
   padding-right: calc(5 * (1vw + 1vh));
 }
@@ -42,7 +42,6 @@
 }
 
 .header-section-img img {
-  position: relative !important;
   width: 100% !important;
   height: auto !important;
   -o-object-fit: cover !important;
@@ -125,7 +124,6 @@
   }
   .header-block-container {
     flex-direction: column;
-    gap: 40px;
   }
   .header-section-under {
     margin-top: 48px;
