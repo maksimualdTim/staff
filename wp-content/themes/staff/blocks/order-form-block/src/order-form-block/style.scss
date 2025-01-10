@@ -63,6 +63,69 @@
 	line-height: 140%;
 }
 
+.order-form {
+	display: flex;
+	gap: size(25px);
+	align-items: flex-end;
+	margin-bottom: size(47px);
+}
+
+.form-label {
+	color: #545454;
+	font-size: size(15px);
+	font-weight: 400;
+	line-height: 110%;
+}
+
+.form-input {
+	width: size(411px);
+	height: size(67px);
+	padding: 0px 34px;
+	background: #ffffff4a;
+	border-radius: size(18px);
+	border: 1px #C9C9C9 solid;
+	backdrop-filter: blur(50px);
+	color: #54545480;
+	font-size: size(18px);
+	font-weight: 400;
+	line-height: 100%;
+	margin-top: size(13px);
+}
+
+.form-input:focus-visible {
+	outline: none;
+}
+
+.form-submit-btn {
+	width: size(349px);
+	height: size(67px);
+	padding: 0;
+	background: linear-gradient(270deg, #578CF2 0%, #1260F5 100%);
+	box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.10);
+	border-radius: size(18px);
+	justify-content: center;
+	border: none;
+	align-items: center;
+	display: flex;
+	color: #fff;
+	font-size: size(16px);
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.order-form p:nth-child(3) {
+	display: flex;
+}
+
+.form-label span span {
+	position: absolute;
+	top: 45px;
+}
+
+.order-form p:nth-child(3) span {
+	display: none;
+}
+
 @media screen and (max-width: 1050px) {
 	.order-form-block {
 		padding-left: 20px;
@@ -72,23 +135,82 @@
 //MOBILE
 @media (max-width: 992px) {
 	.order-form-block {
-		padding-bottom: 0 !important;
-		padding-top: 140px !important;
-		padding-right: 20px !important;
+		padding-bottom: 126px;
+		padding-top: 98px;
+		padding-right: 20px;
+	}
+
+	.order-form-line {
+		width: 55px;
+	}
+
+	.order-form-text {
+		font-size: 15px;
+		line-height: 110%;
 	}
 
 	.order-form-section-title {
-		font-size: 34px;
+		font-size: 26px;
 		width: 100%;
 		max-width: 100%;
 		margin-bottom: 39px;
-		line-height: 110%;
+		line-height: 130%;
+	}
 
+	.order-form-wrapper {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	.order-form-section-description {
+		font-size: 15px;
+		line-height: 140%;
+		width: 100%;
+	}
+
+	.order-form {
+		flex-direction: column;
+		gap: 32px;
+		align-items: flex-start;
+		margin-bottom: 52px;
+	}
+
+	.form-label {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.form-label span {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.form-label span span {
+		position: relative;
+		top: 0;
+	}
+
+	.form-input {
+		width: 100%;
+		height: 67px;
+		padding: 0px 25px;
+		border-radius: 18px;
 		font-size: 16px;
-		line-height: size(60px);
+		margin-top: 0;
+		box-sizing: border-box;
+	}
+
+	.form-submit-btn {
+		width: 100%;
+		height: 67px;
+		border-radius: 18px;
+		font-size: 16px;
+	}
+
+	.order-form p {
 		width: 100%;
 	}
 }

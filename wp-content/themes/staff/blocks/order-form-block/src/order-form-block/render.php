@@ -14,8 +14,10 @@
 
 		<h2 class="order-form-section-title"><?= $attributes['title'] ?></h2>
 
+		<?= do_shortcode('[contact-form-7 id="d9416d4" title="referal-page-form2"]')?>
+
 		<div class="order-form-wrapper">
-		<svg
+			<svg
 						width="21"
 						height="21"
 						viewBox="0 0 21 21"
