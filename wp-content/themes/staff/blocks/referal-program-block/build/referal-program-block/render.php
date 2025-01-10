@@ -4,7 +4,7 @@
  */
 $items = $attributes['items'] ?? []; ?>
 
-<section class="referal-program section" <?= get_block_wrapper_attributes() ?>>
+<section class="referal-program" <?= get_block_wrapper_attributes() ?>>
 	<div class="referal-program__sub">
 			<div class="referal-program__line"></div>
 			<div class="referal-program__text"><?= $attributes['subSectionText'] ?></div>

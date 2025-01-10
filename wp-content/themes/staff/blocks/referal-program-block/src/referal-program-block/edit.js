@@ -80,7 +80,7 @@ export default function Edit({ attributes, setAttributes }) {
 
 
 
-			<section {...useBlockProps({ className: "referal-program section" })}>
+			<section {...useBlockProps({ className: "referal-program" })}>
 				<div className="referal-program__sub">
 					<div className="referal-program__line"></div>
 					<div className="referal-program__text">{subSectionText}</div>
