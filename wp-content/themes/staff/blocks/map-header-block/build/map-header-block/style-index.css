@@ -58,7 +58,7 @@
   font-size: calc(2.5 * (1vw + 1vh));
   font-weight: 500;
   color: #313131;
-  max-width: calc(24.5833333333 * (1vw + 1vh));
+  line-height: 110%;
 }
 
 .map-header-btn {
@@ -85,13 +85,13 @@
 .map-header-btn a:nth-child(2) {
   color: #1260F5;
   border: 1px solid #1260F5;
-  background: #fff;
+  background: transparent;
 }
 
 .header-section-description {
   font-size: calc(0.6666666667 * (1vw + 1vh));
   color: rgba(0, 0, 0, 0.4);
-  width: calc(14.5833333333 * (1vw + 1vh));
+  width: 350px;
   line-height: calc(1.0416666667 * (1vw + 1vh));
 }
 

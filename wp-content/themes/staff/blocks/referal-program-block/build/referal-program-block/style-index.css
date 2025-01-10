@@ -86,8 +86,8 @@
   align-items: flex-start;
 }
 .referal-program__number {
-  width: 57px;
-  height: 57px;
+  width: calc(2.375 * (1vw + 1vh));
+  height: calc(2.375 * (1vw + 1vh));
   background: #1260F5;
   border-radius: 50%;
   justify-content: center;
@@ -97,6 +97,10 @@
   font-size: calc(0.8333333333 * (1vw + 1vh));
   font-weight: 600;
   line-height: 160%;
+}
+.referal-program__number span {
+  position: relative;
+  top: 2px;
 }
 .referal-program__content {
   display: flex;
@@ -137,6 +141,8 @@
   }
   .referal-program__number {
     font-size: 20px;
+    width: 57px;
+    height: 57px;
   }
   .referal-program-content__title {
     font-size: 20px;

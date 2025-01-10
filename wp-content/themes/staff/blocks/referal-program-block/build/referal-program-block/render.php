@@ -15,7 +15,7 @@ $items = $attributes['items'] ?? []; ?>
 		<ul class="referal-program__list" <?= get_block_wrapper_attributes() ?>>
 		<?php foreach ($items as $key => $item): ?>
 			<li class="referal-program__item">
-				<span class="referal-program__number"><?= $key + 1 ?></span>
+				<div class="referal-program__number"><span><?= $key + 1 ?></span></div>
 				<div class="referal-program__content">
 					<h3 class="referal-program-content__title"><?= esc_html($item['title']) ?></h3>
 

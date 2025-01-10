@@ -55,7 +55,7 @@
 	font-size: size(60px);
 	font-weight: 500;
 	color: #313131;
-	max-width: size(590px);
+	line-height: 110%;
 }
 
 .map-header-btn {
@@ -81,16 +81,15 @@
 .map-header-btn a:nth-child(2) {
 	color: #1260F5;
 	border: 1px solid #1260F5;
-	background: #fff;
+	background: transparent;
 }
 
 .header-section-description {
 	font-size: size(16px);
 	color: rgba(0, 0, 0, 0.4);
-	width: size(350px);
+	width: 350px;
 	line-height: size(25px);
 }
-
 
 
 //MOBILE
