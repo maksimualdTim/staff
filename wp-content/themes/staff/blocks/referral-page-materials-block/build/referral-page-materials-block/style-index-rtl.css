@@ -1,0 +1,168 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referral-page-materials-block/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referral-page-materials-block/style.scss (1) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.referral_page_materials {
+  width: 100%;
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1050px) {
+  .referral_page_materials {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.referral_page_materials__title {
+  color: #313131;
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  font-weight: 400;
+  margin-bottom: calc(3.4166666667 * (1vw + 1vh));
+  margin-top: calc(1.875 * (1vw + 1vh));
+}
+
+.referral_page_materials__container {
+  display: flex;
+  gap: calc(0.875 * (1vw + 1vh));
+}
+
+.referral_page_materials__single_container {
+  padding: calc(2.4166666667 * (1vw + 1vh)) calc(1.6666666667 * (1vw + 1vh)) calc(2.6666666667 * (1vw + 1vh)) calc(1.6666666667 * (1vw + 1vh));
+  background: #fff;
+  border-radius: calc(1.25 * (1vw + 1vh));
+  width: 50%;
+}
+
+.referral_page_materials__single_block_icon img {
+  width: calc(2.375 * (1vw + 1vh));
+  margin-bottom: calc(2.0416666667 * (1vw + 1vh));
+}
+
+.referral_page_materials__single_block_title {
+  margin-top: 0;
+  margin-bottom: calc(1.25 * (1vw + 1vh));
+  font-size: calc(0.8333333333 * (1vw + 1vh));
+}
+
+.referral_page_materials__single_block_text {
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 160%;
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  margin-bottom: calc(1.7916666667 * (1vw + 1vh));
+}
+
+.referral_page_materials__single_block_img {
+  border-radius: calc(0.8333333333 * (1vw + 1vh));
+}
+
+.referral_page_materials__single_block_img img {
+  width: 100%;
+}
+
+.referral_page_materials__group_container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.8333333333 * (1vw + 1vh));
+  width: 50%;
+}
+
+.referral_page_materials__group_item {
+  background: #fff;
+  border-radius: calc(1.25 * (1vw + 1vh));
+  padding: calc(1.5 * (1vw + 1vh)) calc(1.6666666667 * (1vw + 1vh)) calc(2.125 * (1vw + 1vh)) calc(1.6666666667 * (1vw + 1vh));
+  display: flex;
+  gap: calc(1.75 * (1vw + 1vh));
+}
+
+.referral_page_materials__group_icon img {
+  width: calc(2.375 * (1vw + 1vh));
+  margin-bottom: calc(2.0416666667 * (1vw + 1vh));
+}
+
+.referral_page_materials__group_title {
+  font-size: calc(0.8333333333 * (1vw + 1vh));
+  margin-bottom: calc(1.2916666667 * (1vw + 1vh));
+  margin-top: 0;
+}
+
+.referral_page_materials__group_text {
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.referral_page_materials__group_img {
+  width: calc(8.875 * (1vw + 1vh));
+  border-radius: calc(0.75 * (1vw + 1vh));
+}
+
+@media (max-width: 600px) {
+  .referral_page_materials__container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .referral_page_materials__single_container {
+    padding: 35px 30px;
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+  }
+  .referral_page_materials__group_item_side {
+    width: 100%;
+    border: 30px;
+  }
+  .referral_page_materials__group_container {
+    width: 100%;
+  }
+  .referral_page_materials__group_item {
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 34px 30px;
+  }
+  .referral_page_materials__group_item:first-child {
+    margin-bottom: 30px;
+  }
+  .referral_page_materials__group_img {
+    width: 100%;
+    height: 132px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .referral_page_materials__group_img img {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .referral_page_materials__single_block_icon img, .referral_page_materials__group_icon img {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 48px;
+  }
+  .referral_page_materials__group_title, .referral_page_materials__single_block_title {
+    font-size: 20px;
+    margin-bottom: 31px;
+  }
+  .referral_page_materials__single_block_text, .referral_page_materials__group_text {
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .referral_page_materials__single_block_text {
+    margin-bottom: 46px;
+  }
+  .referral_page_materials__single_block_img, .referral_page_materials__group_img {
+    border-radius: 18px;
+  }
+}

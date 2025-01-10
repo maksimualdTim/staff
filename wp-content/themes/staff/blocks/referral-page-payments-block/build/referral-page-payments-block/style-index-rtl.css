@@ -1,0 +1,90 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referral-page-payments-block/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referral-page-payments-block/style.scss (1) ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.referral_page_payments {
+  width: 100%;
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1050px) {
+  .referral_page_payments {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.referral_page_payments__title {
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  margin-top: calc(1.8333333333 * (1vw + 1vh));
+  margin-bottom: calc(2.5833333333 * (1vw + 1vh));
+  color: #313131;
+  font-weight: 400;
+}
+
+.referral_page_payments__blocks__container {
+  display: flex;
+  gap: calc(0.8333333333 * (1vw + 1vh));
+}
+
+.referral_page_payments__block {
+  flex: 1;
+  background: #fff;
+  padding: calc(2.125 * (1vw + 1vh)) calc(1.7083333333 * (1vw + 1vh)) calc(1.9166666667 * (1vw + 1vh)) calc(1.7083333333 * (1vw + 1vh));
+  border-radius: calc(0.75 * (1vw + 1vh));
+}
+
+.referral_page_payments__block__img {
+  width: calc(5.5 * (1vw + 1vh));
+  margin-bottom: calc(1.6666666667 * (1vw + 1vh));
+}
+
+.referral_page_payments__block__title {
+  font-size: calc(0.5416666667 * (1vw + 1vh));
+  color: #1260F5;
+  margin-top: 0;
+  margin-bottom: calc(0.7916666667 * (1vw + 1vh));
+}
+
+.referral_page_payments__block__text {
+  color: #A2A2A2;
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  line-height: 110%;
+}
+
+@media (max-width: 600px) {
+  .referral_page_payments__title {
+    font-size: 28px;
+    margin-bottom: 36px;
+    margin-top: 40px;
+  }
+  .referral_page_payments__blocks__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .referral_page_payments__block {
+    padding: 45px 34px 57px 34px;
+    border-radius: 18px;
+  }
+  .referral_page_payments__block__img {
+    width: 96px;
+    margin-bottom: 43px;
+  }
+  .referral_page_payments__block__title {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  .referral_page_payments__block__text {
+    font-size: 16px;
+  }
+}

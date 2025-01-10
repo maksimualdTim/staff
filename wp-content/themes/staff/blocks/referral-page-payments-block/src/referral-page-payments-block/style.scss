@@ -1,0 +1,88 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../../template.scss';
+
+.referral_page_payments {
+	@include main-container();
+}
+
+
+.referral_page_payments__title {
+	font-size: size(40px);
+	margin-top: size(44px);
+	margin-bottom: size(62px);
+	color: #313131;
+	font-weight: 400;
+}
+
+.referral_page_payments__blocks__container {
+	display: flex;
+	gap: size(20px);
+}
+
+.referral_page_payments__block {
+	flex: 1;
+	background: #fff;
+	padding: size(51px) size(41px) size(46px) size(41px);
+	border-radius: size(18px);
+}
+
+.referral_page_payments__block__img {
+	width: size(132px);
+	margin-bottom: size(40px);
+}
+
+.referral_page_payments__block__title {
+	font-size: size(13px);
+	color: #1260F5;
+	margin-top: 0;
+	margin-bottom: size(19px);
+}
+
+.referral_page_payments__block__text {
+	color: #A2A2A2;
+	font-size: size(16px);
+	line-height: 110%;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+	.referral_page_payments__title {
+		font-size: 28px;
+		margin-bottom: 36px;
+		margin-top: 40px;
+	}
+	.referral_page_payments__blocks__container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.referral_page_payments__block {
+		padding: 45px 34px 57px 34px;
+		border-radius: 18px;
+	}
+
+	.referral_page_payments__block__img {
+		width: 96px;
+		margin-bottom: 43px;
+	}
+
+	.referral_page_payments__block__title {
+		font-size: 13px;
+		margin-bottom: 18px;
+	}
+
+	.referral_page_payments__block__text {
+		font-size: 16px;
+	}
+
+}

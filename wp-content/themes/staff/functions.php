@@ -30,6 +30,11 @@ require __DIR__ . '/blocks/registration-stages-block/registration-stages-block.p
 require __DIR__ . '/blocks/platform-block/platform-block.php';
 require __DIR__ . '/blocks/who-are-we-block/who-are-we-block.php';
 require __DIR__ . '/blocks/registration-header-block/registration-header-block.php';
+require __DIR__ . '/blocks/referral-page-card-block/referral-page-card-block.php';
+require __DIR__ . '/blocks/referral-page-payments-block/referral-page-payments-block.php';
+require __DIR__ . '/blocks/referral-page-materials-block/referral-page-materials-block.php';
+require __DIR__ . '/blocks/referral-page-header-block/referral-page-header-block.php';
+require __DIR__ . '/blocks/referral-page-form-first/referral-page-form-first.php';
 
 require __DIR__ . '/blocks/order-form-block/order-form-block.php';
 require __DIR__ . '/blocks/map-header-block/map-header-block.php';

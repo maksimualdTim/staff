@@ -460,6 +460,17 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   background-size: cover;
   background-position: center;
 }
+.referral_page_header {
+  background: url("img/referral-pg-header.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.referral_page_form_container {
+  background: url("img/referral-page-form-first.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 

@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/referral-page-header-block",
+	"version": "0.1.0",
+	"title": "Referral Page Header Block",
+	"category": "staff-category",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"subSectionText": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"items": {
+			"type": "array",
+			"default": []
+		},
+		"iconUrl": {
+			"type": "string"
+		},
+		"imgUrl": {
+			"type": "string"
+		},
+		"firstButtonText": {
+			"type": "string"
+		},
+		"firstButtonUrl": {
+			"type": "string"
+		},
+		"secondButtonText": {
+			"type": "string"
+		},
+		"secondButtonUrl": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "referral-page-header-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

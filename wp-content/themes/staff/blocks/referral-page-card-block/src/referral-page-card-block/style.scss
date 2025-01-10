@@ -1,0 +1,254 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+
+@import '../../../../template.scss';
+
+
+
+.referral_page__cards__block {
+
+	@include main-container();
+	background: white;
+}
+
+
+
+
+
+.referral_page__cards__block_title {
+	font-size: size(40px);
+	color: #313131;
+	margin-top: size(44px);
+	margin-bottom: size(72px);
+	line-height: 120%;
+	font-weight: 400;
+}
+
+.referral_cards__top_blocks_container {
+	display: flex;
+	gap: size(24px);
+}
+
+.referral_cards__top_block {
+	padding: size(72px) size(54px) size(54px) size(54px);
+	background: #FAFAFA;
+	flex: 1;
+	border-radius: size(30px);
+}
+
+.referral_cards__top_block_cont {
+	display: flex;
+	align-items: end;
+	margin-bottom: size(28px);
+}
+.referral_cards__top_title {
+	margin: 0;
+	margin-bottom: size(-18px);
+	font-size: size(96px);
+	background: linear-gradient(to top, #ADC9FF, #1360F5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	line-height: 100%;
+}
+
+.referral_cards__top_side {
+	color: rgba(84,84,84, .4);
+	margin-left: size(21px);
+	font-size: size(22px);
+}
+
+.referral_cards__top_under {
+	font-size: size(18px);
+	color: rgba(0,0,0, .8);
+}
+
+
+
+
+.referral_page__cards__block__between {
+	margin-top: size(25px);
+	margin-bottom: size(25px);
+	background: #303030;
+	border-radius: size(100px);
+	display: flex;
+	width: fit-content;
+	padding: size(17px) size(38px);
+}
+
+.referral_page__cards__block__between span{
+	width: size(16px);
+	height: size(16px);
+	background: white;
+	border-radius: 100%;
+	margin-right: size(12px);
+}
+.referral_page__cards__block__between p {
+	color: white;
+	font-size: size(18px);
+}
+
+
+.referral_cards__bottom_blocks_container {
+	display: flex;
+	gap: size(24px);
+	margin-bottom: size(70px);
+}
+
+.referral_cards__bottom_block {
+	padding: size(72px) size(54px) size(54px) size(54px);
+	background: #fff;
+	border: solid #1260F5 size(1px);
+	flex: 1;
+	border-radius: size(30px);
+}
+
+.referral_cards__bottom_block:last-child {
+	border: none;
+}
+
+
+.referral_cards__bottom_block:last-child {
+	background: linear-gradient(to left, #ADC9FF, #1360F5);
+}
+
+.referral_cards__bottom_title {
+	margin: 0;
+	font-size: size(96px);
+	background: linear-gradient(to top, #ADC9FF, #1360F5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	margin-bottom: size(20px);
+}
+
+.referral_cards__bottom_under {
+	font-size: size(18px);
+	color: rgba(0,0,0, .8);
+}
+
+
+
+.referral__cards_under_text {
+	font-size: size(16px);
+	line-height: 160%;
+	color: rgba(0,0,0, .4);
+}
+.referral__cards_under_text.first {
+	margin-bottom: size(40px);
+}
+
+.referral_cards__bottom_block_upper {
+	color: rgba(255,255,255, .6);
+	font-size: size(14px)
+}
+
+.referral_cards__bottom_middle {
+	color: #fff;
+	font-size: size(25px);
+	margin-bottom: size(44px);
+	margin-top: size(15px);
+}
+
+.referral_cards__bottom_link a{
+	color: #545454;
+	background: #fff;
+	text-decoration: none;
+	padding: size(23px) size(47px);
+	border-radius: size(18px);
+	display: block;
+	width: fit-content;
+	font-size: size(18px);
+}
+
+
+
+
+@media (max-width: 600px) {
+	.referral_page__cards__block_title {
+		font-size: 28px;
+		line-height: 120%;
+		margin-bottom: 39px;
+		margin-top: 38px;
+	}
+	.referral_cards__top_blocks_container, .referral_cards__bottom_blocks_container{
+		flex-direction: column;
+		gap: 20px;
+	}
+	.referral_cards__bottom_blocks_container {
+		margin-bottom: 50px;
+	}
+
+	.referral_cards__top_block , .referral_cards__bottom_block{
+		padding: 48px 35px 35px 35px;
+	}
+
+	.referral_cards__top_block_cont {
+		margin-bottom: 30px;
+	}
+	.referral_cards__top_title , .referral_cards__bottom_title {
+		font-size: 80px;
+	}
+
+	.referral_cards__top_side {
+		margin-left: 20px;
+		font-size: 22px;
+	}
+
+	.referral_cards__top_under , .referral_cards__bottom_under{
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	.referral_cards__bottom_title {
+		margin-bottom: 20px;
+	}
+	.referral_page__cards__block__between {
+		margin: 30px 0;
+		padding: 17px 38px;
+	}
+	.referral_page__cards__block__between span{
+		width: 16px;
+		height: 16px;
+		margin-right: 11px;
+	}
+	.referral_page__cards__block__between p {
+		font-size: 18px;
+	}
+	.referral_cards__bottom_block_upper {
+		font-size: 14px;
+	}
+	.referral_cards__bottom_middle {
+		font-size: 25px;
+		margin-top: 16px;
+		margin-bottom: 43px;
+		font-weight: 400;
+		line-height: 120%;
+	}
+	.referral_cards__bottom_link a {
+		padding: 22px 47px;
+		font-size: 16px;
+		border-radius: 18px;
+	}
+
+	.referral_cards__bottom_block, .referral_cards__top_block{
+		border-radius: 30px;
+	}
+
+	.referral__cards_under_text {
+		font-size: 16px;
+		line-height: 160%;
+	}
+	.referral__cards_under_text.first {
+		margin-bottom: 40px;
+	}
+
+}

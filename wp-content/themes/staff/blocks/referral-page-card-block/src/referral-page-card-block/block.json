@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/referral-page-card-block",
+	"version": "0.1.0",
+	"title": "Referral Page Card Block",
+	"category": "staff-category",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"subSectionText": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"upperItems": {
+			"type": "array",
+			"default": []
+		},
+		"betweenSectionText": {
+			"type": "string"
+		},
+		"bottomItems": {
+			"type": "array",
+			"default": []
+		},
+		"underSectionText": {
+			"type": "string"
+		},
+		"underSectionTextSec": {
+			"type": "string"
+		},
+		"singleCardTitle": {
+			"type": "string"
+		},
+		"singleCardUpper": {
+			"type": "string"
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Кнопка"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": "#"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "referral-page-card-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

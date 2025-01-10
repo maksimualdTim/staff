@@ -1,0 +1,220 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referral-page-form-first/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/referral-page-form-first/style.scss (1) ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.referral_page_form_first {
+  width: 100%;
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+  background: #fff;
+}
+@media screen and (max-width: 1050px) {
+  .referral_page_form_first {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.referral_page_form_first__title {
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  color: #545454;
+  margin-bottom: calc(1.125 * (1vw + 1vh));
+}
+
+.referral_page_form_first__underTitleText {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: calc(0.625 * (1vw + 1vh));
+  margin-bottom: calc(3.25 * (1vw + 1vh));
+}
+
+.referral_page_form_container {
+  border-radius: calc(0.75 * (1vw + 1vh));
+  padding: calc(3.3333333333 * (1vw + 1vh)) calc(3.8333333333 * (1vw + 1vh));
+  background: #0a4b78;
+  margin-bottom: calc(2.625 * (1vw + 1vh));
+}
+
+.referral_page_form_container__inner {
+  display: flex;
+  align-items: center;
+}
+
+.referral_page_form_container__inner svg {
+  width: calc(0.9583333333 * (1vw + 1vh));
+  height: calc(0.9583333333 * (1vw + 1vh));
+  margin-left: calc(0.625 * (1vw + 1vh));
+}
+
+.referral_page_form_first__formTitle {
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  margin-bottom: calc(3.7916666667 * (1vw + 1vh));
+  color: #fff;
+}
+
+.referral_page_form_first__formUnderText {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: calc(0.5416666667 * (1vw + 1vh));
+  line-height: 140%;
+  width: 31%;
+}
+
+.referral_page_form_first__underSectionText {
+  color: #545454;
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  line-height: 150%;
+}
+
+.referral_page_form_first_container {
+  display: flex;
+  align-items: end;
+  gap: calc(1.3333333333 * (1vw + 1vh));
+}
+
+.referral_page_form_first_label {
+  display: flex !important;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: calc(0.625 * (1vw + 1vh));
+  position: relative;
+}
+
+.referral_page_form_first_label span span {
+  position: absolute;
+  bottom: -10;
+}
+
+.referral_page_form_container .wpcf7 {
+  margin-bottom: calc(2.375 * (1vw + 1vh));
+}
+
+.referral_page_form_first_label span {
+  margin-top: calc(0.625 * (1vw + 1vh));
+}
+
+.referral_page_form_first_input {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: calc(1.125 * (1vw + 1vh)) calc(1.4583333333 * (1vw + 1vh));
+  border-radius: calc(0.75 * (1vw + 1vh));
+  font-size: calc(0.75 * (1vw + 1vh));
+}
+
+.referral_page_form_first_label, .referral_page_form_first_btn {
+  flex: 1;
+}
+
+.referral_page_form_first_container .wpcf7-spinner {
+  display: none;
+}
+
+.referral_page_form_first_input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: calc(0.75 * (1vw + 1vh));
+}
+
+.referral_page_form_first_input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: calc(0.75 * (1vw + 1vh));
+}
+
+.referral_page_form_first_btn {
+  color: #1260F5;
+  background: #FCF8FF;
+  border-radius: calc(0.75 * (1vw + 1vh));
+  border: none;
+  text-align: center;
+  padding: calc(1.125 * (1vw + 1vh)) calc(1.4583333333 * (1vw + 1vh));
+  width: calc(14.4583333333 * (1vw + 1vh));
+  height: -moz-max-content;
+  height: max-content;
+  font-size: calc(0.75 * (1vw + 1vh));
+}
+
+@media (max-width: 600px) {
+  .referral_page_form_first__title {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 46px;
+  }
+  .referral_page_form_first__underTitleText {
+    margin-bottom: 54px;
+    font-size: 15px;
+  }
+  .referral_page_form_container {
+    border-radius: 18px;
+    margin-bottom: 55px;
+    padding: 54px 35px;
+  }
+  .referral_page_form_first_label {
+    font-size: 14px;
+  }
+  .referral_page_form_first_label span {
+    margin-top: 13px;
+  }
+  .referral_page_form_first__formTitle {
+    margin-top: 0px;
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .referral_page_form_first_container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .referral_page_form_first_label:first-child, .referral_page_form_first_label:nth-child(2) {
+    margin-left: 0;
+  }
+  .referral_page_form_first_btn, .referral_page_form_first_label {
+    width: 100%;
+  }
+  .referral_page_form_first_input {
+    width: -webkit-fill-available;
+    padding: 28px 26px;
+    border-radius: 18px;
+  }
+  .referral_page_form_first_input::-moz-placeholder {
+    font-size: 15px;
+  }
+  .referral_page_form_first_input::placeholder {
+    font-size: 15px;
+  }
+  .referral_page_form_first_btn {
+    padding: 28px 26px;
+    border-radius: 18px;
+    font-size: 15px;
+  }
+  .referral_page_form_container__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .referral_page_form_container__inner svg {
+    margin-bottom: 17px;
+    width: 21px;
+    height: 21px;
+  }
+  .referral_page_form_first__formUnderText {
+    font-size: 13px;
+    line-height: 140%;
+    width: 100%;
+  }
+  .referral_page_form_first_label span span {
+    left: 0;
+    top: -3px;
+  }
+  .referral_page_form_first__underSectionText {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .referral_page_form_first__underSectionText:first-child {
+    background: black;
+  }
+}

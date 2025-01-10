@@ -1,0 +1,167 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+@import '../../../../template.scss';
+
+
+
+.referral_page_materials {
+
+	@include main-container();
+}
+
+
+
+
+.referral_page_materials__title {
+	color: #313131;
+	font-size: size(40px);
+	font-weight: 400;
+	margin-bottom: size(82px);
+	margin-top: size(45px);
+}
+
+.referral_page_materials__container {
+	display: flex;
+	gap: size(21px);
+}
+
+.referral_page_materials__single_container {
+	padding: size(58px) size(40px) size(64px) size(40px);
+	background: #fff;
+	border-radius: size(30px);
+	width: 50%;
+}
+
+.referral_page_materials__single_block_icon img{
+	width: size(57px);
+	margin-bottom: size(49px);
+}
+
+.referral_page_materials__single_block_title {
+	margin-top: 0;
+	margin-bottom: size(30px);
+	font-size: size(20px);
+}
+
+.referral_page_materials__single_block_text {
+	color: rgba(0,0,0, .4);
+	line-height: 160%;
+	font-size: size(14px);
+	margin-bottom: size(43px);
+}
+
+.referral_page_materials__single_block_img {
+	border-radius: size(20px);
+}
+.referral_page_materials__single_block_img img{
+	width: 100%;
+}
+
+.referral_page_materials__group_container {
+	display: flex;
+	flex-direction: column;
+	gap: size(20px);
+	width: 50%;
+}
+
+.referral_page_materials__group_item {
+	background: #fff;
+	border-radius: size(30px);
+	padding: size(36px)  size(40px) size(51px) size(40px);
+	display: flex;
+	gap: size(42px);
+}
+
+.referral_page_materials__group_item_side {}
+
+.referral_page_materials__group_icon img{
+	width: size(57px);
+	margin-bottom: size(49px);
+}
+
+.referral_page_materials__group_title {
+	font-size: size(20px);
+	margin-bottom: size(31px);
+	margin-top: 0;
+}
+
+.referral_page_materials__group_text {
+	font-size: size(14px);
+	line-height: 160%;
+	color: rgba(0,0,0, .4);
+}
+
+.referral_page_materials__group_img {
+	width: size(213px);
+	border-radius: size(18px);
+}
+
+
+@media (max-width: 600px) {
+	.referral_page_materials__container {
+		flex-direction: column;
+		gap: 0;
+	}
+	.referral_page_materials__single_container {
+		padding: 35px 30px;
+		width: 100%;
+		border-radius: 30px;
+		margin-bottom: 30px;
+	}
+
+	.referral_page_materials__group_item_side {
+		width: 100%;
+		border: 30px;
+	}
+	.referral_page_materials__group_container {
+		width: 100%;
+	}
+
+	.referral_page_materials__group_item {
+		flex-direction: column;
+		border-radius: 30px;
+		padding: 34px 30px;
+	}
+	.referral_page_materials__group_item:first-child {
+		margin-bottom: 30px;
+	}
+	.referral_page_materials__group_img {
+		width: 100%;
+		height: 132px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.referral_page_materials__group_img img {
+		width: 100%;
+		height: max-content;
+
+	}
+	.referral_page_materials__single_block_icon img, .referral_page_materials__group_icon img{
+		width: 57px;
+		height: 57px;
+		margin-bottom: 48px;
+	}
+
+	.referral_page_materials__group_title, .referral_page_materials__single_block_title {
+		font-size: 20px;
+		margin-bottom: 31px;
+	}
+	.referral_page_materials__single_block_text, .referral_page_materials__group_text {
+		font-size: 14px;
+		line-height: 160%;
+	}
+	.referral_page_materials__single_block_text {
+		margin-bottom: 46px;
+	}
+	.referral_page_materials__single_block_img, .referral_page_materials__group_img {
+		border-radius: 18px;
+	}
+}

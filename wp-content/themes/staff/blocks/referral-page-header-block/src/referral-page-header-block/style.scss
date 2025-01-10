@@ -1,0 +1,199 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+@import '../../../../template.scss';
+
+.referral_page_header{
+	@include main-container();
+
+	overflow: hidden;
+	padding-bottom: size(173px) !important;
+	padding-top: size(155px) !important;
+}
+
+
+
+.bread-crumbs {
+	margin-bottom: size(100px);
+}
+
+.bread-crumbs a{
+	text-decoration: none;
+	font-size: size(15px);
+}
+
+.bread-crumbs a:first-child{
+	color: rgba(0,0,0, 0.6);
+}
+.bread-crumbs a:last-child, .bread-crumbs span {
+	color: rgba(0,0,0, 0.3);
+	margin-left: size(18px);
+}
+
+
+.referral_page_header__top__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	margin-bottom: size(63px);
+	margin-top: size(40px);
+}
+.referral_page_header__tittle {
+	margin: 0;
+	font-size: size(60px);
+	line-height: 110%;
+	color: #313131;
+	font-weight: 400;
+	width: 42%;
+
+}
+
+.referral_page_header__items {
+}
+
+.referral_page_header__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: size(18px);
+
+}
+
+.referral_page_header__item span{
+	width: size(18px);
+	height: size(18px);
+	background: #1260F5;
+	border-radius: 100%;
+	margin-right: size(32px);
+}
+
+.referral_page_header__item__text {
+	font-size: size(16px);
+	color: rgba(0,0,0, .4);
+}
+
+.referral_page_header__banner {
+	padding: size(23px) size(25px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: size(30px);
+	height: size(387px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.referral_page_header__banner__icon {
+	width: size(71px);
+	height: size(71px);
+}
+
+
+
+.referral_page_header__banner__img {
+}
+
+.referral_page_header__banner__img img {
+}
+
+
+.referral_page_header__banner__link {
+	text-decoration: none;
+	border-radius: size(18px);
+	padding: size(28px) size(56px);
+	display: inline-block;
+	font-size: size(16px);
+}
+
+.referral_page_header__banner__link:first-child {
+	color: #fff;
+	background: linear-gradient(to left, #578CF2, #1260F5);
+	margin-right: size(15px);
+
+}
+.referral_page_header__banner__link:last-child {
+	color: #545454;
+	background: #fff;
+}
+
+
+
+@media (max-width: 600px) {
+
+
+	.bread-crumbs {
+		margin-bottom: 72px;
+	}
+
+	.bread-crumbs a {
+		font-size: 15px;
+	}
+	.bread-crumbs a:last-child, .bread-crumbs span {
+		margin-left: 18px;
+	}
+
+
+
+
+
+
+	.referral_page_header__top__container {
+		flex-direction: column;
+		margin-bottom: 47px;
+	}
+
+	.referral_page_header__tittle {
+		width: 100%;
+		margin-bottom: 49px;
+		font-size: 34px;
+		line-height: 110%;
+	}
+
+	.referral_page_header__item {
+		margin-bottom: 18px;
+	}
+	.referral_page_header__item:last-child {
+		margin-bottom: 0px;
+	}
+
+
+	.referral_page_header__item span{
+		height: 18px;
+		width: 18px;
+		margin-right: 15px;
+	}
+
+	.referral_page_header__item__text {
+		font-size: 16px;
+	}
+
+	.referral_page_header__banner {
+		padding: 29px 30px;
+		justify-content: end;
+		height: 292px;
+	}
+
+	.referral_page_header__banner__icon {
+		display: none;
+	}
+
+	.referral_page_header__banner__links {
+		flex-direction: column;
+		display: flex;
+	}
+
+	.referral_page_header__banner__link {
+		width: fit-content;
+		font-size: 16px;
+		padding: 28px 57px;
+		border-radius: 18px;
+	}
+	.referral_page_header__banner__link:first-child {
+		margin-bottom: 12px;
+	}
+
+}

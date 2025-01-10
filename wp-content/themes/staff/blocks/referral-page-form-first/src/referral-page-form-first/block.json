@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/referral-page-form-first",
+	"version": "0.1.0",
+	"title": "Referral Page Form First",
+	"category": "staff-category",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+
+		"title": {
+			"type": "string"
+		},
+		"underTitleText": {
+			"type": "string"
+		},
+		"formTitle": {
+			"type": "string"
+		},
+		"formUnderText": {
+			"type": "string"
+		},
+		"underSectionText": {
+			"type": "string"
+		},
+		"underSectionTextSec": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "referral-page-form-first",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
