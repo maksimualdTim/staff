@@ -50,7 +50,9 @@ export default function Edit({ attributes, setAttributes }) {
 				...contentBox,
 				{
 					title: '',
+					nameLabel: '',
 					name: '',
+					descriptionLabel: '',
 					description: '',
 					buttons: [
 						{ text: '', link: '' },
@@ -337,9 +339,19 @@ export default function Edit({ attributes, setAttributes }) {
 							onChange={(value) => updateContentBox(index, 'title', value)}
 						/>
 						<TextControl
+							label={__('Название поля', 'your-text-domain')}
+							value={box.nameLabel}
+							onChange={(value) => updateContentBox(index, 'nameLabel', value)}
+						/>
+						<TextControl
 							label={__('Name', 'your-text-domain')}
 							value={box.name}
 							onChange={(value) => updateContentBox(index, 'name', value)}
+						/>
+						<TextControl
+							label={__('Название поля', 'your-text-domain')}
+							value={box.descriptionLabel}
+							onChange={(value) => updateContentBox(index, 'descriptionLabel', value)}
 						/>
 						<TextareaControl
 							label={__('Description', 'your-text-domain')}

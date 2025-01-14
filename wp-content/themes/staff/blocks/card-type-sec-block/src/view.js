@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	tabs.forEach(tab => tab.classList.remove('active'));
 	contentBoxes.forEach(box => box.classList.remove('active'));
 
+
 	// Устанавливаем активный класс на сохраненный таб или первый по умолчанию
 	tabs[savedTabIndex].classList.add('active');
 	contentBoxes[savedTabIndex].classList.add('active');
@@ -47,8 +48,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			tab.classList.add('active');
 			contentBoxes[index].classList.add('active');
 		});
+
 	});
 });
+
+
 
 
 document.addEventListener('DOMContentLoaded', function () {

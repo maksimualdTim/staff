@@ -79,7 +79,9 @@ function Edit({
     if (contentBox.length < MAX_CONTENT_BOXES) {
       const newContentBox = [...contentBox, {
         title: '',
+        nameLabel: '',
         name: '',
+        descriptionLabel: '',
         description: '',
         buttons: [{
           text: '',
@@ -423,9 +425,17 @@ function Edit({
           value: box.title,
           onChange: value => updateContentBox(index, 'title', value)
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Название поля', 'your-text-domain'),
+          value: box.nameLabel,
+          onChange: value => updateContentBox(index, 'nameLabel', value)
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
           label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Name', 'your-text-domain'),
           value: box.name,
           onChange: value => updateContentBox(index, 'name', value)
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Название поля', 'your-text-domain'),
+          value: box.descriptionLabel,
+          onChange: value => updateContentBox(index, 'descriptionLabel', value)
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
           label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Description', 'your-text-domain'),
           value: box.description,

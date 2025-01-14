@@ -406,6 +406,12 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   flex-grow: 0.4 !important;
 }
 
+@media (min-width: 992px) {
+  .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{
+    display: flex;
+    flex-basis: auto;
+  }
+}
 
 .header-block {
   background: url("img/header-bg.svg") no-repeat;

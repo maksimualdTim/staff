@@ -35,6 +35,7 @@ require __DIR__ . '/blocks/referral-page-payments-block/referral-page-payments-b
 require __DIR__ . '/blocks/referral-page-materials-block/referral-page-materials-block.php';
 require __DIR__ . '/blocks/referral-page-header-block/referral-page-header-block.php';
 require __DIR__ . '/blocks/referral-page-form-first/referral-page-form-first.php';
+require __DIR__ . '/blocks/form-card-page/form-card-page.php';
 
 require __DIR__ . '/blocks/order-form-block/order-form-block.php';
 require __DIR__ . '/blocks/map-header-block/map-header-block.php';

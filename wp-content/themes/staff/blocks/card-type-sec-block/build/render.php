@@ -84,12 +84,12 @@ $style = $bgUrl ? 'style="background-image: url(' . $bgUrl . ');"' : '';
 					<?php foreach ($contentBox as $index => $box) : ?>
 						<div class="content-box <?php echo $index === 0 ? 'active' : ''; ?>" data-tab="<?php echo $index + 1; ?>">
 							<?php if (!empty($box['name'])) : ?>
-								<p class="content-box-name-title">Наименование </p>
+								<p class="content-box-name-title"><?php echo esc_html($box['nameLabel']); ?> </p>
 								<h3 class="content-box-name"><?php echo esc_html($box['name']); ?></h3>
 							<?php endif; ?>
 
 							<?php if (!empty($box['description'])) : ?>
-								<p class="content-box-description-title">Описание </p>
+								<p class="content-box-description-title"><?php echo esc_html($box['descriptionLabel']); ?> </p>
 								<p class="content-box-description"><?php echo esc_html($box['description']); ?></p>
 							<?php endif; ?>
 

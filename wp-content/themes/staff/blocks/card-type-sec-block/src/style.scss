@@ -123,6 +123,12 @@
   justify-content: center;
   opacity: 0.4;
 }
+.tab:nth-child(1) {
+  width: 100%;
+}
+.tab:nth-child(2) {
+  display: none;
+}
 .tab-span {
   display: flex;
   width: size(36px) !important;

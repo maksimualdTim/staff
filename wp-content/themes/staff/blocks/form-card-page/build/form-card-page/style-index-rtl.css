@@ -1,0 +1,490 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/form-card-page/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+@import url(https://use.typekit.net/psh5uyq.css);
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/form-card-page/style.scss (1) ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.form-card {
+  width: 100%;
+  padding-top: calc(6.4583333333 * (1vw + 1vh));
+}
+
+.bread-crumbs {
+  margin-bottom: calc(2.9583333333 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+}
+
+.bread-crumbs a {
+  text-decoration: none;
+  font-size: calc(0.625 * (1vw + 1vh));
+}
+
+.bread-crumbs a:first-child {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.crumbs-link {
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: calc(0.75 * (1vw + 1vh));
+}
+
+.bread-crumbs a:last-child,
+.bread-crumbs span {
+  color: rgba(0, 0, 0, 0.3);
+  margin-right: calc(0.75 * (1vw + 1vh));
+}
+
+.form-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.5833333333 * (1vw + 1vh));
+  margin-bottom: calc(2.3333333333 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  box-sizing: border-box;
+}
+
+.form-card-text {
+  color: rgba(0, 0, 0, 0.3019607843);
+  font-size: calc(0.625 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 110%;
+  margin: 0;
+}
+
+.form-card-title {
+  color: #313131;
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 48px;
+  margin: 0;
+}
+
+.form-card-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: calc(2 * (1vw + 1vh));
+  padding-left: calc(5 * (1vw + 1vh));
+  padding-right: calc(5 * (1vw + 1vh));
+  padding-bottom: calc(9.5833333333 * (1vw + 1vh));
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.form-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: calc(2.375 * (1vw + 1vh));
+}
+
+.form-card-description {
+  color: #1260F5;
+  font-size: calc(0.7916666667 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+
+.form-card_steps {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.form-card_steps span {
+  color: #1260F5;
+  border: calc(0.0208333333 * (1vw + 1vh)) solid #1260F5;
+  height: 0;
+  width: calc(1.375 * (1vw + 1vh));
+}
+
+.form-card_steps .step__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: solid #1260F5 calc(0.0416666667 * (1vw + 1vh));
+  width: calc(1.2083333333 * (1vw + 1vh));
+  height: calc(1.2083333333 * (1vw + 1vh));
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  line-height: 0;
+  vertical-align: middle;
+  padding-top: calc(0.125 * (1vw + 1vh));
+  box-sizing: border-box;
+  color: #1260F5;
+  background: #fff;
+}
+
+.bg-black {
+  background: #1260F5 !important;
+  color: white !important;
+}
+
+.form-card-btn {
+  color: white;
+  font-size: calc(0.75 * (1vw + 1vh));
+  font-weight: 500;
+  line-height: 100%;
+  background: linear-gradient(-270deg, #578CF2 0%, #1260F5 100%);
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border-radius: calc(0.75 * (1vw + 1vh));
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  width: calc(13.5416666667 * (1vw + 1vh));
+  height: calc(2.7916666667 * (1vw + 1vh));
+}
+
+.wpcf7 .form-step {
+  display: none;
+  position: relative;
+  padding-bottom: calc(1.6666666667 * (1vw + 1vh));
+}
+
+.wpcf7 .form-step.active {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(0.8333333333 * (1vw + 1vh));
+  position: relative;
+  padding-top: calc(3.3333333333 * (1vw + 1vh));
+  padding-bottom: calc(3.3333333333 * (1vw + 1vh));
+}
+
+.wpcf7 {
+  width: 100%;
+  margin-bottom: calc(2 * (1vw + 1vh));
+}
+
+.form-card-inner {
+  width: calc(9.2916666667 * (1vw + 1vh));
+  height: calc(2.0833333333 * (1vw + 1vh));
+  color: white;
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  font-weight: 400;
+  background: #303030;
+  border-radius: calc(4.1666666667 * (1vw + 1vh));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wpcf7 label {
+  display: block;
+  color: #181818;
+  font-size: calc(0.5416666667 * (1vw + 1vh));
+  font-weight: 300;
+  line-height: 18.2px;
+}
+
+.wpcf7 input,
+.wpcf7 textarea,
+.wpcf7 select {
+  padding-top: calc(0.625 * (1vw + 1vh));
+  padding-bottom: calc(0.625 * (1vw + 1vh));
+  padding-right: calc(0.75 * (1vw + 1vh));
+  padding-left: calc(0.75 * (1vw + 1vh));
+  margin-top: calc(0.3333333333 * (1vw + 1vh));
+  border: none;
+  background: #F8F8F8;
+  border-radius: calc(0.4166666667 * (1vw + 1vh));
+  box-sizing: border-box;
+  width: calc(13.5416666667 * (1vw + 1vh));
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.5833333333 * (1vw + 1vh));
+  font-weight: 300;
+  line-height: 19.6px;
+  display: flex;
+}
+
+.wpcf7 input:focus-visible {
+  outline: none;
+}
+
+.wpcf7 select:focus-visible {
+  outline: none;
+}
+
+.wpcf7 textarea:focus-visible {
+  outline: none;
+}
+
+button.next-step {
+  color: white;
+  font-size: calc(0.75 * (1vw + 1vh));
+  font-weight: 500;
+  line-height: 100%;
+  padding-top: calc(1 * (1vw + 1vh));
+  padding-bottom: calc(1 * (1vw + 1vh));
+  padding-right: calc(2.2916666667 * (1vw + 1vh));
+  padding-left: calc(2.2916666667 * (1vw + 1vh));
+  background: linear-gradient(-270deg, #578CF2 0%, #1260F5 100%);
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border: none;
+  border-radius: calc(0.75 * (1vw + 1vh));
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  margin-top: calc(2.2083333333 * (1vw + 1vh));
+  width: calc(13.5416666667 * (1vw + 1vh));
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#submit-button {
+  color: white;
+  font-size: calc(0.75 * (1vw + 1vh));
+  font-weight: 500;
+  line-height: 100%;
+  padding-top: calc(1 * (1vw + 1vh));
+  padding-bottom: calc(1 * (1vw + 1vh));
+  padding-right: calc(2.2916666667 * (1vw + 1vh));
+  padding-left: calc(2.2916666667 * (1vw + 1vh));
+  background: linear-gradient(-270deg, #578CF2 0%, #1260F5 100%);
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border: none;
+  border-radius: calc(0.75 * (1vw + 1vh));
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  margin-top: calc(2.2083333333 * (1vw + 1vh));
+  width: calc(13.5416666667 * (1vw + 1vh));
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.wpcf7 .step-4 .wpcf7-spinner {
+  display: none;
+}
+
+.wpcf7 .step-3 .wpcf7-checkbox .wpcf7-list-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 5px;
+}
+
+.wpcf7 .step-3 .wpcf7-checkbox .wpcf7-list-item input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.wpcf7 .step-3 .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: calc(0.625 * (1vw + 1vh));
+  font-weight: 300;
+  line-height: 21px;
+  position: relative;
+  top: 2px;
+}
+
+.wpcf7 .wpcf7-not-valid-tip {
+  color: red;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.success-message {
+  display: none;
+  flex-direction: column;
+  gap: calc(1.9166666667 * (1vw + 1vh));
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: calc(6.4166666667 * (1vw + 1vh));
+  padding-bottom: calc(11.5416666667 * (1vw + 1vh));
+}
+
+.success-message span {
+  color: rgba(0, 0, 0, 0.3019607843);
+  font-size: calc(0.625 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 16.5px;
+}
+
+.success-message h2 {
+  color: #313131;
+  font-size: calc(1.6666666667 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 48px;
+  margin: 0;
+}
+
+.success-message p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.625 * (1vw + 1vh));
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  width: calc(35.375 * (1vw + 1vh));
+}
+
+.success-message a {
+  width: calc(15.7083333333 * (1vw + 1vh));
+  height: calc(2.7916666667 * (1vw + 1vh));
+  box-shadow: 0px 4px 200px rgba(18, 96, 245, 0.1);
+  border-radius: calc(0.75 * (1vw + 1vh));
+  border: 1px #1260F5 solid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #1260F5;
+  font-size: calc(0.6666666667 * (1vw + 1vh));
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .bread-crumbs {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .form-card-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .form-card-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .form-card {
+    padding-top: 25px;
+  }
+  .bread-crumbs {
+    margin-bottom: 67px;
+  }
+  .bread-crumbs a {
+    font-size: 15px;
+  }
+  .crumbs-link {
+    margin-right: 18px;
+  }
+  .bread-crumbs a:last-child,
+  .bread-crumbs span {
+    margin-right: 18px;
+  }
+  .form-card-content {
+    gap: 19px;
+    margin-bottom: 34px;
+  }
+  .form-card-text {
+    font-size: 15px;
+  }
+  .form-card-title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .form-card-container {
+    padding-top: 43px;
+    padding-bottom: 150px;
+  }
+  .form-card-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+    margin-bottom: 53px;
+  }
+  .form-card-description {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .form-card_steps span {
+    color: #1260F5;
+    border: 0.5px solid #1260F5;
+    height: 0;
+    width: 33px;
+  }
+  .form-card_steps .step__item {
+    border: solid #1260F5 1px;
+    width: 29px;
+    height: 29px;
+    font-size: 14px;
+    padding-top: 3px;
+    box-sizing: border-box;
+  }
+  .form-card-btn {
+    font-size: 18px;
+    width: 308px;
+    height: 67px;
+    border-radius: 18px;
+  }
+  .wpcf7 .form-step.active {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .form-card-inner {
+    width: 223px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .wpcf7 {
+    margin-bottom: 40px;
+  }
+  .wpcf7 label {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .wpcf7 input,
+  .wpcf7 textarea,
+  .wpcf7 select {
+    padding: 15px 18px;
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+  button.next-step {
+    font-size: 18px;
+    padding: 0px;
+    border-radius: 18px;
+    margin-top: 0;
+    width: 100%;
+    height: 67px;
+    position: relative;
+  }
+  #submit-button {
+    font-size: 18px;
+    padding: 0px;
+    border-radius: 18px;
+    margin-top: 0;
+    width: 100%;
+    height: 67px;
+    position: relative;
+  }
+  .wpcf7 .step-3 .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label {
+    font-size: 15px;
+    line-height: 140%;
+  }
+}

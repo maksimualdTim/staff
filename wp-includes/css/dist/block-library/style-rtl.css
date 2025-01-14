@@ -216,6 +216,7 @@
   display:flex;
   flex-wrap:wrap !important;
 }
+
 @media (min-width:782px){
   .wp-block-columns{
     flex-wrap:nowrap !important;

@@ -30,7 +30,8 @@
 
 .credit-section-content {
   display: flex;
-  gap: 10px; /* Отступы между блоками */
+  gap: 10px;
+  /* Отступы между блоками */
 }
 
 .credit-section-title {
@@ -38,6 +39,7 @@
   font-size: calc(1.6666666667 * (1vw + 1vh));
   margin-top: calc(1.6666666667 * (1vw + 1vh));
   font-weight: 500;
+  line-height: 48px;
 }
 
 .credit-section-description {
@@ -50,7 +52,8 @@
 }
 
 .credit-section-content > div {
-  flex: 1; /* Каждый элемент занимает равное количество пространства */
+  flex: 1;
+  /* Каждый элемент занимает равное количество пространства */
 }
 
 .credit-section-img {
