@@ -133,7 +133,7 @@ export default function Edit({ attributes, setAttributes }) {
 
 
 
-					<div class="success-message">
+					<div>
 						<span>{subSuccessText}</span>
             <h2>{successTitle}</h2>
             <p>{successText}</p>
