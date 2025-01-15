@@ -53,19 +53,17 @@ document.addEventListener('DOMContentLoaded', function () {
   updateProgressBar(currentStep);
 });
 document.addEventListener('DOMContentLoaded', function () {
+  const formContainer = document.getElementById('form-container');
+  const message = document.getElementById('success-message');
+  const formSection = document.getElementById('formSection');
   document.addEventListener('wpcf7mailsent', function (event) {
-    const formWrapper = event.target.closest('.wpcf7'); // Formni topish
+    const formWrapper = event.target.closest('.wpcf7');
     if (formWrapper) {
-      formWrapper.style.display = 'none'; // Formani yashirish
-      const successMessage = `
-              <div class="success-message">
-                  <h2>БЛАГОДАРИМ ЗА ОБРАЩЕНИЕ</h2>
-                  <p>Спасибо! Ваша заявка уже обрабатывается.</p>
-                  <p>Мы помогаем бизнесам всех масштабов снизить затраты на топливо благодаря нашим инновационным топливным картам.</p>
-                  <a href="#">Инструкция по оформлению карты.</a>
-              </div>
-          `;
-      formWrapper.insertAdjacentHTML('afterend', successMessage); // Xabarni ko'rsatish
+      formWrapper.style.display = 'none';
+      formContainer.style.display = "none";
+      formSection.classList.add("form-card-bg");
+      const successMessage = message.style.display = "flex";
+      formWrapper.insertAdjacentHTML('afterend', successMessage);
     }
   });
 });

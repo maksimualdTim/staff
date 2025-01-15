@@ -29,7 +29,7 @@
 			<div class="registration__form_heading">
 				<h4 class="registration__form_heading_header">Форма обратной связи</h4>
 				<ul class="registration__form_heading_steps">
-					<li class="step__item">
+					<li class="step__item bg-black">
 						1
 					</li>
 					<span>
@@ -40,7 +40,9 @@
 					</li>
 				</ul>
 			</div>
-			<?= do_shortcode('[contact-form-7 id="a2a4bd7" title="multistep"]')?>
+
+			<?= do_shortcode('[contact-form-7 id="4073ae2" title="registration-steps"]')?>
+
 		</div>
 
 	</div>

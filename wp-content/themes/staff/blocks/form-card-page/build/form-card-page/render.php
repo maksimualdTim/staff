@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="form-card" <?= get_block_wrapper_attributes(); ?>>
+<section class="form-card" <?= get_block_wrapper_attributes(); ?> id="formSection">
 	<div id="form-container">
 		<div class="bread-crumbs">
 			<a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a>
@@ -41,7 +41,7 @@
 
 
 
-	<div class="success-message">
+	<div class="success-message" id="success-message">
     <span><?= esc_html($attributes['subSuccessText']); ?></span>
                   <h2><?= esc_html($attributes['successTitle']); ?></h2>
                   <p><?= esc_html($attributes['successText']); ?></p>

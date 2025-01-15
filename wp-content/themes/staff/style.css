@@ -478,6 +478,11 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   background-position: center;
 }
 
+.form-card-bg {
+	background: url("img/registration-header-bg.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
 
 header {

@@ -22,60 +22,47 @@
 
 
 
-
-
+document.querySelectorAll('br').forEach(br => br.remove());
 
 document.addEventListener('DOMContentLoaded', function () {
-	function updateStepIndicators() {
-		const stepStart = document.querySelector('.step-start');
-		const stepEnd = document.querySelector('.step-end');
-		const stepItems = document.querySelectorAll('.step__item');
+	const steps = document.querySelectorAll('.form-step');
+	const nextButtons = document.querySelectorAll('.next-step');
+	const prevButtons = document.querySelectorAll('.prev-step');
+	const stepsItems = document.querySelectorAll('.registration__form_heading_steps .step__item');
+	let currentStep = 0;
 
-		if (stepStart && stepItems[0]) {
-			if (window.getComputedStyle(stepStart).display === 'flex') {
-				stepItems[0].classList.add('bg-black');
-			} else {
-				stepItems[0].classList.remove('bg-black');
-			}
-		}
-
-		if (stepEnd && stepItems[1]) {
-			if (window.getComputedStyle(stepEnd).display === 'flex') {
-				stepItems[1].classList.add('bg-black');
-			} else {
-				stepItems[1].classList.remove('bg-black');
-			}
-		}
-	}
-
-	function observeDisplayChanges(element, callback) {
-		const observer = new MutationObserver(() => {
-			callback();
-		});
-
-		observer.observe(element, {
-			attributes: true, // Отслеживаем изменения атрибутов
-			attributeFilter: ['style'], // Только изменения стиля
+	function updateSteps() {
+		steps.forEach((step, index) => {
+			step.classList.toggle('active', index === currentStep);
 		});
 	}
 
-	function waitForElements() {
-		const form = document.querySelector('.wpcf7-form');
-		const stepStart = document.querySelector('.step-start');
-		const stepEnd = document.querySelector('.step-end');
-
-		if (form && stepStart && stepEnd) {
-			updateStepIndicators();
-
-			// Добавляем наблюдение за изменением display
-			observeDisplayChanges(stepStart, updateStepIndicators);
-			observeDisplayChanges(stepEnd, updateStepIndicators);
-
-			form.addEventListener('wpcf7step-changed', updateStepIndicators);
-		} else {
-			setTimeout(waitForElements, 100); // Повторяем, если элементы не найдены
-		}
+	function updateProgressBar(stepIndex) {
+		stepsItems.forEach((step, index) => {
+			if (index <= stepIndex) {
+				step.classList.add('bg-black');
+			} else {
+				step.classList.remove('bg-black');
+			}
+		});
 	}
 
-	waitForElements();
+	nextButtons.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			currentStep = Math.min(currentStep + 1, steps.length - 1);
+			updateSteps();
+			updateProgressBar(currentStep);
+		});
+	});
+
+	prevButtons.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			currentStep = Math.max(currentStep - 1, 0);
+			updateSteps();
+			updateProgressBar(currentStep);
+		});
+	});
+
+	updateSteps();
+	updateProgressBar(currentStep);
 });
