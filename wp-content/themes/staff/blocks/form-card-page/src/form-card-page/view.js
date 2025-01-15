@@ -65,6 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			formContainer.style.display = "none";
 			formSection.classList.add("form-card-bg");
 			const successMessage = message.style.display = "flex";
+
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+			
 			formWrapper.insertAdjacentHTML('afterend', successMessage);
 		}
 	});
