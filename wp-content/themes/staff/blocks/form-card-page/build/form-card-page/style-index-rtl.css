@@ -157,8 +157,8 @@
   flex-wrap: wrap;
   gap: calc(0.8333333333 * (1vw + 1vh));
   position: relative;
-  padding-top: calc(3.3333333333 * (1vw + 1vh));
-  padding-bottom: calc(3.3333333333 * (1vw + 1vh));
+  padding-top: calc(4.1666666667 * (1vw + 1vh));
+  padding-bottom: calc(4.1666666667 * (1vw + 1vh));
 }
 
 .wpcf7 {

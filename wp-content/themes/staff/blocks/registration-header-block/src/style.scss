@@ -209,6 +209,16 @@
 	cursor: pointer;
 }
 
+.steps_btns {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: calc(0.8333333333 * (1vw + 1vh));
+}
+
+.steps_btns span {
+	display: none;
+}
+
 .steps_btns p {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -251,28 +261,30 @@
 		width: 100%;
 	}
 
-  .registration__form_heading_header {
+	.registration__form_heading_header {
 		font-size: 16px;
 		margin-bottom: 30px;
 	}
 
-  .registration__form_heading_steps .step__item {
-    border: solid #1260F5 1px;
-    width: 29px;
-    height: 29px;
-    font-size: 14px;
-    padding-top: 3px;
-  }
+	.registration__form_heading_steps .step__item {
+		border: solid #1260F5 1px;
+		width: 29px;
+		height: 29px;
+		font-size: 14px;
+		padding-top: 3px;
+	}
 
-  .registration__form_heading_steps span {
-    width: 33px;
-  }
+	.registration__form_heading_steps span {
+		width: 33px;
+	}
+
 	.form-step {
 		gap: 25px;
 	}
 
 	.form-step__wrapper p,
 	.form-step__wrapper,
+	.steps_btns,
 	.steps_btns p {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
@@ -281,7 +293,7 @@
 
 	.registration__form_label span {
 		font-size: 14px;
-    width: 100%;
+		width: 100%;
 		margin-bottom: 8px;
 	}
 
