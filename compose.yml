@@ -4,6 +4,7 @@ services:
     container_name: wordpress
     volumes:
       - ./wp-content:/var/www/html/wp-content
+      - ./.htaccess:/var/www/html/.htaccess
     environment:
       - WORDPRESS_DB_NAME=wordpress
       - WORDPRESS_TABLE_PREFIX=wp_
