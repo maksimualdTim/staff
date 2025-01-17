@@ -452,11 +452,11 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
 }
 
 .wp-block-button__link {
-  font-size: 18px;
-  padding: 28px 57px;
+  font-size: calc(0.75 * (1vw + 1vh));
+  padding: calc(1.3333333333 * (1vw + 1vh)) calc(0 * (1vw + 1vh));
   background: linear-gradient(to left, #578CF2, #1260F5);
-  border-radius: 18px;
-  width: 200px !important;
+  border-radius: calc(0.75 * (1vw + 1vh));
+  width: calc(12.5 * (1vw + 1vh)) !important;
 }
 
 .wp-container-core-columns-is-layout-1 .wp-block-column-is-layout-flow {
@@ -551,13 +551,13 @@ header .wp-container-core-columns-is-layout-3 {
 
 .wp-block-polylang-language-switcher {
   background-color: #fff;
-  border-radius: 18px;
-  padding: 0px 20px;
+  padding: calc(0 * (1vw + 1vh)) calc(1.375 * (1vw + 1vh));
+  border-radius: calc(0.75*(1vw + 1vh));
   display: flex;
 }
 
 .pll-switcher-select {
-  padding: 20px 0px;
+  padding: calc(1.3333333333 * (1vw + 1vh)) calc(0 * (1vw + 1vh));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -565,10 +565,11 @@ header .wp-container-core-columns-is-layout-3 {
   cursor: pointer;
   outline: none;
   color: #0E4BC1;
-  font-size: 15px;
+  font-size: calc(0.625*(1vw + 1vh));
   font-weight: 400;
   line-height: 15px;
   text-transform: uppercase;
+  background: #fff;
 }
 
 .pll-switcher-select:focus {
@@ -645,9 +646,6 @@ header .wp-container-core-columns-is-layout-3 {
 .header-mobile-container-navigation .mobile__subtitle:first-child {
   margin-bottom: 39px;
 }
-
-
-
 
 
 .header-mobile-container-navigation nav ul {
@@ -727,12 +725,34 @@ header .wp-container-core-columns-is-layout-3 {
   display: block;
 }
 
+@media (max-width: 1880px) {
+  .pll-switcher-select {
+    font-size: 15px;
+  }
+
+  .wp-block-button__link {
+    font-size: 18px;
+    padding: 28px 57px;
+    border-radius: 18px;
+    width: 220px !important;
+  }
+
+}
+
 @media (min-width: 992px) {
   .mobile_menu_language div {
     margin: 0;
   }
-  .drop-down-and-btn-container div.wp-block-column {
+
+  .drop-down-and-btn-container {
+    justify-content: flex-end !important;
+    gap: 1rem;
+  }
+
+  .drop-down-and-btn-container div.wp-block-column:nth-child(1) {
     min-width: auto;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -786,5 +806,6 @@ header .wp-container-core-columns-is-layout-3 {
   .pll-switcher-select {
     color: #fff;
     background: unset;
+    padding: 20px 0;
   }
 }
