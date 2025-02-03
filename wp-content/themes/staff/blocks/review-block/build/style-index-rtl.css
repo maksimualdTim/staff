@@ -44,7 +44,8 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.review .section__sub .section__text, .review .section__sub .section__number {
+.review .section__sub .section__text,
+.review .section__sub .section__number {
   color: rgba(255, 255, 255, 0.7) !important;
   opacity: 1;
 }
@@ -55,6 +56,7 @@
   width: calc(22.0833333333 * (1vw + 1vh));
   color: #fff;
   overflow: hidden;
+  line-height: 120%;
   font-weight: 500;
 }
 
@@ -63,9 +65,10 @@
 }
 
 .review-section-description {
-  width: calc(15.3333333333 * (1vw + 1vh));
+  width: calc(20 * (1vw + 1vh));
   font-size: calc(0.6666666667 * (1vw + 1vh));
-  line-height: calc(1.0416666667 * (1vw + 1vh));
+  line-height: 160%;
+  text-align: left;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -88,8 +91,10 @@
 .slick-slider {
   display: flex !important;
   justify-content: center;
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out; /* Плавное изменение размеров */
-  overflow: visible; /* Убедитесь, что элементы не обрезаются */
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  /* Плавное изменение размеров */
+  overflow: visible;
+  /* Убедитесь, что элементы не обрезаются */
   align-items: center;
 }
 
@@ -107,14 +112,16 @@
 }
 
 .slick-track {
-  transition: transform 0.5s ease-in-out; /* Плавность переключения */
+  transition: transform 0.5s ease-in-out;
+  /* Плавность переключения */
   height: calc(18.5416666667 * (1vw + 1vh)) !important;
 }
 
 .slider-item {
   position: relative;
   width: 100% !important;
-  max-width: calc(7.9166666667 * (1vw + 1vh)); /* Предельная ширина карточки */
+  max-width: calc(7.9166666667 * (1vw + 1vh));
+  /* Предельная ширина карточки */
   height: calc(12.4166666667 * (1vw + 1vh)) !important;
   border-radius: calc(0.5 * (1vw + 1vh));
   overflow: hidden;
@@ -123,7 +130,8 @@
   align-items: center;
   justify-content: center;
   margin-left: calc(0.9583333333 * (1vw + 1vh));
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out; /* Плавность размеров */
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  /* Плавность размеров */
 }
 
 .slick-initialized .slick-slide {
@@ -149,7 +157,8 @@
 
 .slick-track .slick-active {
   width: 100% !important;
-  max-width: calc(11.875 * (1vw + 1vh)); /* Предельная ширина карточки */
+  max-width: calc(11.875 * (1vw + 1vh));
+  /* Предельная ширина карточки */
   height: calc(18.5416666667 * (1vw + 1vh)) !important;
   margin-top: 0px;
   border: 2px solid white;
@@ -163,7 +172,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  pointer-events: all; /* Запрещаем взаимодействие с видео */
+  pointer-events: all;
+  /* Запрещаем взаимодействие с видео */
 }
 
 .overlay {
@@ -177,7 +187,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  pointer-events: none; /* Чтобы только кнопка срабатывала */
+  pointer-events: none;
+  /* Чтобы только кнопка срабатывала */
 }
 
 .play-button {
@@ -185,7 +196,8 @@
   height: calc(2.0833333333 * (1vw + 1vh));
   mask-size: contain;
   -webkit-mask-size: contain;
-  pointer-events: all; /* Активируем клики */
+  pointer-events: all;
+  /* Активируем клики */
   cursor: pointer;
 }
 
@@ -282,7 +294,6 @@
     width: 100%;
     margin-top: 46px;
     font-size: 16px;
-    line-height: 26px;
   }
   .slick-dots .slick-active {
     background: white;
@@ -315,7 +326,8 @@
     display: none !important;
   }
   .slider-item {
-    max-width: 224px; /* Предельная ширина карточки */
+    max-width: 224px;
+    /* Предельная ширина карточки */
     height: 351px !important;
     margin-left: 23px;
     border-radius: 18px;
@@ -328,7 +340,8 @@
   }
   .slick-track .slick-active {
     width: 100% !important;
-    max-width: 285px; /* Предельная ширина карточки */
+    max-width: 285px;
+    /* Предельная ширина карточки */
     height: 445px !important;
     border-radius: 18px;
     margin-top: 0;

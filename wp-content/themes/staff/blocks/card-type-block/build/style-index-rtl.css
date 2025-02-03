@@ -39,7 +39,7 @@
   font-size: calc(1.6666666667 * (1vw + 1vh));
   margin-top: calc(1.6666666667 * (1vw + 1vh));
   font-weight: 500;
-  line-height: 48px;
+  line-height: 120%;
 }
 
 .credit-section-description {
@@ -63,7 +63,7 @@
 .credit-section-img img {
   position: absolute;
   z-index: 10;
-  width: calc(29.8333333333 * (1vw + 1vh));
+  width: calc(35.4166666667 * (1vw + 1vh));
   height: -moz-max-content;
   height: max-content;
   top: 50%;
@@ -107,7 +107,6 @@
   .credit-section-title {
     font-size: 28px;
     font-weight: 400;
-    line-height: 38px;
     margin-top: calc(4 * (1vw + 1vh));
     margin-bottom: 0;
   }
@@ -157,7 +156,6 @@
   }
   .credit-section-title {
     margin-top: 36px;
-    line-height: 120%;
   }
   .card-preview-btns .btn-left {
     padding: 27px 57px;

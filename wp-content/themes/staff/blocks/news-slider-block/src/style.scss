@@ -31,7 +31,7 @@
 	&__title {
 		color: #454545;
 		@include font-size(18px);
-		@include line-height(19px);
+		line-height: 120%;
 		margin-bottom: size(25px);
 	}
 	&__content {
