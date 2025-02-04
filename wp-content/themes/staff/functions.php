@@ -154,3 +154,10 @@ add_shortcode("breadcrumbs-partners", function() {
     <?php
     return ob_get_clean();
 });
+
+function add_favicon() {
+    echo '<link rel="icon" type="image/png" href="' . get_template_directory_uri() . '/favicon.ico">';
+}
+add_action('wp_head', 'add_favicon');
+add_action('admin_head', 'add_favicon');
+
