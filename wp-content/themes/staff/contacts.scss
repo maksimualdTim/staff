@@ -28,6 +28,7 @@
     @include line-height(44px);
     color: $primaryColor;
     margin-top: 0;
+    font-weight: 400;
     @media (max-width: 781px) {
         margin-bottom: 37px;
     }
@@ -36,6 +37,13 @@
     color: #292D51;
     @include font-size(18px);
     @include line-height(21px);
+    font-weight: 400;
+
+    @media (max-width: 600px) {
+        font-size: 18px;
+        line-height: normal;
+        margin: 0px;
+      }
 }
 .contacts__partnerlink {
     position: relative;
@@ -106,6 +114,7 @@
     @include line-height(17px);
     color: #000;
     opacity: .8;
+    margin-bottom: 18px;
 }
 .contacts__container {
     @include main-container();
@@ -160,10 +169,11 @@ iframe {
 .contacts__form-container {
     @media (max-width: 781px) {
         flex-direction: column-reverse;
+        margin-bottom: 42px;
         & > .wp-block-column:last-child {
             background: linear-gradient(90deg, #1260F5 0%, #6AB3F8 100%);
             border-radius: 18px;
-            margin-bottom: 65px;
+            margin-bottom: 45px;
             margin-top: 65px;
             p {
                 text-align: center;

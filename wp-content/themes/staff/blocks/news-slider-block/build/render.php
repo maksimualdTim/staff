@@ -29,26 +29,28 @@ $news_posts = get_posts([
 	</div>
 	<div class="news__container">
 		<!-- Slider main container -->
-		<div class="swiper">
+		<div class="swiper" id="slide">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
 			<!-- Slides -->
 			<?php foreach ($news_posts as $key => $news_post):?>
-			<a href="<?= get_permalink($news_post->ID); ?>" class="news__card swiper-slide">
-				<div class="news__img">
-					<?php if (has_post_thumbnail($news_post->ID)) : ?>
-						<?= get_the_post_thumbnail($news_post->ID, 'full'); ?>
-					<?php else : ?>
-						<img src="<?= get_template_directory_uri(); ?>/truck.png" alt="news preview">
-					<?php endif; ?>
+				<div class="swiper-slide">
+					<a href="<?= get_permalink($news_post->ID); ?>" class="news__card">
+						<div class="news__img">
+							<?php if (has_post_thumbnail($news_post->ID)) : ?>
+								<?= get_the_post_thumbnail($news_post->ID, 'full'); ?>
+							<?php else : ?>
+								<img src="<?= get_template_directory_uri(); ?>/truck.png" alt="news preview">
+							<?php endif; ?>
+						</div>
+						<div class="news__content">
+							<div class="news__date"><?= get_the_date('m/d/Y', $news_post->ID); ?></div>
+							<div class="news__title"><?= get_the_title($news_post->ID); ?></div>
+							<div class="news__excerpt"><?= get_the_excerpt($news_post->ID); ?></div>
+							<div class="news__readmore">Читать -></div>
+						</div>
+					</a>
 				</div>
-				<div class="news__content">
-					<div class="news__date"><?= get_the_date('m/d/Y', $news_post->ID); ?></div>
-					<div class="news__title"><?= get_the_title($news_post->ID); ?></div>
-					<div class="news__excerpt"><?= get_the_excerpt($news_post->ID); ?></div>
-					<div class="news__readmore">Читать -></div>
-				</div>
-			</a>
 			<?php endforeach;?>
 		</div>
 		<!-- If we need pagination -->

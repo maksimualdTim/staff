@@ -33,7 +33,8 @@
 }
 
 .form-block-container > div {
-  flex: 1; /* Каждый элемент занимает равное количество пространства */
+  flex: 1;
+  /* Каждый элемент занимает равное количество пространства */
 }
 
 .form-section-title {
@@ -140,8 +141,8 @@
   .form-section-title {
     width: 100%;
     font-size: 28px;
-    font-weight: 300;
-    line-height: 46px;
+    font-weight: 400;
+    line-height: 120%;
   }
   .form-section-img {
     display: none;
@@ -167,17 +168,14 @@
     box-sizing: border-box;
   }
   .form-section-title {
-    margin-bottom: calc(6.0416666667 * (1vw + 1vh));
+    margin-bottom: 48px;
   }
   .call-request label {
     font-size: 15px;
     margin-bottom: calc(2.5 * (1vw + 1vh));
   }
   .form-block-container {
-    padding-top: 73px;
-  }
-  .form-block-container {
-    background: none;
+    background: none !important;
     padding: 0;
   }
   .form-block {
@@ -211,11 +209,6 @@
     padding: 27px 25px;
     width: 246px;
     border-radius: 18px;
-  }
-  .form-section-title {
-    margin-bottom: 54px;
-    width: 82%;
-    line-height: 120%;
   }
   .call-request label {
     margin-bottom: 21px;

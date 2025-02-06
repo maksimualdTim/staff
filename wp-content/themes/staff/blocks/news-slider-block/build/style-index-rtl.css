@@ -46,9 +46,16 @@
     line-height: 48px;
   }
 }
+@media (max-width: 600px) {
+  .news__blocktitle {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
 .news__card {
   text-decoration: none;
   color: inherit;
+  width: 100%;
   display: inline-block;
   background: #fff;
   border-radius: calc(0.75 * (1vw + 1vh));
@@ -56,17 +63,12 @@
 .news__title {
   color: #454545;
   font-size: calc(0.75 * (1vw + 1vh));
-  line-height: calc(0.7916666667 * (1vw + 1vh));
+  line-height: 120%;
   margin-bottom: calc(1.0416666667 * (1vw + 1vh));
 }
 @media (max-width: 600px) {
   .news__title {
     font-size: 18px;
-  }
-}
-@media (max-width: 600px) {
-  .news__title {
-    line-height: 19px;
   }
 }
 .news__content {

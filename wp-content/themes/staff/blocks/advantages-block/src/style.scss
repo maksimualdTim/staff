@@ -5,23 +5,34 @@
  * Replace them with your own styles or remove the file completely.
  */
 
- @import '../../../template.scss';
+@import '../../../template.scss';
 
 .advantages {
 	@include main-container();
+
 	@media (max-width: 600px) {
 		padding: 0;
 	}
+
+	&__top {
+		align-items: center;
+		margin-bottom: 25px;
+	}
+
 	&__top,
 	&__bottom {
 		display: flex;
+		gap: 30px;
+
 		@media (max-width: 420px) {
 			flex-wrap: wrap;
 		}
+
 		@media (max-width: 395px) {
 			flex-direction: column;
 		}
 	}
+
 	&__container {
 		@include border-radius();
 		background-color: #fff;
@@ -43,6 +54,7 @@
 		margin-left: size(105px);
 		position: sticky;
 		top: size(90px);
+
 		@media (max-width: 981px) {
 			margin-left: 0;
 			margin-bottom: 63px;
@@ -52,6 +64,7 @@
 
 	&__empty {
 		width: size(57px);
+
 		@media (max-width: 981px) {
 			width: 0;
 		}
@@ -64,10 +77,12 @@
 		@include border-radius();
 		position: relative;
 		z-index: 2;
+
 		@media (max-width: 981px) {
 			width: 57px;
 			height: 57px;
 		}
+
 		img {
 			position: absolute;
 			top: 50%;
@@ -75,25 +90,31 @@
 			width: size(28px);
 			height: size(28px);
 			transform: translate(-50%, -50%);
+
 			@media (max-width: 981px) {
 				width: 28px;
 				height: 28px;
 			}
 		}
 	}
+
 	&__cards {
 		display: flex;
 		flex-direction: column;
+
 		@media (max-width: 981px) {
 			width: 100%;
 		}
 	}
+
 	&__cardwrapper {
 		width: size(500px);
+
 		@media (max-width: 981px) {
 			width: 100%;
 		}
 	}
+
 	&__card {
 		padding: size(36px);
 		background: linear-gradient(270deg, #7EA8FA 0%, #1A64F6 100%);
@@ -101,6 +122,7 @@
 		position: relative;
 		width: 100%;
 		@include border-radius();
+
 		.bg {
 			@include border-radius();
 		}
@@ -109,6 +131,7 @@
 			padding: 37px 27px;
 		}
 	}
+
 	&__subtitle {
 		@include font-size(14px);
 		@include line-height(15px);
@@ -116,39 +139,45 @@
 		opacity: .5;
 		color: #fff;
 		margin-bottom: size(7px);
+
+		@media (max-width: 981px) {
+			font-size: 14px;
+			line-height: 110%;
+			max-width: 100%;
+			margin-bottom: 7px;
+		}
 	}
+
 	&__title {
 		color: #fff;
 		font-weight: 500;
 		@include font-size(24px);
 		@include line-height(26px);
-		margin-bottom: size(30px);
 		max-width: size(360px);
 
 		@media (max-width: 981px) {
 			font-size: 16px;
-			line-height: 17px;
+			line-height: 160%;
 			max-width: 100%;
 		}
 	}
+
 	&__content {
 		position: relative;
 		z-index: 2;
-		margin-left: size(30px);
+
 		@media (max-width: 981px) {
-			margin-left: 30px;
 			&.--bottom {
 				margin-left: 0;
 			}
 		}
-		@media (max-width: 420px) {
-			margin-left: 10px;
-		}
+
 		@media (max-width: 395px) {
 			margin-top: 15px;
 			margin-left: 0;
 		}
 	}
+
 	&__text {
 		@include font-size(15px);
 		@include line-height(22px);
@@ -159,12 +188,8 @@
 
 		@media (max-width: 981px) {
 			max-width: 100%;
-			margin-top: 25px;
 			font-size: 15px;
-			line-height: 22px;
-		}
-		@media (max-width: 395px) {
-			margin-top: 15px;
+			line-height: 150%;
 		}
 	}
 
@@ -176,9 +201,11 @@
 		margin-top: size(32px);
 		margin-bottom: size(72px);
 		font-weight: 400;
+
 		span {
 			color: $primaryColor;
 		}
+
 		@media (max-width: 600px) {
 			line-height: 33px;
 			font-size: 28px;
@@ -211,13 +238,24 @@
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
+
 	svg {
 		width: 100%;
 		height: 100%;
 	}
-	@media (max-width: 981px) { 
+
+	@media (max-width: 981px) {
 		margin: -2px 0;
 		width: 69px;
 		height: 19px;
+	}
+}
+
+
+.advantages {
+	&__bottom {
+		@media (max-width: 981px) {
+			gap: 0;
+		}
 	}
 }

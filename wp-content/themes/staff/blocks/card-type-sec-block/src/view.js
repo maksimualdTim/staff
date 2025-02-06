@@ -53,12 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
-	new Swiper('.swiper', {
+	new Swiper('#swiper1', {
 		loop: true,
-		slidesPerView: 1, // Отображать только один слайд
+		slidesPerView: 1,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,

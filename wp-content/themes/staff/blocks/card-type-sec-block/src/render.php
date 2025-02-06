@@ -50,7 +50,7 @@ $style = $bgUrl ? 'style="background-image: url(' . $bgUrl . ');"' : '';
 				</svg>
 			</div>
 
-			<div class="swiper">
+			<div class="swiper" id="swiper1">
 				<div class="swiper-wrapper">
 					<?php foreach ($attributes['items'] as $i => $item): ?>
 						<div class="swiper-slide" style="display: inline-block;">

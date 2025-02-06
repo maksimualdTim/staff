@@ -294,6 +294,7 @@
     width: 100%;
     margin-top: 46px;
     font-size: 16px;
+    text-align: right;
   }
   .slick-dots .slick-active {
     background: white;

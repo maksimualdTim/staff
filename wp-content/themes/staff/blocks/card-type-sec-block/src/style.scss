@@ -428,9 +428,12 @@
 			margin-top: 32px;
 			height: auto !important;
 		}
-
+		.card-sec-text p:first-child,
+		.card-sec-text-mobile p:first-child {
+			margin-bottom: size(0px);
+		}
 		.card-sec-text-mobile p:last-child {
-			margin-top: 33px;
+			margin-top: 24px;
 		}
 
 		.content-box {

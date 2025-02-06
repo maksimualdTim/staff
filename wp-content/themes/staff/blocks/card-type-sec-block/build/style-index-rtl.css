@@ -7,11 +7,11 @@
   \*******************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+* The following styles get applied both on the front of your site
+* and in the editor.
+*
+* Replace them with your own styles or remove the file completely.
+*/
 .card-sec {
   width: 100%;
   padding-left: calc(5 * (1vw + 1vh));
@@ -184,6 +184,7 @@
   font-size: calc(1 * (1vw + 1vh));
   margin: 0;
   margin-bottom: calc(1.8333333333 * (1vw + 1vh));
+  font-weight: 400;
 }
 
 .content-box-description-title,
@@ -392,8 +393,12 @@
     margin-top: 32px;
     height: auto !important;
   }
+  .card-sec-text p:first-child,
+  .card-sec-text-mobile p:first-child {
+    margin-bottom: calc(0 * (1vw + 1vh));
+  }
   .card-sec-text-mobile p:last-child {
-    margin-top: 33px;
+    margin-top: 24px;
   }
   .content-box {
     padding-right: calc(2.7916666667 * (1vw + 1vh));

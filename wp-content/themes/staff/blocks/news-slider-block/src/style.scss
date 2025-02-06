@@ -18,12 +18,18 @@
 			color: #313131;
 			@include line-height(48px);
 			font-weight: 400;
+			@media (max-width: 600px) {
+				font-size: 28px;
+				line-height: 120%;
+			}
 		}
+
 	}
 	&__card {
 		text-decoration: none;
 		color: inherit;
 		// width: size(417px);
+		width: 100%;
 		display: inline-block;
 		background: #fff;
 		border-radius: size(18px);

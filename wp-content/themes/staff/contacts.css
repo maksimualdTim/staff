@@ -37,6 +37,7 @@
   line-height: calc(1.8333333333 * (1vw + 1vh));
   color: #1260F5;
   margin-top: 0;
+  font-weight: 400;
 }
 @media (max-width: 600px) {
   .contacts__title {
@@ -58,15 +59,14 @@
   color: #292D51;
   font-size: calc(0.75 * (1vw + 1vh));
   line-height: calc(0.875 * (1vw + 1vh));
+  font-weight: 400;
 }
+
 @media (max-width: 600px) {
   .contacts__subtitle {
     font-size: 18px;
-  }
-}
-@media (max-width: 600px) {
-  .contacts__subtitle {
-    line-height: 21px;
+    line-height: normal;
+    margin: 0px;
   }
 }
 
@@ -198,6 +198,7 @@
   line-height: calc(0.7083333333 * (1vw + 1vh));
   color: #000;
   opacity: 0.8;
+  margin-bottom: 18px;
 }
 @media (max-width: 600px) {
   .contacts__address {
@@ -282,11 +283,12 @@ iframe {
 @media (max-width: 781px) {
   .contacts__form-container {
     flex-direction: column-reverse;
+    margin-bottom: 42px;
   }
   .contacts__form-container > .wp-block-column:last-child {
     background: linear-gradient(90deg, #1260F5 0%, #6AB3F8 100%);
     border-radius: 18px;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     margin-top: 65px;
   }
   .contacts__form-container > .wp-block-column:last-child p {

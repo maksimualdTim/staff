@@ -541,7 +541,6 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
 
 header {
   position: relative;
-  background-color: #000;
 }
 
 header .wp-container-core-columns-is-layout-3 {
@@ -710,8 +709,6 @@ header .wp-container-core-columns-is-layout-3 {
   text-decoration: none;
 }
 
-.mobile__email {}
-
 .header-mobile-container-navigation .wp-block-social-link-anchor svg path {
   fill: #356DD9;
 }
@@ -793,8 +790,8 @@ header .wp-container-core-columns-is-layout-3 {
 
 
   .header-mobile {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 16px;
   }
 
@@ -807,5 +804,12 @@ header .wp-container-core-columns-is-layout-3 {
     color: #fff;
     background: unset;
     padding: 20px 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .form-block-container {
+    background: none;
   }
 }

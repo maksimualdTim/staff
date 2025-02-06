@@ -21,36 +21,75 @@
  */
 
 /* eslint-disable no-console */
-addEventListener('DOMContentLoaded', function () {    
-    const swiper = new Swiper('.swiper', {
-        speed: 400,
-        spaceBetween: 19,
+
+window.addEventListener("load", function () {
+	if (window.swiper) {
+		window.swiper.destroy(true, true);
+	}
+	window.swiper = new Swiper('#slide', {
+		speed: 400,
+		spaceBetween: 20,
         autoplay: {
-            delay: 3000, // Задержка между слайдами в миллисекундах (например, 3000 = 3 секунды)
-            disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия (клика)
+            delay: 3000,
+            disableOnInteraction: false,
         },
-        navigation: {
-            nextEl: '.swiper-button-next', // Класс кнопки для перехода к следующему слайду
-            prevEl: '.swiper-button-prev', // Класс кнопки для перехода к предыдущему слайду
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        loop: true,
-        slidesPerView: 2,
-        breakpoints: {
-            700: {
-                slidesPerView: 3
-            },
-            600: {
-                slidesPerView: 2
-            },
-            0: {
-                slidesPerView: 1.14,
-                spaceBetween: 16
-            }
-        }
-      });      
-})
-/* eslint-enable no-console */
+        slidesPerGroup: 1, 
+        slidesPerView: 3,
+        loop: false,
+        loopFillGroupWithBlank: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		loop: true,
+		breakpoints: {
+			700: {
+				slidesPerView: 3
+			},
+			600: {
+				slidesPerView: 2
+			},
+			0: {
+				slidesPerView: 1.14,
+				spaceBetween: 16
+			}
+		}
+	});
+});
+// addEventListener('DOMContentLoaded', function () {
+// 	const swiper = new Swiper('#slide', {
+// 		// speed: 400,
+// 		spaceBetween: 20,
+// 		autoplay: false,
+// 		observer: false,
+// 		observeParents: false,
+// 		observeSlideChildren: false,
+// 		navigation: {
+// 			nextEl: '.swiper-button-next',
+// 			prevEl: '.swiper-button-prev',
+// 		},
+// 		pagination: {
+// 			el: '.swiper-pagination',
+// 			clickable: true,
+// 		},
+// 		loop: false,
+// 		slidesPerView: 3,
+// 		breakpoints: {
+// 			700: {
+// 				slidesPerView: 3
+// 			},
+// 			600: {
+// 				slidesPerView: 2
+// 			},
+// 			0: {
+// 				slidesPerView: 1.14,
+// 				spaceBetween: 16
+// 			}
+// 		}
+// 	});
+// 	swiper.autoplay.stop();
+// });

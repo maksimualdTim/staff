@@ -267,6 +267,7 @@
     justify-content: center;
 		border-radius: 18px;
     padding: 0 18px;
+		padding-top: 3px;
 	}
 
 	.economy-single-item {
@@ -288,7 +289,7 @@
 	}
 
 	.economy-double-items .economy-block-item-box {
-		padding: size(110px) size(94px);
+		padding: 40px 45px 51px 30px;
 		width: 100%;
 		border-radius: 18px;
 	}
@@ -309,11 +310,13 @@
 	}
 
 	.economy-double-items-name {
-		font-size: 48px;
+		font-size: 38px;
 	}
 
 	.economy-double-items-desc {
 		font-size: 15px;
+		max-width: 150px;
+		line-height: 160%;
 		margin-top: size(64px);
 	}
 
@@ -413,14 +416,9 @@
 		margin-bottom: 31px;
 	}
 
-	.economy-double-items-name {
-		font-size: 35px;
-	}
-
 	.economy-double-items-desc {
 		margin-top: 24px;
 		font-size: 15px;
-    max-width: 150px;
 	}
 
 	.boxes-container-mobile {

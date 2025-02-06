@@ -19,6 +19,7 @@
   overflow: hidden;
   padding-bottom: calc(4.1666666667 * (1vw + 1vh)) !important;
   padding-top: calc(11.0416666667 * (1vw + 1vh)) !important;
+  padding-right: 0px !important;
 }
 @media screen and (max-width: 1050px) {
   .header-block {
@@ -45,7 +46,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: auto;
+  width: 100%;
 }
 
 .header-uppertext {
@@ -104,7 +105,7 @@
 @media (max-width: 600px) {
   .header-block {
     padding-bottom: 0 !important;
-    padding-top: 140px !important;
+    padding-top: 100px !important;
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
@@ -118,7 +119,7 @@
   }
   .header-section-content .header-section-btn {
     order: 4;
-    margin-top: 57px;
+    margin-top: 52px;
     font-size: 16px;
     border-radius: 18px;
   }
