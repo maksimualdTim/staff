@@ -456,7 +456,7 @@ header .wp-container-core-columns-is-layout-2 .wp-container-core-columns-is-layo
   padding: calc(1.3333333333 * (1vw + 1vh)) calc(0 * (1vw + 1vh));
   background: linear-gradient(to left, #578CF2, #1260F5);
   border-radius: calc(0.75 * (1vw + 1vh));
-  width: calc(12.5 * (1vw + 1vh)) !important;
+  width: calc(9.5 * (1vw + 1vh)) !important;
 }
 
 .wp-container-core-columns-is-layout-1 .wp-block-column-is-layout-flow {
