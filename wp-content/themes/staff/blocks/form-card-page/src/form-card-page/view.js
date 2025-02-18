@@ -35,17 +35,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function updateProgressBar(stepIndex) {
 		stepsItems.forEach((step, index) => {
-			if (index <= stepIndex) {
-				step.classList.add('bg-black');
-			}
+			step.classList.toggle('bg-black', index <= stepIndex);
 		});
 	}
 
 	nextButtons.forEach((btn) => {
 		btn.addEventListener('click', () => {
-			currentStep = Math.min(currentStep + 1, steps.length - 1);
-			updateSteps();
-			updateProgressBar(currentStep);
+			const currentFormStep = steps[currentStep];
+			const inputs = currentFormStep.querySelectorAll('input, select, textarea'); 
+			let isValid = true;
+
+			inputs.forEach(input => {
+				const isRequired = input.closest('label')?.textContent.includes('*');
+				if (isRequired && !input.value.trim()) {
+					isValid = false;
+					input.style.border = "2px solid red";
+				}
+			});
+
+			if (isValid) {
+				currentStep = Math.min(currentStep + 1, steps.length - 1);
+				updateSteps();
+				updateProgressBar(currentStep);
+			}
+		});
+	});
+
+	document.querySelectorAll('input, select, textarea').forEach(input => {
+		input.addEventListener('input', function () {
+			if (this.value.trim()) {
+				this.style.border = "";
+			}
 		});
 	});
 
@@ -53,25 +73,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	updateProgressBar(currentStep);
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
 	const formContainer = document.getElementById('form-container');
 	const message = document.getElementById('success-message');
 	const formSection = document.getElementById('formSection');
+
 	document.addEventListener('wpcf7mailsent', function (event) {
 		const formWrapper = event.target.closest('.wpcf7');
 		if (formWrapper) {
 			formWrapper.style.display = 'none';
 			formContainer.style.display = "none";
 			formSection.classList.add("form-card-bg");
-			const successMessage = message.style.display = "flex";
+			message.style.display = "flex";
 
 			window.scrollTo({
 				top: 0,
 				behavior: "smooth",
 			});
-			
-			formWrapper.insertAdjacentHTML('afterend', successMessage);
 		}
 	});
 });

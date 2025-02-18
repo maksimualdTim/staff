@@ -149,7 +149,7 @@ add_shortcode("breadcrumbs-partners", function() {
     ob_start();
     ?>
     <div class="bread-crumbs">
-        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Контакты")?></a><span>/</span><a href="#" class="sections__link">Стать партнером</a>
+        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Контакты")?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Стать партнером")?></a>
     </div>
     <?php
     return ob_get_clean();
@@ -161,3 +161,16 @@ function add_favicon() {
 add_action('wp_head', 'add_favicon');
 add_action('admin_head', 'add_favicon');
 
+pll_register_string('home_url', 'Главная');
+pll_register_string('contact_url', 'Контакты');
+pll_register_string('partner_url', 'Стать партнером');
+
+pll_register_string('blog_company', 'Блог компании');
+pll_register_string('form_callback', 'Форма обратной связи');
+pll_register_string('register_url', 'Оформление');
+
+
+pll_register_string('input_phone', 'Введите номер телефона');
+pll_register_string('btn_order_phone', 'Заказать звонок');
+
+add_filter( 'pll_the_languages_args', function( $args ) { $args['display_names_as'] = 'slug'; return $args; } );

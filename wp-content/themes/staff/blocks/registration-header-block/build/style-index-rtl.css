@@ -85,6 +85,7 @@
 
 .registration-header-section-description {
   font-size: calc(0.6666666667 * (1vw + 1vh));
+  line-height: 25.6px;
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -219,6 +220,16 @@
   cursor: pointer;
 }
 
+.steps_btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(0.8333333333 * (1vw + 1vh));
+}
+
+.steps_btns span {
+  display: none;
+}
+
 .steps_btns p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -277,6 +288,7 @@
   }
   .form-step__wrapper p,
   .form-step__wrapper,
+  .steps_btns,
   .steps_btns p {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

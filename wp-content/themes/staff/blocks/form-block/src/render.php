@@ -10,10 +10,10 @@
 		<div class="form-section-content">
 			<h2 class="form-section-title"><?= $attributes['title'] ?></h2>
 			<div class="call-request">
-				<label for="phone-number">Введите номер телефона:</label>
+				<label for="phone-number"><?= pll__('Введите номер телефона') ?>:</label>
 				<div class="call-request-container">
 					<input type="text" id="phone-number" placeholder="555-555-1234" />
-					<button type="button">Заказать звонок</button>
+					<button type="button"><?= pll__('Заказать звонок') ?></button>
 				</div>
 			</div>
 			<div class="agreement">

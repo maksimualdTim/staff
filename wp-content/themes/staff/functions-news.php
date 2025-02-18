@@ -14,7 +14,7 @@ add_shortcode("breadcrumbs-blog", function() {
     ob_start();
     ?>
     <div class="bread-crumbs">
-        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?=pll__("Блог")?></a>
+        <a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a><span>/</span><a href="#" class="sections__link"><?= get_the_title(); ?></a>
     </div>
     <?php
     return ob_get_clean();

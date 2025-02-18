@@ -2,6 +2,15 @@
 /**
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
+$current_lang = pll_current_language(); 
+
+if ($current_lang == 'ru') {
+    $news_page_id = pll_get_post(379);
+} elseif ($current_lang == 'en') {
+    $news_page_id = pll_get_post(555);
+} else {
+    $news_page_id = 555; 
+}
 ?>
 
 <section class="form-card" <?= get_block_wrapper_attributes(); ?> id="formSection">
@@ -9,7 +18,7 @@
 		<div class="bread-crumbs">
 			<a href="<?= home_url() ?>" class="sections__link"><?= pll__('Главная') ?></a>
 			<span>/</span>
-			<a href="#" class="crumbs-link">Оформление</a>
+			<a href="<?= get_permalink($news_page_id) ?>" class="crumbs-link"><?= pll__('Оформление') ?></a>
 			<span>/</span>
 			<a href="#" class="sections__link"><?= the_title(); ?></a>
 		</div>

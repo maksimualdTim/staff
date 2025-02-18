@@ -22,7 +22,7 @@
 
 				<div id="savings-calculator" class="calculator__card">
 					<div class="calculator__content">
-						<span class="calculator__content-text">Choose fleet size</span>
+						<span class="calculator__content-text"><?= $attributes['fleetSize'] ?></span>
 
 						<div class="calculator__range">
 							<span id="rangeValue"class="calculator__value">1</span>
@@ -31,7 +31,7 @@
 					</div>
 
 					<div class="calculator__content">
-							<span class="calculator__content-text">Select fill-ups per week</span>
+							<span class="calculator__content-text"><?= $attributes['perWeek'] ?></span>
 							<div class="fill-up-container">
 									<button class="fill-up-btn active" data-value="1">1</button>
 									<button class="fill-up-btn" data-value="2">2</button>
@@ -44,7 +44,7 @@
 					</div>
 		
 					<div class="calculator__content">
-					<span class="calculator__content-text">Choose Gallons Per Fill-Up</span>
+					<span class="calculator__content-text"><?= $attributes['gallons'] ?></span>
 
 					<div class="calculator__range">
 						<span id="gallonsValue"class="gallons__value">50</span>
@@ -55,7 +55,7 @@
 			</div>
 
 			<div class="calculator__results-box-mobi">
-				<span class="calculator__results-text">Annual Savings</span>
+				<span class="calculator__results-text"><?= $attributes['annualText'] ?></span>
 				<div id="savings-result-mobi" class="calculator__results">$0</div>
 			</div>
 	</div>

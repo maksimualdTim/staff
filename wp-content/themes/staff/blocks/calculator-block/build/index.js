@@ -62,7 +62,10 @@ function Edit({
   const {
     subSectionText,
     title,
-    annualText
+    annualText,
+    fleetSize,
+    perWeek,
+    gallons
   } = attributes;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
@@ -86,6 +89,24 @@ function Edit({
           onChange: value => setAttributes({
             annualText: value
           })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u0440\u0430\u0437\u043C\u0435\u0440 \u0430\u0432\u0442\u043E\u043F\u0430\u0440\u043A\u0430",
+          value: fleetSize,
+          onChange: value => setAttributes({
+            fleetSize: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u043F\u043E\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0432 \u043D\u0435\u0434\u0435\u043B\u044E",
+          value: perWeek,
+          onChange: value => setAttributes({
+            perWeek: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u0433\u0430\u043B\u043B\u043E\u043D\u044B \u043D\u0430 \u0437\u0430\u043F\u0440\u0430\u0432\u043A\u0443",
+          value: gallons,
+          onChange: value => setAttributes({
+            gallons: value
+          })
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
@@ -93,22 +114,42 @@ function Edit({
         className: 'calculator section'
       }),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-        className: "section__sub",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "section__line"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "section__text",
-          children: subSectionText
+        style: {
+          display: "flex",
+          justifyContent: "space-between"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            className: "section__sub",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "section__line"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "section__text",
+              children: subSectionText
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
+            tagName: "h3",
+            value: title,
+            label: "\u0417\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A",
+            placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A ...",
+            onChange: val => setAttributes({
+              title: val
+            }),
+            className: "calculator-title"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "calculator__card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            className: "calculator__content-text",
+            children: fleetSize
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            className: "calculator__content-text",
+            children: perWeek
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            className: "calculator__content-text",
+            children: gallons
+          })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
-        tagName: "h3",
-        value: title,
-        label: "\u0417\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A",
-        placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A ...",
-        onChange: val => setAttributes({
-          title: val
-        }),
-        className: "calculator-title"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
         className: "calculator__results-text",
         children: annualText
@@ -247,7 +288,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/calculator-block","version":"0.1.0","title":"Calculator Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"},"annualText":{"type":"string"}},"supports":{"html":false},"textdomain":"calculator-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/calculator-block","version":"0.1.0","title":"Calculator Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"},"annualText":{"type":"string"},"fleetSize":{"type":"string"},"perWeek":{"type":"string"},"gallons":{"type":"string"}},"supports":{"html":false},"textdomain":"calculator-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

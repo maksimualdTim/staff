@@ -22,11 +22,8 @@
 
 /* eslint-disable no-console */
 
-window.addEventListener("load", function () {
-	if (window.swiper) {
-		window.swiper.destroy(true, true);
-	}
-	window.swiper = new Swiper('#slide', {
+document.addEventListener("DOMContentLoaded", function() {
+	const swiper = new Swiper('#slide', {
 		speed: 400,
 		spaceBetween: 20,
         autoplay: {
@@ -60,36 +57,3 @@ window.addEventListener("load", function () {
 		}
 	});
 });
-// addEventListener('DOMContentLoaded', function () {
-// 	const swiper = new Swiper('#slide', {
-// 		// speed: 400,
-// 		spaceBetween: 20,
-// 		autoplay: false,
-// 		observer: false,
-// 		observeParents: false,
-// 		observeSlideChildren: false,
-// 		navigation: {
-// 			nextEl: '.swiper-button-next',
-// 			prevEl: '.swiper-button-prev',
-// 		},
-// 		pagination: {
-// 			el: '.swiper-pagination',
-// 			clickable: true,
-// 		},
-// 		loop: false,
-// 		slidesPerView: 3,
-// 		breakpoints: {
-// 			700: {
-// 				slidesPerView: 3
-// 			},
-// 			600: {
-// 				slidesPerView: 2
-// 			},
-// 			0: {
-// 				slidesPerView: 1.14,
-// 				spaceBetween: 16
-// 			}
-// 		}
-// 	});
-// 	swiper.autoplay.stop();
-// });

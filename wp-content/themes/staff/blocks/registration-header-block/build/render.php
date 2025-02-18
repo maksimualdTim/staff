@@ -27,7 +27,7 @@
 
 		<div class="registration-header-section-form">
 			<div class="registration__form_heading">
-				<h4 class="registration__form_heading_header">Форма обратной связи</h4>
+				<h4 class="registration__form_heading_header"><?= pll__('Форма обратной связи') ?></h4>
 				<ul class="registration__form_heading_steps">
 					<li class="step__item bg-black">
 						1

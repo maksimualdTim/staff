@@ -128,7 +128,7 @@
 .news__title {
   color: #454545;
   font-size: calc(0.75 * (1vw + 1vh));
-  line-height: calc(0.7916666667 * (1vw + 1vh));
+  line-height: 21.6px;
   margin-bottom: calc(1.0416666667 * (1vw + 1vh));
 }
 @media (max-width: 600px) {
