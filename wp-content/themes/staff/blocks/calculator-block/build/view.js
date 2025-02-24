@@ -38,33 +38,22 @@ fleetSize.addEventListener("input", e => {
 const gallonsFillUp = document.getElementById("gallons-fillup");
 const gallonsValue = document.getElementById("gallonsValue");
 gallonsFillUp.addEventListener("input", e => {
-  // Получаем текущее значение input
   let currentValue = e.target.value;
-
-  // Нормализуем значение от 50-250 в диапазон 1-100
   let minValue = 50;
   let maxValue = 250;
   let normalizedValue = (currentValue - minValue) / (maxValue - minValue) * 99 + 1;
-
-  // Рассчитываем позицию для transform
   let position = -1 * normalizedValue;
-
-  // Применяем стили
   gallonsValue.style.left = normalizedValue + '%';
   gallonsValue.style.transform = 'translate(' + position + '%, 2px)';
-  gallonsValue.innerText = currentValue; // Округляем для отображения
+  gallonsValue.innerText = currentValue;
 });
 let fillUpsPerWeek = 1;
-
-// Event listeners for button selection
 function saveInputs() {
-  // Сохраняем текущие значения в LocalStorage
   localStorage.setItem("fleetSize", document.getElementById("fleet-size").value);
   localStorage.setItem("gallonsPerFillUp", document.getElementById("gallons-fillup").value);
   localStorage.setItem("fillUpsPerWeek", fillUpsPerWeek);
 }
 function loadInputs() {
-  // Восстанавливаем значения из LocalStorage
   const savedFleetSize = localStorage.getItem("fleetSize");
   const savedGallonsPerFillUp = localStorage.getItem("gallonsPerFillUp");
   const savedFillUpsPerWeek = localStorage.getItem("fillUpsPerWeek");
@@ -84,20 +73,14 @@ function calculateSavings() {
   const fleetSize = parseInt(document.getElementById("fleet-size").value) || 0;
   const gallonsPerFillUp = parseInt(document.getElementById("gallons-fillup").value) || 0;
   const savingsPerGallon = 0.6;
-  const annualSavings = fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp; // 52 weeks
+  const annualSavings = fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp;
   document.getElementById("savings-result").innerText = `$${annualSavings.toLocaleString()}`;
-  const annualSavingsMobi = fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp; // 52 weeks
+  const annualSavingsMobi = fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp;
   document.getElementById("savings-result-mobi").innerText = `$${annualSavingsMobi.toLocaleString()}`;
-
-  // Сохраняем текущие данные
   saveInputs();
 }
-
-// Recalculate when input changes
 document.getElementById("fleet-size").addEventListener("input", calculateSavings);
 document.getElementById("gallons-fillup").addEventListener("input", calculateSavings);
-
-// Event listeners for button selection
 document.querySelectorAll(".fill-up-btn").forEach(button => {
   button.addEventListener("click", () => {
     document.querySelectorAll(".fill-up-btn").forEach(btn => btn.classList.remove("active"));
@@ -106,8 +89,6 @@ document.querySelectorAll(".fill-up-btn").forEach(button => {
     calculateSavings();
   });
 });
-
-// Load saved inputs on page load
 loadInputs();
 calculateSavings();
 

@@ -53,6 +53,7 @@
   margin-top: 0;
   margin-bottom: calc(1.25 * (1vw + 1vh));
   font-size: calc(0.8333333333 * (1vw + 1vh));
+  font-weight: 400;
 }
 
 .referral_page_materials__single_block_text {
@@ -94,6 +95,7 @@
   font-size: calc(0.8333333333 * (1vw + 1vh));
   margin-bottom: calc(1.2916666667 * (1vw + 1vh));
   margin-top: 0;
+  font-weight: 400;
 }
 
 .referral_page_materials__group_text {
