@@ -21,10 +21,32 @@
 		"fleetSize": {
 			"type": "string"
 		},
+		"fleetSizeMin": {
+			"type": "string"
+		},
+		"fleetSizeMax": {
+			"type": "string"
+		},
 		"perWeek": {
 			"type": "string"
 		},
 		"gallons": {
+			"type": "string"
+		},
+		"gallonSizeMin": {
+			"type": "string"
+		},
+		"gallonSizeMax": {
+			"type": "string"
+		},
+		"fillUpButtons": {
+      "type": "array",
+      "default": [1, 2, 3, 4, 5, 6, 7]
+    },
+		"pricePerGallonWithoutCard": {
+			"type": "string"
+		},
+		"pricePerGallonWithCard": {
 			"type": "string"
 		}
 	},

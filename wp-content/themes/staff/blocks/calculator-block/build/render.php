@@ -2,6 +2,9 @@
 /**
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
+
+$fillUpButtons = isset($attributes['fillUpButtons']) ? $attributes['fillUpButtons'] : get_field('fill_up_buttons');
+$fillUpButtons = is_array($fillUpButtons) ? $fillUpButtons : [1, 2, 3, 4, 5, 6, 7]; 
 ?>
 
 <section class="calculator section" <?= get_block_wrapper_attributes(); ?>>
@@ -25,14 +28,16 @@
 						<span class="calculator__content-text"><?= $attributes['fleetSize'] ?></span>
 
 						<div class="calculator__range">
-							<span id="rangeValue"class="calculator__value">1</span>
-							<input class="calculator__fleet-size" id="fleet-size" type="range" value="1" min="1" max="100" step="1">
+							<span id="rangeValue"class="calculator__value"><?= $attributes['fleetSizeMin'] ?></span>
+							<input class="calculator__fleet-size" id="fleet-size" type="range"  value="<?php echo esc_attr($attributes["fleetSizeMin"]); ?>" 
+							min="<?php echo esc_attr($attributes["fleetSizeMin"]); ?>" 
+       max="<?php echo esc_attr($attributes["fleetSizeMax"]); ?>"  step="1">
 						</div>
 					</div>
 
 					<div class="calculator__content">
 							<span class="calculator__content-text"><?= $attributes['perWeek'] ?></span>
-							<div class="fill-up-container">
+							<!-- <div class="fill-up-container">
 									<button class="fill-up-btn active" data-value="1">1</button>
 									<button class="fill-up-btn" data-value="2">2</button>
 									<button class="fill-up-btn" data-value="3">3</button>
@@ -40,15 +45,22 @@
 									<button class="fill-up-btn" data-value="5">5</button>
 									<button class="fill-up-btn" data-value="6">6</button>
 									<button class="fill-up-btn" data-value="7">7</button>
-							</div>
+							</div> -->
+							<div class="fill-up-container">
+    <?php foreach ($fillUpButtons as $index => $buttonValue): ?>
+        <button class="fill-up-btn <?= $index === 0 ? 'active' : '' ?>" data-value="<?= esc_attr($buttonValue) ?>">
+            <?= esc_html($buttonValue) ?>
+        </button>
+    <?php endforeach; ?>
+</div>
 					</div>
 		
 					<div class="calculator__content">
 					<span class="calculator__content-text"><?= $attributes['gallons'] ?></span>
 
 					<div class="calculator__range">
-						<span id="gallonsValue"class="gallons__value">50</span>
-						<input class="calculator__fleet-size" id="gallons-fillup" type="range" value="50"  min="50" max="250" step="1">
+						<span id="gallonsValue"class="gallons__value"><?= $attributes['gallonSizeMin'] ?></span>
+						<input class="calculator__fleet-size" id="gallons-fillup" type="range" value="<?php echo esc_attr($attributes["gallonSizeMin"]); ?>"  min="<?php echo esc_attr($attributes["gallonSizeMin"]); ?>" max="<?php echo esc_attr($attributes["gallonSizeMax"]); ?>" step="1">
 					</div>
 				</div>
 
@@ -63,3 +75,15 @@
 	</div>
 
 </section>
+
+<script>
+	  window.fuelPrices = <?php echo json_encode([
+        'pricePerGallonWithoutCard' => floatval($attributes["pricePerGallonWithoutCard"]),
+        'pricePerGallonWithCard' => floatval($attributes["pricePerGallonWithCard"]),
+				'fleetSizeMin' => intval($attributes["fleetSizeMin"]),
+        'fleetSizeMax' => intval($attributes["fleetSizeMax"]),
+				'gallonSizeMin' => intval($attributes["gallonSizeMin"]),
+        'gallonSizeMax' => intval($attributes["gallonSizeMax"]),
+				'fillUpButtons' => array_map('intval', $fillUpButtons)
+    ]); ?>;
+</script>

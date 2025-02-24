@@ -22,111 +22,120 @@
 
 /* eslint-disable no-console */
 
+document.addEventListener("DOMContentLoaded", function () {
 
-const fleetSize = document.getElementById("fleet-size");
-const rangeValue = document.getElementById("rangeValue");
-fleetSize.addEventListener("input", (e) => {
-	let num = e.target.value;
-	let position = -1 * num;
-  
-	rangeValue.style.left = (num + '%');
-	rangeValue.style.transform = 'translate(' + position + '%, 2px)';
-	rangeValue.innerText = num;
-});
+	const fleetSize = document.getElementById("fleet-size");
+	const rangeValue = document.getElementById("rangeValue");
+	const minValue = parseInt(fleetSize.min);
+	const maxValue = parseInt(fleetSize.max);
 
-const gallonsFillUp = document.getElementById("gallons-fillup");
-const gallonsValue = document.getElementById("gallonsValue");
+	fleetSize.addEventListener("input", (e) => {
+		let num = parseInt(e.target.value);
+		let normalizedValue = ((num - minValue) / (maxValue - minValue)) * 99 + 1;
+		let position = -1 * normalizedValue;
 
-gallonsFillUp.addEventListener("input", (e) => {
-  let currentValue = e.target.value;
-
-  let minValue = 50;
-  let maxValue = 250;
-  let normalizedValue = ((currentValue - minValue) / (maxValue - minValue)) * 99 + 1;
-
-  let position = -1 * normalizedValue;
-
-  gallonsValue.style.left = normalizedValue + '%';
-  gallonsValue.style.transform = 'translate(' + position + '%, 2px)';
-  gallonsValue.innerText = currentValue; 
-});
-
-let fillUpsPerWeek = 1;
-
-function saveInputs() {
-	localStorage.setItem(
-		"fleetSize",
-		document.getElementById("fleet-size").value,
-	);
-	localStorage.setItem(
-		"gallonsPerFillUp",
-		document.getElementById("gallons-fillup").value,
-	);
-	localStorage.setItem("fillUpsPerWeek", fillUpsPerWeek);
-}
-
-function loadInputs() {
-	const savedFleetSize = localStorage.getItem("fleetSize");
-	const savedGallonsPerFillUp = localStorage.getItem("gallonsPerFillUp");
-	const savedFillUpsPerWeek = localStorage.getItem("fillUpsPerWeek");
-
-	if (savedFleetSize !== null) {
-		document.getElementById("fleet-size").value = savedFleetSize;
-	}
-	if (savedGallonsPerFillUp !== null) {
-		document.getElementById("gallons-fillup").value = savedGallonsPerFillUp;
-	}
-	if (savedFillUpsPerWeek !== null) {
-		fillUpsPerWeek = parseInt(savedFillUpsPerWeek);
-		document
-			.querySelectorAll(".fill-up-btn")
-			.forEach((btn) => btn.classList.remove("active"));
-		document
-			.querySelector(`.fill-up-btn[data-value="${savedFillUpsPerWeek}"]`)
-			?.classList.add("active");
-	}
-}
-
-function calculateSavings() {
-	const fleetSize = parseInt(document.getElementById("fleet-size").value) || 0;
-	const gallonsPerFillUp =
-		parseInt(document.getElementById("gallons-fillup").value) || 0;
-	const savingsPerGallon = 0.6;
-
-	const annualSavings =
-		fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp;
-	document.getElementById(
-		"savings-result",
-	).innerText = `$${annualSavings.toLocaleString()}`;
-
-	const annualSavingsMobi =
-		fleetSize * fillUpsPerWeek * savingsPerGallon * gallonsPerFillUp;
-	document.getElementById(
-		"savings-result-mobi",
-	).innerText = `$${annualSavingsMobi.toLocaleString()}`;
-
-	saveInputs();
-}
-
-document
-	.getElementById("fleet-size")
-	.addEventListener("input", calculateSavings);
-document
-	.getElementById("gallons-fillup")
-	.addEventListener("input", calculateSavings);
-
-document.querySelectorAll(".fill-up-btn").forEach((button) => {
-	button.addEventListener("click", () => {
-		document
-			.querySelectorAll(".fill-up-btn")
-			.forEach((btn) => btn.classList.remove("active"));
-		button.classList.add("active");
-		fillUpsPerWeek = parseInt(button.dataset.value);
-		calculateSavings();
+    rangeValue.style.left = normalizedValue + '%';
+    rangeValue.style.transform = `translate(${position}%, 2px)`;
+		rangeValue.innerText = num;
 	});
+
+	const gallonsFillUp = document.getElementById("gallons-fillup");
+	const gallonsValue = document.getElementById("gallonsValue");
+
+	gallonsFillUp.addEventListener("input", (e) => {
+		let currentValue = parseInt(e.target.value);
+
+		let minValue = parseInt(gallonsFillUp.min);
+		let maxValue = parseInt(gallonsFillUp.max);
+		let normalizedValue = ((currentValue - minValue) / (maxValue - minValue)) * 99 + 1;
+
+		let position = -1 * normalizedValue;
+
+		gallonsValue.style.left = normalizedValue + '%';
+		gallonsValue.style.transform = 'translate(' + position + '%, 2px)';
+		gallonsValue.innerText = currentValue;
+	});
+
+	let fillUpsPerWeek = 1;
+
+	function saveInputs() {
+		localStorage.setItem(
+			"fleetSize",
+			document.getElementById("fleet-size").value,
+		);
+		localStorage.setItem(
+			"gallonsPerFillUp",
+			document.getElementById("gallons-fillup").value,
+		);
+		localStorage.setItem("fillUpsPerWeek", fillUpsPerWeek);
+	}
+
+	function loadInputs() {
+		const savedFleetSize = localStorage.getItem("fleetSize");
+		const savedGallonsPerFillUp = localStorage.getItem("gallonsPerFillUp");
+		const savedFillUpsPerWeek = localStorage.getItem("fillUpsPerWeek");
+
+		if (savedFleetSize !== null) {
+			document.getElementById("fleet-size").value = savedFleetSize;
+		}
+		if (savedGallonsPerFillUp !== null) {
+			document.getElementById("gallons-fillup").value = savedGallonsPerFillUp;
+		}
+		if (savedFillUpsPerWeek !== null) {
+			fillUpsPerWeek = parseInt(savedFillUpsPerWeek);
+			document
+				.querySelectorAll(".fill-up-btn")
+				.forEach((btn) => btn.classList.remove("active"));
+			document
+				.querySelector(`.fill-up-btn[data-value="${savedFillUpsPerWeek}"]`) ?.classList.add("active");
+		}
+	}
+
+	function calculateSavings() {
+		const fleetSize = parseInt(document.getElementById("fleet-size").value) || 0;
+		const gallonsPerFillUp =
+			parseInt(document.getElementById("gallons-fillup").value) || 0;
+		// const savingsPerGallon = 0.6;
+		const pricePerGallonWithoutCard = window.fuelPrices.pricePerGallonWithoutCard;
+		const pricePerGallonWithCard = window.fuelPrices.pricePerGallonWithCard;
+
+		const annualSavings =
+			fleetSize * fillUpsPerWeek * (pricePerGallonWithoutCard - pricePerGallonWithCard) * gallonsPerFillUp;
+		document.getElementById(
+			"savings-result",
+		).innerText = `$${annualSavings.toLocaleString()}`;
+
+		const annualSavingsMobi =
+			fleetSize * fillUpsPerWeek * (pricePerGallonWithoutCard - pricePerGallonWithCard) * gallonsPerFillUp;
+		document.getElementById(
+			"savings-result-mobi",
+		).innerText = `$${annualSavingsMobi.toLocaleString()}`;
+
+		saveInputs();
+	}
+
+	document
+		.getElementById("fleet-size")
+		.addEventListener("input", calculateSavings);
+	document
+		.getElementById("gallons-fillup")
+		.addEventListener("input", calculateSavings);
+
+	document.querySelectorAll(".fill-up-btn").forEach((button) => {
+		button.addEventListener("click", () => {
+			document
+				.querySelectorAll(".fill-up-btn")
+				.forEach((btn) => btn.classList.remove("active"));
+			button.classList.add("active");
+			fillUpsPerWeek = parseInt(button.dataset.value);
+			calculateSavings();
+		});
+	});
+
+	loadInputs();
+	calculateSavings();
 });
 
-loadInputs();
-calculateSavings();
+
 
 /* eslint-enable no-console */

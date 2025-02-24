@@ -65,7 +65,14 @@ function Edit({
     annualText,
     fleetSize,
     perWeek,
-    gallons
+    gallons,
+    pricePerGallonWithoutCard,
+    pricePerGallonWithCard,
+    fleetSizeMin,
+    fleetSizeMax,
+    gallonSizeMin,
+    gallonSizeMax,
+    fillUpButtons
   } = attributes;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
@@ -96,16 +103,62 @@ function Edit({
             fleetSize: value
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u0440\u0430\u0437\u043C\u0435\u0440 \u0430\u0432\u0442\u043E\u043F\u0430\u0440\u043A\u0430 minimum number",
+          value: fleetSizeMin,
+          onChange: value => setAttributes({
+            fleetSizeMin: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u0440\u0430\u0437\u043C\u0435\u0440 \u0430\u0432\u0442\u043E\u043F\u0430\u0440\u043A\u0430 maximum number",
+          value: fleetSizeMax,
+          onChange: value => setAttributes({
+            fleetSizeMax: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
           label: "\u0422\u0435\u043A\u0441\u0442 \u043F\u043E\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0432 \u043D\u0435\u0434\u0435\u043B\u044E",
           value: perWeek,
           onChange: value => setAttributes({
             perWeek: value
           })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u043F\u043E\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0432 \u043D\u0435\u0434\u0435\u043B\u044E dates",
+          value: fillUpButtons ? fillUpButtons.join(", ") : "",
+          onChange: value => {
+            const sanitizedValue = value.replace(/[^0-9]/g, "").replace(/(\d)(?=\d)/g, "$1, ");
+            const newValues = sanitizedValue.split(", ").map(num => num.trim()).filter(num => num !== "" && !isNaN(num)).map(Number);
+            setAttributes({
+              fillUpButtons: newValues
+            });
+          }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
           label: "\u0422\u0435\u043A\u0441\u0442 \u0433\u0430\u043B\u043B\u043E\u043D\u044B \u043D\u0430 \u0437\u0430\u043F\u0440\u0430\u0432\u043A\u0443",
           value: gallons,
           onChange: value => setAttributes({
             gallons: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u0433\u0430\u043B\u043B\u043E\u043D\u044B \u043D\u0430 \u0437\u0430\u043F\u0440\u0430\u0432\u043A\u0443 minimum number",
+          value: gallonSizeMin,
+          onChange: value => setAttributes({
+            gallonSizeMin: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0422\u0435\u043A\u0441\u0442 \u0433\u0430\u043B\u043B\u043E\u043D\u044B \u043D\u0430 \u0437\u0430\u043F\u0440\u0430\u0432\u043A\u0443 maximum number",
+          value: gallonSizeMax,
+          onChange: value => setAttributes({
+            gallonSizeMax: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0421\u0440\u0435\u0434\u043D\u044F\u044F \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0433\u0430\u043B\u043B\u043E\u043D\u0430 \u0431\u0435\u0437 \u043D\u0430\u0448\u0435\u0439 \u043A\u0430\u0440\u0442\u044B",
+          value: pricePerGallonWithoutCard,
+          onChange: value => setAttributes({
+            pricePerGallonWithoutCard: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+          label: "\u0421\u0440\u0435\u0434\u043D\u044F\u044F \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0433\u0430\u043B\u043B\u043E\u043D\u0430 c \u043D\u0430\u0448\u0435\u0439 \u043A\u0430\u0440\u0442\u043E\u0439",
+          value: pricePerGallonWithCard,
+          onChange: value => setAttributes({
+            pricePerGallonWithCard: value
           })
         })]
       })
@@ -142,12 +195,64 @@ function Edit({
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
             className: "calculator__content-text",
             children: fleetSize
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            style: {
+              display: "flex",
+              gap: "5px",
+              alignItems: "center"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              className: "calculator__content-text",
+              children: fleetSizeMin
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: "-"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              className: "calculator__content-text",
+              children: fleetSizeMax
+            })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
             className: "calculator__content-text",
             children: perWeek
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "fill-up-container",
+            children: fillUpButtons.map((btnValue, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+              className: "fill-up-btn",
+              "data-value": btnValue,
+              children: btnValue
+            }, index))
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
             className: "calculator__content-text",
             children: gallons
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            style: {
+              display: "flex",
+              gap: "5px",
+              alignItems: "center"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              className: "calculator__content-text",
+              children: gallonSizeMin
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: "-"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              className: "calculator__content-text",
+              children: gallonSizeMax
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            style: {
+              display: "flex",
+              gap: "5px",
+              alignItems: "center"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              className: "calculator__content-text",
+              children: pricePerGallonWithoutCard
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              children: "-"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+              className: "calculator__content-text",
+              children: pricePerGallonWithCard
+            })]
           })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
@@ -288,7 +393,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/calculator-block","version":"0.1.0","title":"Calculator Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"},"annualText":{"type":"string"},"fleetSize":{"type":"string"},"perWeek":{"type":"string"},"gallons":{"type":"string"}},"supports":{"html":false},"textdomain":"calculator-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/calculator-block","version":"0.1.0","title":"Calculator Block","category":"staff-category","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"attributes":{"subSectionText":{"type":"string"},"title":{"type":"string"},"annualText":{"type":"string"},"fleetSize":{"type":"string"},"fleetSizeMin":{"type":"string"},"fleetSizeMax":{"type":"string"},"perWeek":{"type":"string"},"gallons":{"type":"string"},"gallonSizeMin":{"type":"string"},"gallonSizeMax":{"type":"string"},"fillUpButtons":{"type":"array","default":[1,2,3,4,5,6,7]},"pricePerGallonWithoutCard":{"type":"string"},"pricePerGallonWithCard":{"type":"string"}},"supports":{"html":false},"textdomain":"calculator-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

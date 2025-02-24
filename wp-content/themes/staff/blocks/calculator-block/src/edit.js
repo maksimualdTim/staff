@@ -12,7 +12,7 @@
   * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
   */
  import { useBlockProps, MediaUpload, RichText } from '@wordpress/block-editor'
- import { PanelBody, TextControl } from '@wordpress/components'
+ import { PanelBody, TextControl, TextareaControl } from '@wordpress/components'
  import { InspectorControls } from '@wordpress/block-editor'
  
  /**
@@ -33,8 +33,8 @@
   */
  
  export default function Edit({ attributes, setAttributes }) {
-   const { subSectionText, title, annualText, fleetSize, perWeek, gallons } = attributes
- 
+   const { subSectionText, title, annualText, fleetSize, perWeek, gallons, pricePerGallonWithoutCard, pricePerGallonWithCard, fleetSizeMin, fleetSizeMax, gallonSizeMin, gallonSizeMax, fillUpButtons } = attributes
+
    return (
      <>
        <InspectorControls>
@@ -61,7 +61,16 @@
              value={fleetSize}
              onChange={(value) => setAttributes({ fleetSize: value })}
            />
-
+         <TextControl
+             label="Текст размер автопарка minimum number"
+             value={fleetSizeMin}
+             onChange={(value) => setAttributes({ fleetSizeMin: value })}
+           />
+             <TextControl
+             label="Текст размер автопарка maximum number"
+             value={fleetSizeMax}
+             onChange={(value) => setAttributes({ fleetSizeMax: value })}
+           />
 
          <TextControl
              label="Текст пополнения в неделю"
@@ -69,10 +78,52 @@
              onChange={(value) => setAttributes({ perWeek: value })}
            />
 
+          <TextareaControl
+              label="Текст пополнения в неделю dates"
+              value={fillUpButtons ? fillUpButtons.join(", ") : ""}
+              onChange={(value) => {
+                const sanitizedValue = value
+                  .replace(/[^0-9]/g, "")
+                  .replace(/(\d)(?=\d)/g, "$1, ");
+            
+                const newValues = sanitizedValue
+                  .split(", ")
+                  .map((num) => num.trim())
+                  .filter((num) => num !== "" && !isNaN(num))
+                  .map(Number);
+            
+                setAttributes({ fillUpButtons: newValues });
+              }}
+            />
+
             <TextControl
               label="Текст галлоны на заправку"
               value={gallons}
               onChange={(value) => setAttributes({ gallons: value })}
+            />
+
+          <TextControl
+              label="Текст галлоны на заправку minimum number"
+              value={gallonSizeMin}
+              onChange={(value) => setAttributes({ gallonSizeMin: value })}
+            />
+
+          <TextControl
+              label="Текст галлоны на заправку maximum number"
+              value={gallonSizeMax}
+              onChange={(value) => setAttributes({ gallonSizeMax: value })}
+            />
+
+            <TextControl
+              label="Средняя стоимость галлона без нашей карты"
+              value={pricePerGallonWithoutCard}
+              onChange={(value) => setAttributes({ pricePerGallonWithoutCard: value })}
+            />
+
+          <TextControl
+              label="Средняя стоимость галлона c нашей картой"
+              value={pricePerGallonWithCard}
+              onChange={(value) => setAttributes({ pricePerGallonWithCard: value })}
             />
         </PanelBody>
        </InspectorControls>
@@ -96,9 +147,33 @@
           </div>
 
         <div className="calculator__card">
-        <span className="calculator__content-text">{fleetSize}</span>
+          <span className="calculator__content-text">{fleetSize}</span>
+          <div style={{display: "flex", gap: "5px", alignItems: "center"}}>
+					<span className="calculator__content-text">{fleetSizeMin}</span> 
+          <span>-</span>
+          <span className="calculator__content-text">{fleetSizeMax}</span>
+        </div>
           <span className="calculator__content-text">{perWeek}</span>
-					<span className="calculator__content-text">{gallons}</span> 
+          <div className="fill-up-container">
+            {fillUpButtons.map((btnValue, index) => (
+              <button key={index} className="fill-up-btn" data-value={btnValue}>
+                {btnValue}
+              </button>
+            ))}
+          </div>
+
+					<span className="calculator__content-text">{gallons}</span>
+          <div style={{display: "flex", gap: "5px", alignItems: "center"}}>
+					<span className="calculator__content-text">{gallonSizeMin}</span> 
+          <span>-</span>
+          <span className="calculator__content-text">{gallonSizeMax}</span>
+        </div> 
+
+          <div style={{display: "flex", gap: "5px", alignItems: "center"}}>
+					<span className="calculator__content-text">{pricePerGallonWithoutCard}</span> 
+          <span>-</span>
+          <span className="calculator__content-text">{pricePerGallonWithCard}</span>
+        </div>
         </div>
           </div>
          <span className="calculator__results-text">{annualText}</span>
